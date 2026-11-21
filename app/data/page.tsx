@@ -13,10 +13,12 @@ const LABEL: Record<string, string> = {
 export default async function DataIssues({ searchParams }: { searchParams: Promise<SP> }) {
   const { idx, date, from, to, q } = await resolveRange(await searchParams);
   const rows = (await readRun<{ rows: DataIssue[] }>(`${date}/data_issues.json`))?.rows ?? [];
-  const [sent, dg] = await Promise.all([
+  const [sent, dg, subs] = await Promise.all([
     readRun<Record<string, { status: string; at: string; error?: string }>>(`${date}/delivered.json`),
     readRun<{ digests: Record<string, Digest> }>(`${date}/digests.json`),
+    Promise.all(Array.from({ length: 6 }, (_, i) => `AM-0${i + 1}`).map(async (id) => [id, await readRun<{ chat_id: number }>(`subscribers/${id}.json`)] as const)),
   ]);
+  const connected = new Set(subs.filter(([, v]) => v).map(([id]) => id));
   return (
     <>
       <Header from={from} to={to} dates={idx.dates} path="/data" />
@@ -25,13 +27,14 @@ export default async function DataIssues({ searchParams }: { searchParams: Promi
       <h2>Telegram delivery · {date}</h2>
       <div className="panel tablewrap">
         <table className="stack">
-          <thead><tr><th>Area manager</th><th>Status</th><th>Sent at</th></tr></thead>
+          <thead><tr><th>Area manager</th><th>Telegram</th><th>Status</th><th>Sent at</th></tr></thead>
           <tbody>
             {Object.values(dg?.digests ?? {}).map((d) => {
               const r = sent?.[d.am_id];
               return (
                 <tr key={d.am_id}>
                   <td className="issue-cell">{d.name}<div className="small">{d.city}</div></td>
+                  <td data-label="Telegram"><span className={`chip ${connected.has(d.am_id) ? "ok" : ""}`}>{connected.has(d.am_id) ? "Connected" : "Not connected"}</span></td>
                   <td data-label="Status"><span className={`chip ${r?.status === "ok" ? "ok" : r ? "bad" : ""}`}>{r ? (r.status === "ok" ? "Delivered" : "Failed") : "Not sent"}</span>{r?.error && <div className="small">{r.error}</div>}</td>
                   <td data-label="Sent at">{r?.at ? new Date(r.at).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" }) : "—"}</td>
                 </tr>

@@ -11,3 +11,4 @@ runs/snapshot/
 runs/lock.json
 runs/subscribers/
 .vercel
+.env*

@@ -252,12 +252,14 @@ Try it offline: `python scripts/mock_api.py --through 2026-10-05`, then `LIVE_AP
 
 After the newest day runs, `engine/deliver.py` sends each area manager a Telegram message (their briefing in Hindi or Kannada, the new issues with who/what/when, last week's results) and the voice briefing as an audio message. A quiet day gets a short all-clear. Status per manager is in `runs/<date>/delivered.json` and on the Data issues page; a manager already delivered is never sent twice (`?resend=1` overrides).
 
-Setup (one time):
+Setup (one time, you):
 1. In Telegram, talk to `@BotFather`, `/newbot`, copy the token into `TELEGRAM_BOT_TOKEN`.
-2. Set `TELEGRAM_SECRET` to a long random string (letters, digits, `_`, `-`). It signs the personal links and authenticates Telegram's calls to the webhook. Set both, plus `BLOB_READ_WRITE_TOKEN` and `APP_URL`, in Vercel too, then deploy.
-3. `python scripts/telegram_setup.py --webhook https://<your-app>` points the bot at `/api/telegram`.
-4. `python scripts/telegram_setup.py --links` prints one personal link per manager. Send each link to that manager only. When they press **Start**, the bot saves their chat id (`runs/subscribers/<am>.json`) and replies "Connected".
-5. `--status` shows who has registered; `--test AM-01` sends a hello. The next daily run delivers to everyone registered.
+2. Set `TELEGRAM_SECRET` to a long random string (letters, digits, `_`, `-`). Set it, the bot token, `BLOB_READ_WRITE_TOKEN` and `APP_URL` in Vercel, then deploy to production. The app registers its own webhook on first start (`instrumentation.ts`); `python scripts/telegram_setup.py --status` shows the webhook URL (`--webhook https://<app>` is the manual fallback).
+3. `python scripts/telegram_setup.py --links` prints your **admin link**. Open it once and press Start: you are now the approver.
+
+Each area manager (one time): open the shared bot link, press **Start**, tap their own name. You get "X says they are AM-01 ... [Approve] [Reject]" in Telegram; one tap connects them and the bot tells them. `--status` (or the Data page) shows who is connected.
+
+Optional: `--links` also prints personal links per manager. Opening one connects that manager without your approval, so send each only to its manager.
 
 A link only works for its own manager (the code is an HMAC of the manager id), so nobody can claim another manager's slot. Changing `TELEGRAM_SECRET` invalidates all old links. `DELIVERY_RECIPIENTS` still works as a manual override. Saved chat ids sit in the public run store next to the digests; a chat id alone cannot message anyone without the bot token.
 

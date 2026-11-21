@@ -1,7 +1,7 @@
 """Telegram setup helper (needs TELEGRAM_BOT_TOKEN and TELEGRAM_SECRET in env or .env).
   --whoami                 check the bot token, print the bot link
-  --webhook https://APP    point the bot at APP/api/telegram (run once after deploying; managers register through it)
-  --links                  print each manager's personal Start link: send each one to that manager only
+  --webhook https://APP    point the bot at APP/api/telegram (the app does this itself on a production deploy; manual fallback)
+  --links                  print the shared bot link for managers, your one-time admin link, and optional personal links
   --status                 who has registered
   --test AM-01             send a hello to that manager
   --ids                    legacy: list chat ids of people who pressed Start (only works while NO webhook is set)
@@ -49,12 +49,18 @@ if a.whoami:
     print(f"Bot: @{me['username']}  ->  https://t.me/{me['username']}")
 if a.webhook:
     call("setWebhook", {"url": a.webhook.rstrip("/") + "/api/telegram", "secret_token": os.environ["TELEGRAM_SECRET"],
-                        "allowed_updates": ["message"]})
+                        "allowed_updates": ["message", "callback_query"]})
     print("Webhook set:", call("getWebhookInfo")["url"])
 if a.links:
+    print(f"Managers: share https://t.me/{me['username']}  (they tap their name; you approve in Telegram)")
+    print(f"Admin (open once, press Start):  https://t.me/{me['username']}?start=admin_{deliver.link_code('ADMIN')}\n")
+    print("Optional personal links (connect without approval):")
     for am, name, city in managers():
         print(f"{am}  {name} ({city})\n  https://t.me/{me['username']}?start={am}_{deliver.link_code(am)}")
 if a.status:
+    wh = call("getWebhookInfo").get("url") or "NOT SET (deploy to production, or run --webhook)"
+    print(f"Webhook: {wh}")
+    print("Admin:   " + ("registered" if store.read_json("subscribers/admin.json") else "not yet (open the admin link)"))
     reg = deliver.recipients([m[0] for m in managers()])
     for am, name, city in managers():
         print(f"{am}  {name:<22} {'registered' if am in reg else 'not yet'}")
