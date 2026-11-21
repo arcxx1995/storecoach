@@ -14,7 +14,7 @@
   "fallback_en": 0,
   "audio": 0,
   "health": {
-   "seconds": 3.6,
+   "seconds": 5.6,
    "source": "csv",
    "sarvam_cut_off": false
   }

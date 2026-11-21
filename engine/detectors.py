@@ -134,7 +134,7 @@ def staffing(ctx) -> list:
                  if missing else "; move weekly offs to Tue or Wed")
         peer = best_seller_now(ctx, store, exclude=[s for s, _, _ in missing])
         cards = {s: {"behaviour": "Be on the floor on busy days",
-                     "text": f"This weekend: work {sat} and {sun}, and take your weekly off on a weekday. "
+                     "text": f"This week: work {sat} and {sun}, and take your weekly off on a weekday. "
                              f"You were off {o} of the last {n} busy days and the floor was short. "
                              f"{ctx.names.get(peer, 'Your best colleague')} works weekends; ask how they plan the week.",
                      "peer": peer}
@@ -169,7 +169,8 @@ def city_slowdown(ctx) -> list:
         if len(idx) < 2 or yy.conversion.isna().any():
             continue
         now, before = rate(cc), rate(yy)
-        rest = rate(c.drop(idx)) / rate(y.drop(idx).dropna()) - 1  # what the rest of the network did
+        others = y.drop(idx).dropna().index  # same stores on both sides
+        rest = rate(c.loc[others]) / rate(y.loc[others]) - 1  # what the rest of the network did
         change = now / before - 1
         per_store = cc.conversion / yy.conversion - 1
         # A city is a market problem only if it fell clearly AND more than everyone else (calendar shifts hit all).
@@ -321,8 +322,12 @@ def attach_gap(ctx) -> list:
                 if not gaps:
                     continue
                 top = max(gaps, key=lambda x: x["rupees"])
-                rates = {s: g[g.salesperson_id == s][top["col"]].mean() for s in eligible if s != sp}
+                # Peer: best same-store colleague; if nobody else has min_n bills, anyone active with 5+.
+                pool = [s for s in eligible if s != sp] or [
+                    s for s, n in counts.items() if s != sp and n >= 5 and s in ctx.active]
+                rates = {s: g[g.salesperson_id == s][top["col"]].mean() for s in pool}
                 peer = max(rates, key=rates.get) if rates else None
+                peer = peer if peer and rates[peer] > top["rate"] else None  # a peer must actually do it better
                 pn = ctx.names.get(peer, "your best colleague")
                 adds_txt = names([x["add"].lower() for x in gaps])
                 nm = ctx.names[sp]

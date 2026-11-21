@@ -7,8 +7,9 @@ const STATUS: Record<string, string> = { improved: "Improved", worse: "Got worse
 export default async function Followups({ searchParams }: { searchParams: Promise<SP> }) {
   const { idx, date, from, to, q } = await resolveRange(await searchParams);
   const upTo = idx.dates.filter((d) => d <= date);
-  const all = (await Promise.all(upTo.map((d) => readRun<{ followups: Followup[] }>(`${d}/followups.json`))))
-    .flatMap((r) => r?.followups ?? []);
+  // one row per alert: a "too early" check is replaced by its later result
+  const all = [...new Map((await Promise.all(upTo.map((d) => readRun<{ followups: Followup[] }>(`${d}/followups.json`))))
+    .flatMap((r) => r?.followups ?? []).map((f) => [f.key + f.alerted_on, f])).values()];
   // ₹, lever and manager name come from the original alert
   const alertDays = [...new Set(all.map((f) => f.alerted_on))];
   const orig = new Map((await Promise.all(alertDays.map(async (d) => [d, await readRun<{ issues: Issue[] }>(`${d}/issues.json`)] as const)))

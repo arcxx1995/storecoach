@@ -14,7 +14,7 @@
   "fallback_en": 0,
   "audio": 0,
   "health": {
-   "seconds": 4.1,
+   "seconds": 3.8,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -319,9 +319,9 @@
    "peer_name": null,
    "source": "leaver:LKO-02",
    "rupees": 268078,
-   "text_en": "Today: call 10 of Imran C.'s past customers and invite them in; they are yours now. Be on the floor 5–9 pm on Sat 7 Nov and Sun 8 Nov.",
+   "text_en": "Today: call 10 of Imran C.'s past customers and invite them in; they are yours now. Be on the floor 5–9 pm on Sun 1 Nov and Sat 7 Nov.",
    "lang": "hi-IN",
-   "text_local": "आज: Imran C. के 10 पुराने customers को call करके अंदर बुलाइए; अब वे आपके हैं। Sat 7 Nov और Sun 8 Nov को शाम 5–9 बजे तक floor पर मौजूद रहें।",
+   "text_local": "आज: Imran C. के पिछले 10 ग्राहकों को call करें और उन्हें store में बुलाएं; अब वे आपके हैं। 1 Nov Sun और 7 Nov Sat को शाम 5–9 बजे floor पर रहें।",
    "audio": null
   },
   {
@@ -1083,13 +1083,13 @@
    "city": "Patna",
    "state": "Bihar",
    "behaviour": "Add a mala to every sherwani",
-   "peer_id": null,
-   "peer_name": null,
+   "peer_id": "SP1093",
+   "peer_name": "Jitendra N.",
    "source": "attach_gap:SP1092:sherwani",
    "rupees": 703,
-   "text_en": "Today: show a mala with every sherwani trial. You add a mala on 11% of sherwani bills; your best colleague does it on 38%. Watch your best colleague at the next trial.",
+   "text_en": "Today: show a mala with every sherwani trial. You add a mala on 11% of sherwani bills; Jitendra N. does it on 40%. Watch Jitendra N. at the next trial.",
    "lang": "hi-IN",
-   "text_local": "आज: हर sherwani trial के साथ एक mala दिखाएं। आप sherwani bills के 11% पर mala add करते हैं; आपके सबसे अच्छे साथी इसे 38% पर करते हैं। अगले trial में अपने सबसे अच्छे साथी को ध्यान से देखें।",
+   "text_local": "आज: हर sherwani trial के साथ एक mala दिखाएं। आप sherwani bills में 11% पर एक mala जोड़ते हैं; Jitendra N. 40% पर ऐसा करते हैं। अगले trial में Jitendra N. को ध्यान से देखें।",
    "audio": null
   },
   {
@@ -1679,9 +1679,9 @@
    "peer_name": "Santosh V.",
    "source": "staffing:BLR-03",
    "rupees": 285776,
-   "text_en": "This weekend: work Sat 7 Nov and Sun 8 Nov, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+   "text_en": "This week: work Sun 1 Nov and Sat 7 Nov, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
    "lang": "kn-IN",
-   "text_local": "ಈ ವೀಕೆಂಡ್: Sat 7 Nov ಮತ್ತು Sun 8 Nov ಕೆಲಸ ಮಾಡಿ, ಮತ್ತು ವಾರದ ರಜೆಯನ್ನು ವಾರದ ಮಧ್ಯದ ಯಾವುದಾದರೂ ದಿನ ತೆಗೆದುಕೊಳ್ಳಿ. ಕಳೆದ 8 ಬ್ಯುಸಿ ದಿನಗಳಲ್ಲಿ ನೀವು 8 ದಿನ ರಜೆ ಹಾಕಿದ್ದೀರಿ ಮತ್ತು floor ನಲ್ಲಿ staff shortage ಇತ್ತು. Santosh V. ವೀಕೆಂಡ್ಸ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಾರೆ; ಅವರು ವಾರದ ಪ್ಲಾನ್ ಹೇಗೆ ಮಾಡುತ್ತಾರೆ ಅಂತ ಕೇಳಿ.",
+   "text_local": "ಈ ವಾರ: Sun 1 Nov ಮತ್ತು Sat 7 Nov ಕೆಲಸ ಮಾಡಿ, ಮತ್ತು ವಾರದ ರಜೆಯನ್ನು ವಾರದ ಮಧ್ಯದ ಯಾವುದಾದರೂ ದಿನ ತೆಗೆದುಕೊಳ್ಳಿ. ಕಳೆದ 8 ಬ್ಯುಸಿ ದಿನಗಳಲ್ಲಿ ನೀವು 8 ದಿನ ರಜೆ ತೆಗೆದುಕೊಂಡಿದ್ದೀರಿ ಮತ್ತು floor ನಲ್ಲಿ ಜನ ಕಡಿಮೆಯಿದ್ದರು. Santosh V. ವೀಕೆಂಡ್‌ಗಳಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಾರೆ; ಅವರು ವಾರವನ್ನು ಹೇಗೆ ಪ್ಲಾನ್ ಮಾಡುತ್ತಾರೆ ಅಂತ ಕೇಳಿ.",
    "audio": null
   },
   {
@@ -1695,9 +1695,9 @@
    "peer_name": "Santosh V.",
    "source": "staffing:BLR-03",
    "rupees": 285776,
-   "text_en": "This weekend: work Sat 7 Nov and Sun 8 Nov, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+   "text_en": "This week: work Sun 1 Nov and Sat 7 Nov, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
    "lang": "kn-IN",
-   "text_local": "ಈ ವೀಕೆಂಡ್: Sat 7 Nov ಮತ್ತು Sun 8 Nov ಕೆಲಸ ಮಾಡಿ, ಮತ್ತು ವಾರದ ರಜೆಯನ್ನು ವಾರದ ಮಧ್ಯದ ಯಾವುದಾದರೂ ದಿನ ತೆಗೆದುಕೊಳ್ಳಿ. ಕಳೆದ 8 ಬ್ಯುಸಿ ದಿನಗಳಲ್ಲಿ ನೀವು 8 ದಿನ ರಜೆ ಹಾಕಿದ್ದೀರಿ ಮತ್ತು floor ನಲ್ಲಿ staff shortage ಇತ್ತು. Santosh V. ವೀಕೆಂಡ್ಸ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಾರೆ; ಅವರು ವಾರದ ಪ್ಲಾನ್ ಹೇಗೆ ಮಾಡುತ್ತಾರೆ ಅಂತ ಕೇಳಿ.",
+   "text_local": "ಈ ವಾರ: Sun 1 Nov ಮತ್ತು Sat 7 Nov ಕೆಲಸ ಮಾಡಿ, ಮತ್ತು ನಿಮ್ಮ ವಾರದ ರಜೆಯನ್ನು ವಾರದ ಮಧ್ಯದ ಯಾವುದಾದರೂ ಒಂದು ದಿನ ತೆಗೆದುಕೊಳ್ಳಿ. ಕಳೆದ 8 ಬಿಜಿ ದಿನಗಳಲ್ಲಿ ನೀವು 8 ದಿನ ರಜೆ ಹಾಕಿದ್ದೀರಿ ಮತ್ತು floor ನಲ್ಲಿ staff ಕಮ್ಮಿ ಇತ್ತು. Santosh V. ಅವರು weekends ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಾರೆ; ಅವರು ವಾರವನ್ನು ಹೇಗೆ plan ಮಾಡುತ್ತಾರೆ ಅಂತ ಕೇಳಿ.",
    "audio": null
   },
   {

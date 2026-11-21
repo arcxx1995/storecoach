@@ -14,7 +14,7 @@
   "fallback_en": 0,
   "audio": 0,
   "health": {
-   "seconds": 2.6,
+   "seconds": 4.4,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -29,8 +29,9 @@
    "before": 0.11563169164882227,
    "after": 0.09207161125319693,
    "sample": 391,
+   "days": 7,
    "status": "worse",
-   "summary": "LKO-02: top seller Imran C. has left: conversion got worse, 11.6% → 9.2% in the week since."
+   "summary": "LKO-02: top seller Imran C. has left: conversion got worse, 11.6% → 9.2% in the 7 days since."
   },
   {
    "key": "repeat_low:SP1013",
@@ -41,6 +42,7 @@
    "before": 0.16666666666666666,
    "after": 0.0,
    "sample": 11,
+   "days": 7,
    "status": "too_early",
    "summary": "Arif M. (LKO-01): customers don't come back: too few bills in 7 days to tell (11)."
   },
@@ -53,6 +55,7 @@
    "before": 0.10795454545454546,
    "after": 1.0,
    "sample": 1,
+   "days": 7,
    "status": "too_early",
    "summary": "Dheeraj R. (KNP-01) rarely adds a jacket to a kurta set: too few bills in 7 days to tell (1)."
   },
@@ -65,6 +68,7 @@
    "before": 0.023809523809523808,
    "after": 0.0,
    "sample": 2,
+   "days": 7,
    "status": "too_early",
    "summary": "Jitendra N. (PAT-03) rarely sells Sherwani: too few bills in 7 days to tell (2)."
   },
@@ -77,8 +81,9 @@
    "before": 0.08237788792944124,
    "after": 0.09632522829794257,
    "sample": 10,
+   "days": 7,
    "status": "worse",
-   "summary": "PAT-01: discounts well above the store norm: discount off MRP got worse, 8.2% → 9.6% in the week since."
+   "summary": "PAT-01: discounts well above the store norm: discount off MRP got worse, 8.2% → 9.6% in the 7 days since."
   },
   {
    "key": "repeat_low:SP1072",
@@ -89,6 +94,7 @@
    "before": 0.0,
    "after": 0.08333333333333333,
    "sample": 12,
+   "days": 7,
    "status": "too_early",
    "summary": "Faizan K. (PAT-01): customers don't come back: too few bills in 7 days to tell (12)."
   },
@@ -101,6 +107,7 @@
    "before": 0.2608695652173913,
    "after": null,
    "sample": 0,
+   "days": 7,
    "status": "too_early",
    "summary": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani: too few bills in 7 days to tell (0)."
   },
@@ -113,8 +120,9 @@
    "before": 0.13081603435934144,
    "after": 0.11879259980525804,
    "sample": 2054,
+   "days": 7,
    "status": "flat",
-   "summary": "Bengaluru: conversion down across the city: conversion has not moved, 13.1% → 11.9% in the week since."
+   "summary": "Bengaluru: conversion down across the city: conversion has not moved, 13.1% → 11.9% in the 7 days since."
   },
   {
    "key": "staffing:BLR-03",
@@ -125,8 +133,9 @@
    "before": 0.07738095238095238,
    "after": 0.0472972972972973,
    "sample": 148,
+   "days": 7,
    "status": "worse",
-   "summary": "BLR-03: short-staffed on weekends and wedding days: busy-day conversion got worse, 7.7% → 4.7% in the week since."
+   "summary": "BLR-03: short-staffed on weekends and wedding days: busy-day conversion got worse, 7.7% → 4.7% in the 7 days since."
   },
   {
    "key": "category_avoid:SP1125:indo_western",
@@ -137,6 +146,7 @@
    "before": 0.014989293361884369,
    "after": 0.0,
    "sample": 7,
+   "days": 7,
    "status": "too_early",
    "summary": "Suresh K. (BLR-02) rarely sells Indo-Western: too few bills in 7 days to tell (7)."
   },
@@ -149,6 +159,7 @@
    "before": 0.09523809523809523,
    "after": 0.0,
    "sample": 9,
+   "days": 7,
    "status": "too_early",
    "summary": "Manjunath C. (BLR-01): customers don't come back: too few bills in 7 days to tell (9)."
   },
@@ -161,6 +172,7 @@
    "before": 0.0625,
    "after": 0.0,
    "sample": 5,
+   "days": 7,
    "status": "too_early",
    "summary": "Pavan N. (BLR-02): customers don't come back: too few bills in 7 days to tell (5)."
   },
@@ -173,8 +185,9 @@
    "before": 0.08010732081257187,
    "after": 0.08206686930091185,
    "sample": 329,
+   "days": 7,
    "status": "flat",
-   "summary": "Mysuru: conversion down across the city: conversion has not moved, 8.0% → 8.2% in the week since."
+   "summary": "Mysuru: conversion down across the city: conversion has not moved, 8.0% → 8.2% in the 7 days since."
   }
  ]
 }

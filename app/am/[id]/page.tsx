@@ -86,8 +86,8 @@ export default async function AreaManager({ params, searchParams }: {
       </>)}
 
       <h2>Did last week&apos;s alerts move the number?</h2>
-      {d.followups.length ? <div className="grid">{d.followups.map((f) => <FollowupRow key={f.key} f={f} />)}</div>
-        : <p className="empty">No alerts from exactly a week ago.</p>}
+      {d.followups.length ? <div className="grid">{d.followups.map((f) => <FollowupRow key={f.key + f.alerted_on} f={f} />)}</div>
+        : <p className="empty">No follow-ups due today.</p>}
 
       {d.role_models.length > 0 && (<>
         <h2>Role models: customers come back</h2>

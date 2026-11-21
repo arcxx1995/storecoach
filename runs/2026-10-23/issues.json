@@ -14,7 +14,7 @@
   "fallback_en": 0,
   "audio": 0,
   "health": {
-   "seconds": 2.9,
+   "seconds": 4.3,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -101,12 +101,12 @@
    "cards": {
     "SP1141": {
      "behaviour": "Be on the floor on busy days",
-     "text": "This weekend: work Sat 24 Oct and Sun 25 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+     "text": "This week: work Sat 24 Oct and Sun 25 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
      "peer": "SP1143"
     },
     "SP1142": {
      "behaviour": "Be on the floor on busy days",
-     "text": "This weekend: work Sat 24 Oct and Sun 25 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+     "text": "This week: work Sat 24 Oct and Sun 25 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
      "peer": "SP1143"
     }
    }
@@ -728,8 +728,8 @@
       "rupees": 1482.6848599357245
      }
     ],
-    "peer": null,
-    "peer_rate": null
+    "peer": "SP1025",
+    "peer_rate": 0.75
    },
    "track": {
     "metric": "attach",
@@ -747,8 +747,8 @@
    "cards": {
     "SP1027": {
      "behaviour": "Add a mojari to every sherwani",
-     "text": "Today: show a mojari with every sherwani trial. You add a mojari on 27% of sherwani bills; your best colleague does it on 55%. Watch your best colleague at the next trial.",
-     "peer": null
+     "text": "Today: show a mojari with every sherwani trial. You add a mojari on 27% of sherwani bills; Faizan J. does it on 75%. Watch Faizan J. at the next trial.",
+     "peer": "SP1025"
     }
    }
   },
@@ -975,8 +975,8 @@
       "rupees": 759.0665597433841
      }
     ],
-    "peer": null,
-    "peer_rate": null
+    "peer": "SP1093",
+    "peer_rate": 0.4
    },
    "track": {
     "metric": "attach",
@@ -994,8 +994,8 @@
    "cards": {
     "SP1092": {
      "behaviour": "Add a mala to every sherwani",
-     "text": "Today: show a mala with every sherwani trial. You add a mala on 11% of sherwani bills; your best colleague does it on 40%. Watch your best colleague at the next trial.",
-     "peer": null
+     "text": "Today: show a mala with every sherwani trial. You add a mala on 11% of sherwani bills; Jitendra N. does it on 40%. Watch Jitendra N. at the next trial.",
+     "peer": "SP1093"
     }
    }
   },

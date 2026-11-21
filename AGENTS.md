@@ -32,5 +32,7 @@ Full spec and run steps: `README.md` (Part 2).
 source .venv/bin/activate
 python -m engine.run --as-of 2026-10-31 --no-sarvam
 python tests/test_metrics.py && python tests/test_signals.py && python tests/test_deliver.py
+node --test tests/grounding.test.ts      # Ask-the-coach guard, offline
+python tests/eval_chat.py                # Ask-the-coach live eval; needs app on CHAT_URL (default :3100)
 npm run dev
 ```

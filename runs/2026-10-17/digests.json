@@ -14,7 +14,7 @@
   "fallback_en": 0,
   "audio": 0,
   "health": {
-   "seconds": 4.1,
+   "seconds": 4.0,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -65,7 +65,7 @@
       "better": "up"
      },
      "text_en": "LKO-02: top seller Imran C. has left. Cause: Imran C. (#1 seller, 34% of store sales) last billed on Sun 13 Sep. Conversion since: 9.6%, vs 12.3% before and 12.3% in the same weeks last year. Action for LKO-02 store manager and Sumit A.: Hand Imran C.'s 585 customers from the last 12 months to Sumit A.; Sumit A. calls 10 of them today, and is on the floor 5–9 pm on Sat 17 Oct and Sun 18 Oct, today; Sat 17 Oct and Sun 18 Oct. At stake: ₹2.9 lakh per month.",
-     "text_local": null
+     "text_local": "LKO-02: टॉप सेलर Imran C. जा चुके हैं। कारण: Imran C. (स्टोर की सेल्स का 34%, #1 सेलर) ने आखिरी बार Sun 13 Sep को बिल किया था। उसके बाद से कन्वर्जन: 9.6%, जबकि पहले यह 12.3% था और पिछले साल के उन्हीं हफ्तों में 12.3% था। LKO-02 स्टोर मैनेजर और Sumit A. के लिए एक्शन: पिछले 12 महीनों के Imran C. के 585 कस्टमर्स Sumit A. को सौंप दें; Sumit A. आज उनमें से 10 लोगों को कॉल करेंगे, और Sat 17 Oct और Sun 18 Oct को शाम 5–9 बजे फ्लोर पर मौजूद रहेंगे, आज; Sat 17 Oct और Sun 18 Oct। दांव पर: ₹2.9 lakh प्रति माह।"
     },
     {
      "sent_on": "2026-10-15",
@@ -107,20 +107,7 @@
     }
    ],
    "held_back": 0,
-   "followups": [
-    {
-     "key": "repeat_low:SP1013",
-     "title": "Arif M. (LKO-01): customers don't come back",
-     "am_id": "AM-01",
-     "alerted_on": "2026-10-01",
-     "metric": "bills from returning customers",
-     "before": 0.16666666666666666,
-     "after": 0.0,
-     "sample": 11,
-     "status": "too_early",
-     "summary": "Arif M. (LKO-01): customers don't come back: too few bills in 7 days to tell (11)."
-    }
-   ],
+   "followups": [],
    "role_models": [],
    "notes": [],
    "briefing_en": "Good morning Rakesh. Store Coach for Sun 18 Oct. No new issues today.",
@@ -145,10 +132,11 @@
      "alerted_on": "2026-10-01",
      "metric": "attach rate",
      "before": 0.10795454545454546,
-     "after": 1.0,
-     "sample": 1,
-     "status": "too_early",
-     "summary": "Dheeraj R. (KNP-01) rarely adds a jacket to a kurta set: too few bills in 7 days to tell (1)."
+     "after": 0.4,
+     "sample": 5,
+     "days": 16,
+     "status": "improved",
+     "summary": "Dheeraj R. (KNP-01) rarely adds a jacket to a kurta set: attach rate improved, 10.8% → 40.0% in the 16 days since."
     }
    ],
    "role_models": [
@@ -164,8 +152,8 @@
     }
    ],
    "notes": [],
-   "briefing_en": "Good morning Alok. Store Coach for Sun 18 Oct. No new issues today. Role model: Kunal N. at KNP-03; 7% of their customers come back.",
-   "briefing_local": "गुड मॉर्निंग आलोक। Sun 18 Oct के लिए स्टोर कोच। आज कोई नया issue नहीं है। रोल मॉडल: KNP-03 के Kunal N.; उनके 7% कस्टमर्स वापस आते हैं।",
+   "briefing_en": "Good morning Alok. Store Coach for Sun 18 Oct. No new issues today. Last week's alerts: Dheeraj R. (KNP-01) rarely adds a jacket to a kurta set: attach rate improved, 10.8% → 40.0% in the 16 days since. Role model: Kunal N. at KNP-03; 7% of their customers come back.",
+   "briefing_local": "गुड मॉर्निंग आलोक। Sun 18 Oct के लिए स्टोर कोच। आज कोई नई समस्या नहीं है। पिछले हफ्ते के अलर्ट: धीरज R. (KNP-01) शायद ही कभी kurta set के साथ jacket जोड़ते हैं: पिछले 16 दिनों में उनका अटैच रेट सुधरकर 10.8% से 40.0% हो गया है। रोल मॉडल: KNP-03 में कुणाल N.; उनके 7% कस्टमर वापस आते हैं।",
    "briefing_audio": null
   },
   "AM-03": {
@@ -360,44 +348,7 @@
     }
    ],
    "held_back": 0,
-   "followups": [
-    {
-     "key": "category_avoid:SP1093:sherwani",
-     "title": "Jitendra N. (PAT-03) rarely sells Sherwani",
-     "am_id": "AM-03",
-     "alerted_on": "2026-10-01",
-     "metric": "share of bills",
-     "before": 0.023809523809523808,
-     "after": 0.0,
-     "sample": 2,
-     "status": "too_early",
-     "summary": "Jitendra N. (PAT-03) rarely sells Sherwani: too few bills in 7 days to tell (2)."
-    },
-    {
-     "key": "repeat_low:SP1072",
-     "title": "Faizan K. (PAT-01): customers don't come back",
-     "am_id": "AM-03",
-     "alerted_on": "2026-10-01",
-     "metric": "bills from returning customers",
-     "before": 0.0,
-     "after": 0.08333333333333333,
-     "sample": 12,
-     "status": "too_early",
-     "summary": "Faizan K. (PAT-01): customers don't come back: too few bills in 7 days to tell (12)."
-    },
-    {
-     "key": "attach_gap:SP1087:sherwani",
-     "title": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani",
-     "am_id": "AM-03",
-     "alerted_on": "2026-10-01",
-     "metric": "attach rate",
-     "before": 0.2608695652173913,
-     "after": null,
-     "sample": 0,
-     "status": "too_early",
-     "summary": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani: too few bills in 7 days to tell (0)."
-    }
-   ],
+   "followups": [],
    "role_models": [],
    "notes": [],
    "briefing_en": "Good morning Nitin. Store Coach for Sun 18 Oct. No new issues today.",
@@ -643,44 +594,7 @@
     }
    ],
    "held_back": 1,
-   "followups": [
-    {
-     "key": "category_avoid:SP1125:indo_western",
-     "title": "Suresh K. (BLR-02) rarely sells Indo-Western",
-     "am_id": "AM-05",
-     "alerted_on": "2026-10-01",
-     "metric": "share of bills",
-     "before": 0.014989293361884369,
-     "after": 0.0,
-     "sample": 7,
-     "status": "too_early",
-     "summary": "Suresh K. (BLR-02) rarely sells Indo-Western: too few bills in 7 days to tell (7)."
-    },
-    {
-     "key": "repeat_low:SP1114",
-     "title": "Manjunath C. (BLR-01): customers don't come back",
-     "am_id": "AM-05",
-     "alerted_on": "2026-10-01",
-     "metric": "bills from returning customers",
-     "before": 0.09523809523809523,
-     "after": 0.0,
-     "sample": 9,
-     "status": "too_early",
-     "summary": "Manjunath C. (BLR-01): customers don't come back: too few bills in 7 days to tell (9)."
-    },
-    {
-     "key": "repeat_low:SP1129",
-     "title": "Pavan N. (BLR-02): customers don't come back",
-     "am_id": "AM-05",
-     "alerted_on": "2026-10-01",
-     "metric": "bills from returning customers",
-     "before": 0.0625,
-     "after": 0.0,
-     "sample": 5,
-     "status": "too_early",
-     "summary": "Pavan N. (BLR-02): customers don't come back: too few bills in 7 days to tell (5)."
-    }
-   ],
+   "followups": [],
    "role_models": [
     {
      "salesperson_id": "SP1110",
@@ -789,20 +703,7 @@
     }
    ],
    "held_back": 0,
-   "followups": [
-    {
-     "key": "category_avoid:SP1173:indo_western",
-     "title": "Mohan Y. (MYS-02) rarely sells Indo-Western",
-     "am_id": "AM-06",
-     "alerted_on": "2026-10-06",
-     "metric": "share of bills",
-     "before": 0.022099447513812154,
-     "after": null,
-     "sample": 0,
-     "status": "too_early",
-     "summary": "Mohan Y. (MYS-02) rarely sells Indo-Western: too few bills in 7 days to tell (0)."
-    }
-   ],
+   "followups": [],
    "role_models": [
     {
      "salesperson_id": "SP1172",

@@ -29,8 +29,10 @@ def day(ts) -> str:
 
 
 def weekend(as_of) -> tuple[str, str]:
-    """Next Sat/Sun on or after the morning after as_of."""
+    """Next two weekend days from the morning after as_of. On a Sunday that is today and next Saturday."""
     today = pd.Timestamp(as_of) + pd.Timedelta(days=1)
+    if today.dayofweek == 6:
+        return day(today), day(today + pd.Timedelta(days=6))
     sat = today + pd.Timedelta(days=(5 - today.dayofweek) % 7)
     return day(sat), day(sat + pd.Timedelta(days=1))
 

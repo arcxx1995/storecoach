@@ -14,7 +14,7 @@
   "fallback_en": 0,
   "audio": 0,
   "health": {
-   "seconds": 2.8,
+   "seconds": 3.8,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -75,7 +75,7 @@
    "action": {
     "who": "BLR-03 store manager",
     "what": "Keep 7 people on the floor both days; Manjunath K. and Vijay N. work both days and take their weekly off on Tue or Wed",
-    "when": "Sat 10 Oct and Sun 11 Oct"
+    "when": "Sun 4 Oct and Sat 10 Oct"
    },
    "rupees": 196079,
    "rupees_formula": "(busy-day conversion before − now) × busy-day walk-ins (4 wks) × avg bill value, then × 30.4/28 to show per month",
@@ -102,12 +102,12 @@
    "cards": {
     "SP1141": {
      "behaviour": "Be on the floor on busy days",
-     "text": "This weekend: work Sat 10 Oct and Sun 11 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+     "text": "This week: work Sun 4 Oct and Sat 10 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
      "peer": "SP1143"
     },
     "SP1142": {
      "behaviour": "Be on the floor on busy days",
-     "text": "This weekend: work Sat 10 Oct and Sun 11 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+     "text": "This week: work Sun 4 Oct and Sat 10 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
      "peer": "SP1143"
     }
    }
@@ -123,8 +123,8 @@
    "cause": "Imran C. (#1 seller, 34% of store sales) last billed on Sun 13 Sep. Conversion since: 10.0%, vs 12.3% before and 11.8% in the same weeks last year.",
    "action": {
     "who": "LKO-02 store manager and Sumit A.",
-    "what": "Hand Imran C.'s 635 customers from the last 12 months to Sumit A.; Sumit A. calls 10 of them today, and is on the floor 5–9 pm on Sat 10 Oct and Sun 11 Oct",
-    "when": "today; Sat 10 Oct and Sun 11 Oct"
+    "what": "Hand Imran C.'s 635 customers from the last 12 months to Sumit A.; Sumit A. calls 10 of them today, and is on the floor 5–9 pm on Sun 4 Oct and Sat 10 Oct",
+    "when": "today; Sun 4 Oct and Sat 10 Oct"
    },
    "rupees": 136385,
    "rupees_formula": "(conversion before exit − since exit) × walk-ins since exit × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
@@ -149,7 +149,7 @@
    "cards": {
     "SP1027": {
      "behaviour": "Look after Imran C.'s customers",
-     "text": "Today: call 10 of Imran C.'s past customers and invite them in; they are yours now. Be on the floor 5–9 pm on Sat 10 Oct and Sun 11 Oct.",
+     "text": "Today: call 10 of Imran C.'s past customers and invite them in; they are yours now. Be on the floor 5–9 pm on Sun 4 Oct and Sat 10 Oct.",
      "peer": null
     }
    }
@@ -991,8 +991,8 @@
       "rupees": 1017.156339031339
      }
     ],
-    "peer": null,
-    "peer_rate": null
+    "peer": "SP1093",
+    "peer_rate": 0.4
    },
    "track": {
     "metric": "attach",
@@ -1010,8 +1010,8 @@
    "cards": {
     "SP1092": {
      "behaviour": "Add a mala to every sherwani",
-     "text": "Today: show a mala with every sherwani trial. You add a mala on 14% of sherwani bills; your best colleague does it on 41%. Watch your best colleague at the next trial.",
-     "peer": null
+     "text": "Today: show a mala with every sherwani trial. You add a mala on 14% of sherwani bills; Jitendra N. does it on 40%. Watch Jitendra N. at the next trial.",
+     "peer": "SP1093"
     }
    }
   },

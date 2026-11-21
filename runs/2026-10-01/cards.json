@@ -14,7 +14,7 @@
   "fallback_en": 0,
   "audio": 0,
   "health": {
-   "seconds": 3.6,
+   "seconds": 5.6,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -1019,11 +1019,11 @@
    "city": "Patna",
    "state": "Bihar",
    "behaviour": "Add a mala to every sherwani",
-   "peer_id": null,
-   "peer_name": null,
+   "peer_id": "SP1093",
+   "peer_name": "Jitendra N.",
    "source": "attach_gap:SP1092:sherwani",
    "rupees": 872,
-   "text_en": "Today: show a mala with every sherwani trial. You add a mala on 14% of sherwani bills; your best colleague does it on 41%. Watch your best colleague at the next trial.",
+   "text_en": "Today: show a mala with every sherwani trial. You add a mala on 14% of sherwani bills; Jitendra N. does it on 40%. Watch Jitendra N. at the next trial.",
    "lang": "hi-IN",
    "text_local": null,
    "audio": null
@@ -1599,7 +1599,7 @@
    "peer_name": "Santosh V.",
    "source": "staffing:BLR-03",
    "rupees": 179141,
-   "text_en": "This weekend: work Sat 3 Oct and Sun 4 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+   "text_en": "This week: work Sat 3 Oct and Sun 4 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
    "lang": "kn-IN",
    "text_local": null,
    "audio": null
@@ -1615,7 +1615,7 @@
    "peer_name": "Santosh V.",
    "source": "staffing:BLR-03",
    "rupees": 179141,
-   "text_en": "This weekend: work Sat 3 Oct and Sun 4 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+   "text_en": "This week: work Sat 3 Oct and Sun 4 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
    "lang": "kn-IN",
    "text_local": null,
    "audio": null

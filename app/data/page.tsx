@@ -8,6 +8,11 @@ const LABEL: Record<string, string> = {
   new_store_no_baseline: "New store: no history to compare",
   salesperson_no_bills: "On the staff list but never billed",
   item_missing_launch_date: "Product missing a launch date",
+  bill_on_off_day: "Bills by someone rostered Off that day",
+  bill_before_join_date: "Bills dated before the salesperson joined",
+  price_above_mrp: "Sold above MRP",
+  qty_not_positive: "Zero or negative quantity",
+  price_not_positive: "Product sold at ₹0 or less",
 };
 
 export default async function DataIssues({ searchParams }: { searchParams: Promise<SP> }) {

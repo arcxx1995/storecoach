@@ -6,6 +6,7 @@ export default function Chat({ date, amId }: { date: string; amId: string }) {
   const [answer, setAnswer] = useState("");
   const [busy, setBusy] = useState(false);
   const [audio, setAudio] = useState("");
+  const [refused, setRefused] = useState(false);
 
   async function speak() {
     setAudio("");
@@ -18,11 +19,13 @@ export default function Chat({ date, amId }: { date: string; amId: string }) {
     setBusy(true);
     setAnswer("");
     setAudio("");
+    setRefused(false);
     try {
       const r = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" },
         body: JSON.stringify({ date, amId, question: q }) });
       const j = await r.json();
       setAnswer(j.answer ?? j.error ?? "Something went wrong.");
+      setRefused(!!j.refused);
     } catch {
       setAnswer("Couldn't reach the coach. Try again.");
     } finally {
@@ -37,6 +40,7 @@ export default function Chat({ date, amId }: { date: string; amId: string }) {
         placeholder="Why is LKO-02 on my list? Who should Sumit call first?" />
       <button disabled={busy || !q.trim()}>{busy ? "Thinking…" : "Ask"}</button>
       {answer && <div className="answer" aria-live="polite">{answer}</div>}
+      {refused && <p className="small">Not in today&apos;s data. Try a question about your stores, team or issues.</p>}
       {answer && <button type="button" onClick={speak}>Listen</button>}
       {audio && <audio controls autoPlay src={audio} />}
     </form>

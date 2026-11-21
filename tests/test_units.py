@@ -11,4 +11,9 @@ assert all(len(x) <= 2500 for x in c) and " ".join(c) == t
 assert valid("Gap 13% on Sat 7 Nov", "13% Sat 7 Nov")
 assert not valid("Gap 13%", "13% and 40%"), "invented number must fail"
 assert not valid("Gap 13%", "gap"), "dropped number must fail"
+
+from engine.text import weekend  # noqa: E402
+assert weekend("2026-10-30") == ("Sat 31 Oct", "Sun 1 Nov")  # Fri run -> Sat morning
+assert weekend("2026-10-31") == ("Sun 1 Nov", "Sat 7 Nov")   # Sat run -> Sunday morning: today counts
+assert weekend("2026-10-27") == ("Sat 31 Oct", "Sun 1 Nov")
 print("ok")

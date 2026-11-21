@@ -31,10 +31,13 @@ def build_digests(ctx: Ctx, issues: list, data_issues: list, history: dict) -> t
         slots = max(0, int(am.max_alerts_per_week) - len(this_week))
         mine = [i for i in issues if i["am_id"] == am_id and i["key"] not in recent and i["rupees"] >= MIN_RUPEES]
         new = [{k: v for k, v in i.items() if k != "cards"} | {"text_en": issue_text(i)} for i in mine[:slots]]
-        # Any alert at least 7 days old and not yet measured (a missed run or "too early" retries next day).
+        # Any alert at least 7 days old and not yet measured. "Too early" is said once, on day 7; after that the
+        # check retries quietly each day (its window grows) and reports only once it can tell.
+        # ponytail: if the day-7 run is missed, a never-measurable alert is never mentioned; fine for a daily cron.
         done = {(f["key"], f["alerted_on"]) for dg in history.values()
                 for f in dg.get(am_id, {}).get("followups", []) if f["status"] != "too_early"}
-        fu = [check(d, i, dt) for dt, i in sent if dt <= week_ago and (i["key"], dt) not in done]
+        fu = [f for dt, i in sent if dt <= week_ago and (i["key"], dt) not in done
+              for f in [check(d, i, dt)] if f["status"] != "too_early" or dt == week_ago]
         followups += fu
         state = ctx.stores[ctx.stores.area_manager_id == am_id].state.iat[0]
         digests[am_id] = {

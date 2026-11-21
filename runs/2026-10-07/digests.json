@@ -14,7 +14,7 @@
   "fallback_en": 0,
   "audio": 0,
   "health": {
-   "seconds": 2.7,
+   "seconds": 3.1,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -281,7 +281,7 @@
       "window_days": 90
      },
      "text_en": "PAT-01: discounts well above the store norm. Cause: Manoj N. gives 8.8% off MRP vs 2.2% for the rest of the store; Sanjay K. gives 7.7% off MRP vs 2.3% for the rest of the store (last 90 days). Action for PAT-01 store manager with Manoj N. and Sanjay K.: No discount without the store manager's OK; sell at MRP like Tarun T., from today's first bill. At stake: ₹27k per month.",
-     "text_local": null
+     "text_local": "PAT-01: स्टोर के नॉर्म से काफी ज़्यादा discounts। वजह: Manoj N. MRP पर 8.8% off दे रहे हैं जबकि बाकी स्टोर के लिए यह 2.2% है; Sanjay K. MRP पर 7.7% off दे रहे हैं जबकि बाकी स्टोर के लिए यह 2.3% है (पिछले 90 दिनों में)। \n\nPAT-01 के स्टोर मैनेजर को Manoj N. और Sanjay K. के साथ ये एक्शन लेने हैं: स्टोर मैनेजर की ओके के बिना कोई discount नहीं; आज की पहली bill से Tarun T. की तरह MRP पर ही बेचें। \n\nखतरे में है: हर महीने ₹27k।"
     },
     {
      "sent_on": "2026-10-01",

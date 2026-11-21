@@ -303,7 +303,7 @@ Environment variables: `SARVAM_API_KEY` and `BLOB_READ_WRITE_TOKEN`.
 | Phrase cards and digests | `sarvam-105b` via `/v1/chat/completions` | Structured facts go in as JSON and short text comes out. Hindi for UP and Bihar, Kannada for Karnataka, and English always generated as well. |
 | Salesperson voice note | `bulbul:v3` TTS | About 20 seconds per card, in the city's language. |
 | Area manager briefing | `bulbul:v3` TTS | 60-second spoken digest. |
-| Ask-the-coach chat | `sarvam-105b` | `/api/chat` is grounded only in the selected run's JSON and refuses to answer outside it. |
+| Ask-the-coach chat | `sarvam-105b` | `/api/chat` is grounded only in the selected run's JSON. Code ranks and compares; `lib/grounding.ts` rejects any number, store/salesperson id or name not in that JSON (one retry, then a fixed refusal). Out-of-scope or injected questions get "I don't have that in today's data." Tests: `node --test tests/grounding.test.ts` (offline) and `python tests/eval_chat.py` (live, against `npx next dev -p 3100`). |
 
 - Cache phrasing and audio by a hash of the facts plus the language. Only call TTS again for cards that changed.
 - `sarvam-m` and `sarvam-30b` are deprecated. Check the model IDs against the live docs at build time: <https://docs.sarvam.ai/api/getting-started/models>.
@@ -347,7 +347,7 @@ npm run dev                                # http://localhost:3000
 | Detectors | `engine/detectors.py` | Leaver, busy-day staffing, city slowdown (vs last year and vs rest of network), conversion drop (significance-tested), attach gap, category avoidance (vs own city), discount outlier, low repeat, role models |
 | Cards | `engine/cards.py` | One per active salesperson: biggest ₹ gap vs same-store peers, or a teach-a-colleague card for leaders |
 | Digest | `engine/digest.py` | Rank by ₹, ≥ ₹5k for managers, max 5 per rolling week, 14-day cooldown, morning briefing |
-| Follow-up | `engine/followup.py` | Re-measures each alert's metric for the 7 days after it: improved, not moved, got worse, or too early to tell |
+| Follow-up | `engine/followup.py` | Re-measures each alert's metric a week after it: improved, not moved, got worse, or too early to tell (then retries daily on the growing window until it can tell) |
 | Sarvam | `engine/sarvam.py` | `sarvam-105b` translation with number/name validator + English fallback; `bulbul:v3` MP3; disk cache |
 | Storage | `engine/store.py` | `runs/` locally; Vercel Blob (REST, public) when `BLOB_READ_WRITE_TOKEN` is set |
 | Cron | `api/cron.py`, `vercel.json` | Daily 07:00 IST; skips if the day already ran (data ends 31 Oct) |

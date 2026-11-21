@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 
 // Server pages pass plain data only: each cell carries its sort value and what to show.
 export type Cell = { sort: string | number; text: string; sub?: string; href?: string; level?: number };
@@ -21,12 +21,11 @@ export function Meter({ level, label }: { level: number; label: string }) {
   );
 }
 
-// Sort + filter state lives in the URL (?sort=&dir=&q=&f_<col>=a|b) next to the date range, so views are shareable.
+// Sort + filter state lives in the URL (?sort=&dir=&f_<col>=value) next to the date range, so views are shareable.
 export function DataTable({ cols, rows, defaultSort }: { cols: Col[]; rows: Row[]; defaultSort: { key: string; dir: "asc" | "desc" } }) {
   const router = useRouter(), path = usePathname(), sp = useSearchParams();
   const sort = sp.get("sort") ?? defaultSort.key, dir = (sp.get("dir") ?? defaultSort.dir) as "asc" | "desc";
-  const [q, setQ] = useState(sp.get("q") ?? "");
-  const chosen = (k: string) => (sp.get(`f_${k}`) ?? "").split("|").filter(Boolean);
+  const chosen = (k: string) => sp.get(`f_${k}`) ?? "";
 
   const set = (patch: Record<string, string | null>) => {
     const n = new URLSearchParams(sp.toString());
@@ -35,10 +34,6 @@ export function DataTable({ cols, rows, defaultSort }: { cols: Col[]; rows: Row[
   };
   const toggleSort = (key: string) =>
     set(sort === key ? { sort: key, dir: dir === "asc" ? "desc" : "asc" } : { sort: key, dir: cols.find((c) => c.key === key)?.kind === "text" || cols.find((c) => c.key === key)?.kind === "link" ? "asc" : "desc" });
-  const toggleOpt = (k: string, v: string) => {
-    const cur = chosen(k);
-    set({ [`f_${k}`]: (cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v]).join("|") || null });
-  };
 
   const options = useMemo(
     () => Object.fromEntries(cols.filter((c) => c.filter).map((c) => {
@@ -50,41 +45,35 @@ export function DataTable({ cols, rows, defaultSort }: { cols: Col[]; rows: Row[
     [cols, rows],
   );
 
-  const needle = (sp.get("q") ?? "").toLowerCase();
   const shown = useMemo(() => {
     const f = cols.filter((c) => c.filter).map((c) => [c.key, chosen(c.key)] as const).filter(([, v]) => v.length);
-    const out = rows.filter((r) =>
-      f.every(([k, v]) => v.includes(r.cells[k].text)) &&
-      (!needle || Object.values(r.cells).some((c) => `${c.text} ${c.sub ?? ""}`.toLowerCase().includes(needle))));
+    const out = rows.filter((r) => f.every(([k, v]) => r.cells[k].text === v));
     const s = dir === "asc" ? 1 : -1;
     return out.sort((a, b) => {
       const x = a.cells[sort]?.sort ?? 0, y = b.cells[sort]?.sort ?? 0;
       return (typeof x === "number" && typeof y === "number" ? x - y : String(x).localeCompare(String(y))) * s;
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [rows, cols, sp, sort, dir, needle]);
+  }, [rows, cols, sp, sort, dir]);
 
-  const active = [...sp.keys()].some((k) => k.startsWith("f_") || k === "q");
+  const active = [...sp.keys()].some((k) => k.startsWith("f_"));
   const clear = () => {
     const n = new URLSearchParams(sp.toString());
-    [...n.keys()].filter((k) => k.startsWith("f_") || k === "q").forEach((k) => n.delete(k));
-    setQ("");
+    [...n.keys()].filter((k) => k.startsWith("f_")).forEach((k) => n.delete(k));
     router.replace(`${path}?${n}`, { scroll: false });
   };
 
   return (
     <>
       <div className="filters">
-        <input type="search" placeholder="Search…" value={q} aria-label="Search"
-          onChange={(e) => { setQ(e.target.value); set({ q: e.target.value || null }); }} />
         {cols.filter((c) => c.filter).map((c) => (
-          <div className="fgroup" key={c.key} role="group" aria-label={`Filter by ${c.label}`}>
+          <label className="fgroup" key={c.key}>
             <span className="small">{c.label}</span>
-            {options[c.key].map((o) => (
-              <button key={o} type="button" className={`fchip${chosen(c.key).includes(o) ? " on" : ""}`} aria-pressed={chosen(c.key).includes(o)}
-                onClick={() => toggleOpt(c.key, o)}>{o}</button>
-            ))}
-          </div>
+            <select value={chosen(c.key)} onChange={(e) => set({ [`f_${c.key}`]: e.target.value || null })}>
+              <option value="">All</option>
+              {options[c.key].map((o) => <option key={o} value={o}>{o}</option>)}
+            </select>
+          </label>
         ))}
         {active && <button type="button" className="fclear" onClick={clear}>Clear filters</button>}
         <span className="small fcount">{shown.length} of {rows.length}</span>

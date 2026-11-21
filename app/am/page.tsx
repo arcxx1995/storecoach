@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { inr, readRun, resolveRange, type SP, type Digest } from "@/lib/data";
+import { inr, perMonth, readRun, resolveRange, type SP, type Digest } from "@/lib/data";
 import { Header } from "../ui";
 
 export default async function Managers({ searchParams }: { searchParams: Promise<SP> }) {
@@ -25,7 +25,7 @@ export default async function Managers({ searchParams }: { searchParams: Promise
               </div>
               <h3>{d.name}</h3>
               {d.new_today[0] ? (
-                <p className="small" style={{ margin: 0 }}>{d.new_today[0].title} · <span className="rupees">{inr(d.new_today[0].rupees)}</span></p>
+                <p className="small" style={{ margin: 0 }}>{d.new_today[0].title} · <span className="rupees">{inr(perMonth(d.new_today[0].rupees))}/month</span></p>
               ) : (
                 <p className="small" style={{ margin: 0 }}>No new issues today{d.followups.length ? ` · ${d.followups.length} follow-up(s)` : ""}</p>
               )}
