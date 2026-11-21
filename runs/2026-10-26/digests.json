@@ -12,9 +12,9 @@
   "sarvam": true,
   "translated": 6,
   "fallback_en": 0,
-  "audio": 6,
+  "audio": 0,
   "health": {
-   "seconds": 6.7,
+   "seconds": 2.9,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -48,7 +48,7 @@
    "notes": [],
    "briefing_en": "Good morning Rakesh. Store Coach for Tue 27 Oct. No new issues today.",
    "briefing_local": "गुड मॉर्निंग राकेश। Tue 27 Oct के लिए Store Coach। आज कोई नए issues नहीं हैं।",
-   "briefing_audio": "2026-10-26/audio/briefing_AM-01.mp3"
+   "briefing_audio": null
   },
   "AM-02": {
    "am_id": "AM-02",
@@ -76,7 +76,7 @@
    "notes": [],
    "briefing_en": "Good morning Alok. Store Coach for Tue 27 Oct. No new issues today. Role model: Kunal N. at KNP-03; 6% of their customers come back.",
    "briefing_local": "गुड मॉर्निंग आलोक। Tue 27 Oct के लिए Store Coach। आज कोई नई समस्या नहीं है। रोल मॉडल: KNP-03 में Kunal N.; उनके 6% कस्टमर्स वापस आते हैं।",
-   "briefing_audio": "2026-10-26/audio/briefing_AM-02.mp3"
+   "briefing_audio": null
   },
   "AM-03": {
    "am_id": "AM-03",
@@ -130,7 +130,7 @@
    "notes": [],
    "briefing_en": "Good morning Nitin. Store Coach for Tue 27 Oct. No new issues today.",
    "briefing_local": "गुड मॉर्निंग नितिन। Tue 27 Oct के लिए स्टोर कोच। आज कोई नई समस्या नहीं है।",
-   "briefing_audio": "2026-10-26/audio/briefing_AM-03.mp3"
+   "briefing_audio": null
   },
   "AM-04": {
    "am_id": "AM-04",
@@ -158,7 +158,7 @@
    "notes": [],
    "briefing_en": "Good morning Pankaj. Store Coach for Tue 27 Oct. No new issues today. Role model: Ankit P. at MZF-02; 8% of their customers come back.",
    "briefing_local": "गुड मॉर्निंग पंकज। Tue 27 Oct के लिए स्टोर कोच। आज कोई नया issue नहीं है। रोल मॉडल हैं MZF-02 के Ankit P.; उनके 8% customers वापस आते हैं।",
-   "briefing_audio": "2026-10-26/audio/briefing_AM-04.mp3"
+   "briefing_audio": null
   },
   "AM-05": {
    "am_id": "AM-05",
@@ -185,7 +185,7 @@
       "when": "today, before 12 noon"
      },
      "rupees": 11470,
-     "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+     "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
      "evidence": {
       "repeat_rate": 0.026476578411405296,
       "store_rate": 0.056699889258028796,
@@ -204,8 +204,8 @@
       "target": null,
       "better": "up"
      },
-     "text_en": "Suresh V. (BLR-01): customers don't come back. Cause: 2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (491 customers first billed 6–18 months ago). Karthik J. is the role model at 12.4%. Action for Suresh V.: Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first, today, before 12 noon. At stake: ₹11k per 4 weeks.",
-     "text_local": "ಸುರೇಶ್ ವಿ. (BLR-01): ಕಸ್ಟಮರ್ಸ್ ಮತ್ತೆ ಬರೋದಿಲ್ಲ. ಕಾರಣ: ಸುರೇಶ್ ವಿ. ಅವರ 2.6% ಕಸ್ಟಮರ್ಸ್ 30+ ದಿನಗಳ ನಂತರ ಮತ್ತೆ ಬಂದಿದ್ದಾರೆ, ಆದರೆ BLR-01 ನ ಉಳಿದವರದ್ದು 5.7% ಇದೆ (6–18 ತಿಂಗಳ ಹಿಂದೆ ಮೊದಲ ಬಾರಿಗೆ ಬಿಲ್ ಆದ 491 ಕಸ್ಟಮರ್ಸ್). ಕಾರ್ತಿಕ್ ಜೆ. ಅವರು 12.4% ನೊಂದಿಗೆ ರೋಲ್ ಮಾಡೆಲ್ ಆಗಿದ್ದಾರೆ. ಸುರೇಶ್ ವಿ. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: 6–18 ತಿಂಗಳ ಹಿಂದೆ ಮದುವೆಗಾಗಿ ಬಂದಿದ್ದ 14 ಜನ ಕಸ್ಟಮರ್ಸ್ ಗಳಲ್ಲಿ, ಮತ್ತೆ ಬಾರದ 14 ಜನರನ್ನು ಕಾಲ್ ಮಾಡಿ ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ; ಅವರ ಫಾಲೋ-ಅಪ್ ಮಾತುಕತೆಯ ವಿಧಾನವನ್ನು ಮೊದಲು ಕಾರ್ತಿಕ್ ಜೆ. ಅವರ ಹತ್ತಿರ ಕೇಳಿ ತಿಳಿದುಕೊಳ್ಳಿ, ಇವತ್ತೇ ಮಧ್ಯಾಹ್ನ 12 ಗಂಟೆಗಿಂತ ಮುಂಚೆ. ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹11k."
+     "text_en": "Suresh V. (BLR-01): customers don't come back. Cause: 2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (491 customers first billed 6–18 months ago). Karthik J. is the role model at 12.4%. Action for Suresh V.: Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first, today, before 12 noon. At stake: ₹12k per month.",
+     "text_local": "ಸುರೇಶ್ ವಿ. (BLR-01): ಗ್ರಾಹಕರು ವಾಪಸ್ ಬರುತ್ತಿಲ್ಲ. ಕಾರಣ: ಸುರೇಶ್ ವಿ. ಅವರ 2.6% ಗ್ರಾಹಕರು 30+ ದಿನಗಳ ನಂತರ ವಾಪಸ್ ಬಂದಿದ್ದಾರೆ, ಆದರೆ ಉಳಿದ BLR-01 ನಲ್ಲಿ ಇದು 5.7% ಇದೆ (6–18 ತಿಂಗಳ ಹಿಂದೆ ಮೊದಲ ಬಾರಿಗೆ ಬಿಲ್ ಆದ 491 ಗ್ರಾಹಕರು). ಕಾರ್ತಿಕ್ ಜೆ. ಅವರು 12.4% ನೊಂದಿಗೆ ರೋಲ್ ಮಾಡೆಲ್ ಆಗಿದ್ದಾರೆ. ಸುರೇಶ್ ವಿ. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: 6–18 ತಿಂಗಳ ಹಿಂದೆ ನೀವು ಸೇವೆ ನೀಡಿದ 14 ಮದುವೆ ಗ್ರಾಹಕರಿಗೆ ಕಾಲ್ ಮಾಡಿ, ಅವರು ವಾಪಸ್ ಬಂದಿಲ್ಲದಿದ್ದರೆ ಅವರನ್ನು ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ; ಇಂದು 12 ಮಧ್ಯಾಹ್ನದ ಮೊದಲು ಕಾರ್ತಿಕ್ ಜೆ. ಅವರ ಬಳಿ ಅವರ ಫಾಲೋ-ಅಪ್ ಮಾತುಗಳನ್ನು ಮೊದಲು ಕೇಳಿ. ಅಪಾಯದಲ್ಲಿರುವುದು: ತಿಂಗಳಿಗೆ ₹12k."
     }
    ],
    "held_back": 0,
@@ -262,7 +262,7 @@
    "notes": [],
    "briefing_en": "Good morning Harish. Store Coach for Tue 27 Oct. No new issues today. Role model: Karthik J. at BLR-01; 12% of their customers come back.",
    "briefing_local": "ಶುಭೋದಯ ಹರೀಶ್ ಅವರೇ. ಮಂಗಳವಾರ 27 Oct-ಗೆ Store Coach. ಇವತ್ತು ಯಾವುದೇ ಹೊಸ ಸಮಸ್ಯೆಗಳಿಲ್ಲ. Role model: BLR-01 ನಲ್ಲಿರುವ ಕಾರ್ತಿಕ್ J.; ಅವರಲ್ಲಿ 12% ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಾರೆ.",
-   "briefing_audio": "2026-10-26/audio/briefing_AM-05.mp3"
+   "briefing_audio": null
   },
   "AM-06": {
    "am_id": "AM-06",
@@ -289,7 +289,7 @@
       "when": "today"
      },
      "rupees": 17746,
-     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill",
+     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill, then × 30.4/28 to show per month",
      "evidence": {
       "mix": 0.023391812865497075,
       "city_median": 0.06114591802573055,
@@ -309,8 +309,8 @@
       "better": "up",
       "window_days": 365
      },
-     "text_en": "Mohan Y. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.3% of Mohan Y.'s bills vs 6.1% for other Mysuru salespeople (171 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Mohan Y.: Show two Indo-Western looks to every wedding customer; ask Madhu G. for their best look first, today. At stake: ₹18k per 4 weeks.",
-     "text_local": "ಮೋಹನ್ ವೈ. (MYS-02) ಅವರು Indo-Western ಅನ್ನು ತುಂಬಾ ಅಪರೂಪಕ್ಕೆ ಸೇಲ್ ಮಾಡುತ್ತಾರೆ. ಕಾರಣ: ಮೋಹನ್ ವೈ. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ Indo-Western ಕೇವಲ 2.3% ಇದೆ, ಆದರೆ ಇತರ ಮೈಸೂರು ಸೇಲ್ಸ್‌ಪರ್ಸನ್‌ಗಳ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.1% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳಲ್ಲಿ 171 ಬಿಲ್‌ಗಳು). ಮೈಸೂರಿನವರು ಇದನ್ನು ಖರೀದಿಸುತ್ತಾರೆ; ಇದು ಒಬ್ಬ ವ್ಯಕ್ತಿಯ ಗ್ಯಾಪ್ ಆಗಿದೆ. ಮೋಹನ್ ವೈ. ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಪ್ರತಿಯೊಬ್ಬ ಮದುವೆ ಗ್ರಾಹಕರಿಗೆ ಎರಡು Indo-Western ಲುಕ್ಸ್ ತೋರಿಸಿ; ಇವತ್ತೇ ಮೊದಲು ಮಧು ಜಿ. ಅವರ ಹತ್ತಿರ ಅವರ ಬೆಸ್ಟ್ ಲುಕ್ ಯಾವುದು ಅಂತ ಕೇಳಿ. ಇದರಲ್ಲಿ ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹18k."
+     "text_en": "Mohan Y. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.3% of Mohan Y.'s bills vs 6.1% for other Mysuru salespeople (171 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Mohan Y.: Show two Indo-Western looks to every wedding customer; ask Madhu G. for their best look first, today. At stake: ₹19k per month.",
+     "text_local": "ಮೋಹನ್ Y. (MYS-02) ಅವರು ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಸೇಲ್ಸ್ ಮಾಡೋದು ತುಂಬಾ ಕಮ್ಮಿ. ಕಾರಣ: ಕಳೆದ 12 ತಿಂಗಳುಗಳಲ್ಲಿ 171 ಬಿಲ್‌ಗಳಲ್ಲಿ, ಮೋಹನ್ Y. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಕೇವಲ 2.3% ಇದೆ, ಆದ್ರೆ ಮೈಸೂರಿನ ಬೇರೆ ಸೇಲ್ಸ್‌ಪರ್ಸನ್‌ಗಳ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.1% ಇದೆ. ಮೈಸೂರಿನವರು ಇದನ್ನ ಖರೀದಿಸ್ತಾರೆ; ಇದು ಒಬ್ಬ ವ್ಯಕ್ತಿಯ ಗ್ಯಾಪ್ ಅಷ್ಟೇ. ಮೋಹನ್ Y. ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಪ್ರತಿಯೊಬ್ಬ ವೆಡ್ಡಿಂಗ್ ಕಸ್ಟಮರ್‌ಗೆ ಎರಡು ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಲುಕ್ಸ್ ತೋರಿಸಿ; ಇವತ್ತೇ ಮಧು G. ಅವರ ಹತ್ತಿರ ಅವರ ಬೆಸ್ಟ್ ಲುಕ್ ಏನು ಅಂತ ಮೊದಲು ಕೇಳಿ. ಇಲ್ಲಿ ರಿಸ್ಕ್ ಇರೋದು: ತಿಂಗಳಿಗೆ ₹19k."
     }
    ],
    "held_back": 0,
@@ -355,7 +355,7 @@
    "notes": [],
    "briefing_en": "Good morning Mahesh. Store Coach for Tue 27 Oct. No new issues today. Role model: Santosh B. at MYS-02; 8% of their customers come back.",
    "briefing_local": "ಶುಭ ಬೆಳಿಗ್ಗೆ Mahesh ಅವರೇ. Tue 27 Oct ಗೆ Store Coach. ಇವತ್ತು ಯಾವುದೇ ಹೊಸ ಸಮಸ್ಯೆಗಳಿಲ್ಲ. Role model: MYS-02 ನಲ್ಲಿ Santosh B. ಅವರು; ಅವರ ಅಂಗಡಿಗೆ 8% ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಾರೆ.",
-   "briefing_audio": "2026-10-26/audio/briefing_AM-06.mp3"
+   "briefing_audio": null
   }
  }
 }

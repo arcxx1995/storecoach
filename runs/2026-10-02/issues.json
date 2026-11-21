@@ -12,9 +12,9 @@
   "sarvam": true,
   "translated": 6,
   "fallback_en": 0,
-  "audio": 6,
+  "audio": 0,
   "health": {
-   "seconds": 7.2,
+   "seconds": 2.8,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -35,7 +35,7 @@
     "when": "today's morning call"
    },
    "rupees": 540424,
-   "rupees_formula": "(city conversion last year − now) × walk-ins (13 wks) × avg bill value, per 4 weeks",
+   "rupees_formula": "(city conversion last year − now) × walk-ins (13 wks) × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
    "evidence": {
     "conv_now": 0.1309185606060606,
     "conv_last_year": 0.14265719207579672,
@@ -78,7 +78,7 @@
     "when": "Sat 3 Oct and Sun 4 Oct"
    },
    "rupees": 179141,
-   "rupees_formula": "(busy-day conversion before − now) × busy-day walk-ins (4 wks) × avg bill value",
+   "rupees_formula": "(busy-day conversion before − now) × busy-day walk-ins (4 wks) × avg bill value, then × 30.4/28 to show per month",
    "evidence": {
     "busy_conv_now": 0.07738095238095238,
     "busy_conv_before": 0.1320015667841755,
@@ -127,7 +127,7 @@
     "when": "today; Sat 3 Oct and Sun 4 Oct"
    },
    "rupees": 123686,
-   "rupees_formula": "(conversion before exit − since exit) × walk-ins since exit × avg bill value, per 4 weeks",
+   "rupees_formula": "(conversion before exit − since exit) × walk-ins since exit × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
    "evidence": {
     "left": "SP1018",
     "last_bill": "2026-09-13",
@@ -169,7 +169,7 @@
     "when": "today"
    },
    "rupees": 118175,
-   "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill",
+   "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill, then × 30.4/28 to show per month",
    "evidence": {
     "mix": 0.015021459227467811,
     "city_median": 0.08270676691729323,
@@ -212,7 +212,7 @@
     "when": "today's morning call"
    },
    "rupees": 60001,
-   "rupees_formula": "(city conversion last year − now) × walk-ins (13 wks) × avg bill value, per 4 weeks",
+   "rupees_formula": "(city conversion last year − now) × walk-ins (13 wks) × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
    "evidence": {
     "conv_now": 0.08149276466108149,
     "conv_last_year": 0.09158154279675942,
@@ -251,7 +251,7 @@
     "when": "today"
    },
    "rupees": 32583,
-   "rupees_formula": "(city Sherwani share − own) × own bills per 4 weeks × season factor × avg Sherwani value per bill",
+   "rupees_formula": "(city Sherwani share − own) × own bills per 4 weeks × season factor × avg Sherwani value per bill, then × 30.4/28 to show per month",
    "evidence": {
     "mix": 0.023923444976076555,
     "city_median": 0.07228915662650602,
@@ -294,7 +294,7 @@
     "when": "from today's first bill"
    },
    "rupees": 25038,
-   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90",
+   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90, then × 30.4/28 to show per month",
    "evidence": {
     "people": {
      "SP1064": {
@@ -348,7 +348,7 @@
     "when": "today, before 12 noon"
    },
    "rupees": 14056,
-   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
    "evidence": {
     "repeat_rate": 0.0211864406779661,
     "store_rate": 0.05956879306512558,
@@ -390,7 +390,7 @@
     "when": "today, at every trial"
    },
    "rupees": 13263,
-   "rupees_formula": "Σ (store attach − own attach) × own kurta set bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own kurta set bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 175,
     "season_factor": 1.8221966205837172,
@@ -441,7 +441,7 @@
     "when": "today, before 12 noon"
    },
    "rupees": 12786,
-   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
    "evidence": {
     "repeat_rate": 0.019067796610169493,
     "store_rate": 0.051896733403582716,
@@ -483,7 +483,7 @@
     "when": "today, before 12 noon"
    },
    "rupees": 7248,
-   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
    "evidence": {
     "repeat_rate": 0.0176678445229682,
     "store_rate": 0.051161641127039054,
@@ -525,7 +525,7 @@
     "when": "today, before 12 noon"
    },
    "rupees": 6924,
-   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
    "evidence": {
     "repeat_rate": 0.012244897959183673,
     "store_rate": 0.04887130556202001,
@@ -567,7 +567,7 @@
     "when": "today, at every trial"
    },
    "rupees": 6031,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 23,
     "season_factor": 1.7775974025974026,
@@ -630,7 +630,7 @@
     "when": "today, at every trial"
    },
    "rupees": 3807,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 45,
     "season_factor": 2.190211104684789,
@@ -681,7 +681,7 @@
     "when": "from today's first bill"
    },
    "rupees": 2554,
-   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90",
+   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90, then × 30.4/28 to show per month",
    "evidence": {
     "people": {
      "SP1122": {
@@ -725,7 +725,7 @@
     "when": "from today's first bill"
    },
    "rupees": 2416,
-   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90",
+   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90, then × 30.4/28 to show per month",
    "evidence": {
     "people": {
      "SP1153": {
@@ -769,7 +769,7 @@
     "when": "today, at every trial"
    },
    "rupees": 1926,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 17,
     "season_factor": 1.961125158027813,
@@ -826,7 +826,7 @@
     "when": "from today's first bill"
    },
    "rupees": 1887,
-   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90",
+   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90, then × 30.4/28 to show per month",
    "evidence": {
     "people": {
      "SP1089": {
@@ -870,7 +870,7 @@
     "when": "today, at every trial"
    },
    "rupees": 1803,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 19,
     "season_factor": 2.156283566058002,
@@ -921,7 +921,7 @@
     "when": "today, at every trial"
    },
    "rupees": 1647,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 16,
     "season_factor": 1.961125158027813,
@@ -972,7 +972,7 @@
     "when": "today, at every trial"
    },
    "rupees": 1533,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 33,
     "season_factor": 1.9732961992136302,
@@ -1023,7 +1023,7 @@
     "when": "today, at every trial"
    },
    "rupees": 971,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 23,
     "season_factor": 1.9732961992136302,
@@ -1074,7 +1074,7 @@
     "when": "today, at every trial"
    },
    "rupees": 872,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 21,
     "season_factor": 1.6294642857142858,
@@ -1125,7 +1125,7 @@
     "when": "today, at every trial"
    },
    "rupees": 581,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 17,
     "season_factor": 1.7775974025974026,
@@ -1176,7 +1176,7 @@
     "when": "today, at every trial"
    },
    "rupees": 559,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 15,
     "season_factor": 2.156283566058002,
@@ -1227,7 +1227,7 @@
     "when": "today"
    },
    "rupees": 377,
-   "rupees_formula": "(city Mala share − own) × own bills per 4 weeks × season factor × avg Mala value per bill",
+   "rupees_formula": "(city Mala share − own) × own bills per 4 weeks × season factor × avg Mala value per bill, then × 30.4/28 to show per month",
    "evidence": {
     "mix": 0.017094017094017096,
     "city_median": 0.06324110671936758,
@@ -1270,7 +1270,7 @@
     "when": "today, at every trial"
    },
    "rupees": 362,
-   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price, then × 30.4/28 to show per month",
    "evidence": {
     "anchor_bills_12m": 16,
     "season_factor": 1.5113871635610765,

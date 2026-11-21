@@ -12,9 +12,9 @@
   "sarvam": true,
   "translated": 6,
   "fallback_en": 0,
-  "audio": 6,
+  "audio": 0,
   "health": {
-   "seconds": 9.1,
+   "seconds": 3.1,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -48,7 +48,7 @@
    "notes": [],
    "briefing_en": "Good morning Rakesh. Store Coach for Wed 28 Oct. No new issues today.",
    "briefing_local": "गुड मॉर्निंग राकेश। Wed 28 Oct के लिए स्टोर कोच। आज कोई नया इश्यू नहीं है।",
-   "briefing_audio": "2026-10-27/audio/briefing_AM-01.mp3"
+   "briefing_audio": null
   },
   "AM-02": {
    "am_id": "AM-02",
@@ -76,7 +76,7 @@
    "notes": [],
    "briefing_en": "Good morning Alok. Store Coach for Wed 28 Oct. No new issues today. Role model: Kunal N. at KNP-03; 6% of their customers come back.",
    "briefing_local": "गुड मॉर्निंग आलोक। Wed 28 Oct के लिए स्टोर कोच। आज कोई नया issue नहीं है। रोल मॉडल: KNP-03 के Kunal N.; उनके 6% customers वापस आते हैं।",
-   "briefing_audio": "2026-10-27/audio/briefing_AM-02.mp3"
+   "briefing_audio": null
   },
   "AM-03": {
    "am_id": "AM-03",
@@ -130,7 +130,7 @@
    "notes": [],
    "briefing_en": "Good morning Nitin. Store Coach for Wed 28 Oct. No new issues today.",
    "briefing_local": "गुड मॉर्निंग नितिन जी। 28 Oct, बुधवार के लिए स्टोर कोच। आज कोई नया issue नहीं है।",
-   "briefing_audio": "2026-10-27/audio/briefing_AM-03.mp3"
+   "briefing_audio": null
   },
   "AM-04": {
    "am_id": "AM-04",
@@ -158,7 +158,7 @@
    "notes": [],
    "briefing_en": "Good morning Pankaj. Store Coach for Wed 28 Oct. No new issues today. Role model: Ankit P. at MZF-02; 8% of their customers come back.",
    "briefing_local": "गुड मॉर्निंग पंकज। 28 Oct Wed के लिए स्टोर कोच। आज कोई नया issue नहीं है। रोल मॉडल: MZF-02 के Ankit P.; उनके 8% customers वापस आते हैं।",
-   "briefing_audio": "2026-10-27/audio/briefing_AM-04.mp3"
+   "briefing_audio": null
   },
   "AM-05": {
    "am_id": "AM-05",
@@ -183,7 +183,7 @@
       "when": "from today's first bill"
      },
      "rupees": 5023,
-     "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90",
+     "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90, then × 30.4/28 to show per month",
      "evidence": {
       "people": {
        "SP1122": {
@@ -204,8 +204,8 @@
       "better": "down",
       "window_days": 90
      },
-     "text_en": "BLR-01: discounts well above the store norm. Cause: Sunil T. gives 3.9% off MRP vs 1.3% for the rest of the store (last 90 days). Action for BLR-01 store manager with Sunil T.: No discount without the store manager's OK; sell at MRP like Prasad M., from today's first bill. At stake: ₹5k per 4 weeks.",
-     "text_local": "BLR-01: ಸ್ಟೋರ್‌ನ ಸಾಮಾನ್ಯ ನಿಯಮಕ್ಕಿಂತ ತುಂಬಾ ಹೆಚ್ಚು ಡಿಸ್ಕೌಂಟ್ ಕೊಡ್ತಿದ್ದಾರೆ. ಕಾರಣ: Sunil T. ಅವರು MRP ಮೇಲೆ 3.9% ಡಿಸ್ಕೌಂಟ್ ಕೊಡ್ತಿದ್ದಾರೆ, ಆದರೆ ಸ್ಟೋರ್‌ನ ಉಳಿದವರಿಗೆ ಇದು 1.3% ಇದೆ (ಕಳೆದ 90 ದಿನಗಳಲ್ಲಿ). BLR-01 ಸ್ಟೋರ್ ಮ್ಯಾನೇಜರ್ ಮತ್ತು Sunil T. ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಸ್ಟೋರ್ ಮ್ಯಾನೇಜರ್ ಒಪ್ಪಿಗೆ ಇಲ್ಲದೆ ಯಾವುದೇ ಡಿಸ್ಕೌಂಟ್ ಕೊಡಬಾರದು; ಇವತ್ತಿನ ಮೊದಲ ಬಿಲ್‌ನಿಂದ Prasad M. ಅವರ ಹಾಗೆ MRP ಗೆ ಸೇಲ್ ಮಾಡಬೇಕು. ಅಪಾಯದಲ್ಲಿ ಇರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹5k."
+     "text_en": "BLR-01: discounts well above the store norm. Cause: Sunil T. gives 3.9% off MRP vs 1.3% for the rest of the store (last 90 days). Action for BLR-01 store manager with Sunil T.: No discount without the store manager's OK; sell at MRP like Prasad M., from today's first bill. At stake: ₹5k per month.",
+     "text_local": "BLR-01: ಅಂಗಡಿಯ ಸಾಮಾನ್ಯ ನಿಯಮಕ್ಕಿಂತ ತುಂಬಾ ಜಾಸ್ತಿ ಡಿಸ್ಕೌಂಟ್ ಕೊಡ್ತಿದ್ದಾರೆ. ಕಾರಣ: Sunil T. ಅವರು ಉಳಿದ ಅಂಗಡಿಯವರ 1.3% ಗೆ ಹೋಲಿಸಿದರೆ, ಕಳೆದ 90 ದಿನಗಳಲ್ಲಿ MRP ಮೇಲೆ 3.9% ಡಿಸ್ಕೌಂಟ್ ಕೊಟ್ಟಿದ್ದಾರೆ. BLR-01 ಸ್ಟೋರ್ ಮ್ಯಾನೇಜರ್ ಮತ್ತು Sunil T. ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಸ್ಟೋರ್ ಮ್ಯಾನೇಜರ್ ಒಪ್ಪಿಗೆ ಇಲ್ಲದೆ ಯಾವುದೇ ಡಿಸ್ಕೌಂಟ್ ಕೊಡಬಾರದು; ಇವತ್ತಿನ ಮೊದಲ ಬಿಲ್‌ನಿಂದ Prasad M. ಅವರ ಹಾಗೆ MRP ಗೆ ಸೇಲ್ ಮಾಡಬೇಕು. ಅಪಾಯದಲ್ಲಿರುವುದು: ತಿಂಗಳಿಗೆ ₹5k."
     }
    ],
    "earlier_this_week": [
@@ -225,7 +225,7 @@
       "when": "today, before 12 noon"
      },
      "rupees": 11470,
-     "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+     "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks, then × 30.4/28 to show per month",
      "evidence": {
       "repeat_rate": 0.026476578411405296,
       "store_rate": 0.056699889258028796,
@@ -244,8 +244,8 @@
       "target": null,
       "better": "up"
      },
-     "text_en": "Suresh V. (BLR-01): customers don't come back. Cause: 2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (491 customers first billed 6–18 months ago). Karthik J. is the role model at 12.4%. Action for Suresh V.: Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first, today, before 12 noon. At stake: ₹11k per 4 weeks.",
-     "text_local": "ಸುರೇಶ್ ವಿ. (BLR-01): ಕಸ್ಟಮರ್ಸ್ ಮತ್ತೆ ಬರೋದಿಲ್ಲ. ಕಾರಣ: ಸುರೇಶ್ ವಿ. ಅವರ 2.6% ಕಸ್ಟಮರ್ಸ್ 30+ ದಿನಗಳ ನಂತರ ಮತ್ತೆ ಬಂದಿದ್ದಾರೆ, ಆದರೆ BLR-01 ನ ಉಳಿದವರದ್ದು 5.7% ಇದೆ (6–18 ತಿಂಗಳ ಹಿಂದೆ ಮೊದಲ ಬಾರಿಗೆ ಬಿಲ್ ಆದ 491 ಕಸ್ಟಮರ್ಸ್). ಕಾರ್ತಿಕ್ ಜೆ. ಅವರು 12.4% ನೊಂದಿಗೆ ರೋಲ್ ಮಾಡೆಲ್ ಆಗಿದ್ದಾರೆ. ಸುರೇಶ್ ವಿ. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: 6–18 ತಿಂಗಳ ಹಿಂದೆ ಮದುವೆಗಾಗಿ ಬಂದಿದ್ದ 14 ಜನ ಕಸ್ಟಮರ್ಸ್ ಗಳಲ್ಲಿ, ಮತ್ತೆ ಬಾರದ 14 ಜನರನ್ನು ಕಾಲ್ ಮಾಡಿ ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ; ಅವರ ಫಾಲೋ-ಅಪ್ ಮಾತುಕತೆಯ ವಿಧಾನವನ್ನು ಮೊದಲು ಕಾರ್ತಿಕ್ ಜೆ. ಅವರ ಹತ್ತಿರ ಕೇಳಿ ತಿಳಿದುಕೊಳ್ಳಿ, ಇವತ್ತೇ ಮಧ್ಯಾಹ್ನ 12 ಗಂಟೆಗಿಂತ ಮುಂಚೆ. ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹11k."
+     "text_en": "Suresh V. (BLR-01): customers don't come back. Cause: 2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (491 customers first billed 6–18 months ago). Karthik J. is the role model at 12.4%. Action for Suresh V.: Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first, today, before 12 noon. At stake: ₹12k per month.",
+     "text_local": "ಸುರೇಶ್ ವಿ. (BLR-01): ಗ್ರಾಹಕರು ವಾಪಸ್ ಬರುತ್ತಿಲ್ಲ. ಕಾರಣ: ಸುರೇಶ್ ವಿ. ಅವರ 2.6% ಗ್ರಾಹಕರು 30+ ದಿನಗಳ ನಂತರ ವಾಪಸ್ ಬಂದಿದ್ದಾರೆ, ಆದರೆ ಉಳಿದ BLR-01 ನಲ್ಲಿ ಇದು 5.7% ಇದೆ (6–18 ತಿಂಗಳ ಹಿಂದೆ ಮೊದಲ ಬಾರಿಗೆ ಬಿಲ್ ಆದ 491 ಗ್ರಾಹಕರು). ಕಾರ್ತಿಕ್ ಜೆ. ಅವರು 12.4% ನೊಂದಿಗೆ ರೋಲ್ ಮಾಡೆಲ್ ಆಗಿದ್ದಾರೆ. ಸುರೇಶ್ ವಿ. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: 6–18 ತಿಂಗಳ ಹಿಂದೆ ನೀವು ಸೇವೆ ನೀಡಿದ 14 ಮದುವೆ ಗ್ರಾಹಕರಿಗೆ ಕಾಲ್ ಮಾಡಿ, ಅವರು ವಾಪಸ್ ಬಂದಿಲ್ಲದಿದ್ದರೆ ಅವರನ್ನು ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ; ಇಂದು 12 ಮಧ್ಯಾಹ್ನದ ಮೊದಲು ಕಾರ್ತಿಕ್ ಜೆ. ಅವರ ಬಳಿ ಅವರ ಫಾಲೋ-ಅಪ್ ಮಾತುಗಳನ್ನು ಮೊದಲು ಕೇಳಿ. ಅಪಾಯದಲ್ಲಿರುವುದು: ತಿಂಗಳಿಗೆ ₹12k."
     }
    ],
    "held_back": 0,
@@ -302,7 +302,7 @@
    "notes": [],
    "briefing_en": "Good morning Harish. Store Coach for Wed 28 Oct. 1 new issue today. 1. BLR-01: discounts well above the store norm. No discount without the store manager's OK; sell at MRP like Prasad M., from today's first bill. ₹5k at stake. Role model: Karthik J. at BLR-01; 12% of their customers come back.",
    "briefing_local": "ಶುಭ ಬೆಳಿಗ್ಗೆ ಹರೀಶ್ ಅವರೇ. Wed 28 Oct ಗೆ ಸ್ಟೋರ್ ಕೋಚ್. ಇವತ್ತು 1 ಹೊಸ ಸಮಸ್ಯೆ ಇದೆ. 1. BLR-01: ಡಿಸ್ಕೌಂಟ್ ಗಳು ಸ್ಟೋರ್ ನಿಯಮಕ್ಕಿಂತ ತುಂಬಾ ಜಾಸ್ತಿ ಇವೆ. ಸ್ಟೋರ್ ಮ್ಯಾನೇಜರ್ ಅವರ ಒಪ್ಪಿಗೆ ಇಲ್ಲದೆ ಯಾವುದೇ ಡಿಸ್ಕೌಂಟ್ ಕೊಡಬೇಡಿ; ಇವತ್ತಿನ ಮೊದಲ ಬಿಲ್ ಆದ Prasad M. ಅವರ ಹಾಗೆ MRP ಗೆ ಸೇಲ್ ಮಾಡಿ. ₹5k ಅಪಾಯದಲ್ಲಿದೆ. ಮಾಡೆಲ್: BLR-01 ನಲ್ಲಿರುವ Karthik J.; ಅವರ 12% ಗ್ರಾಹಕರು ಮತ್ತೆ ವಾಪಸ್ ಬರುತ್ತಾರೆ.",
-   "briefing_audio": "2026-10-27/audio/briefing_AM-05.mp3"
+   "briefing_audio": null
   },
   "AM-06": {
    "am_id": "AM-06",
@@ -367,7 +367,7 @@
    "notes": [],
    "briefing_en": "Good morning Mahesh. Store Coach for Wed 28 Oct. No new issues today. Role model: Santosh B. at MYS-02; 8% of their customers come back.",
    "briefing_local": "ನಮಸ್ಕಾರ Mahesh ಅವರೇ. Wed 28 Oct ಗೆ Store Coach. ಇವತ್ತು ಹೊಸ ಸಮಸ್ಯೆಗಳು ಏನೂ ಇಲ್ಲ. Role model: MYS-02 ನಲ್ಲಿ Santosh B. ಅವರು; ಅವರಲ್ಲಿ 8% ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಾರೆ.",
-   "briefing_audio": "2026-10-27/audio/briefing_AM-06.mp3"
+   "briefing_audio": null
   }
  }
 }

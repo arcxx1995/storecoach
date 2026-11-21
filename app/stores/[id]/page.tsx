@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { cityOf, conv, inr, pct, readRun, resolveRange, type SP, series, short, type Card, type Meta, type Digest, type SalesMetric, type StoreMetric } from "@/lib/data";
+import { cityOf, conv, inr, pct, perMonth, readRun, resolveRange, type SP, series, short, type Card, type Meta, type Digest, type SalesMetric, type StoreMetric } from "@/lib/data";
 import { Audio, Fallback, Header } from "../../ui";
+import { CardFilter } from "../../cardfilter";
 import { Bars, C, HBars, Kpi, Line, change } from "../../charts";
 
 export default async function StoreCards({ params, searchParams }: {
@@ -84,12 +85,11 @@ export default async function StoreCards({ params, searchParams }: {
       </>) : <p className="empty">No metrics for this store on this date.</p>}
 
       <h2>Today&apos;s cards</h2>
-      <div className="grid cards">
-        {cards.map((c) => (
+      <CardFilter items={cards.map((c) => ({ id: c.salesperson_id, name: c.name, node: (
           <article className="panel scard" key={c.salesperson_id} data-reveal>
             <div className="scard-top">
               <h3>{c.name}</h3>
-              {c.rupees > 0 && <span className="rupees" title="at stake per 4 weeks">{inr(c.rupees)}</span>}
+              {c.rupees > 0 && <span className="rupees" title="at stake per month">{inr(perMonth(c.rupees))}</span>}
             </div>
             <div className="chips">
               <span className="chip lever">{c.behaviour}</span>
@@ -100,9 +100,7 @@ export default async function StoreCards({ params, searchParams }: {
             <Audio src={c.audio} date={date} sp={c.salesperson_id} />
             {c.text_local && <details><summary>English</summary><p className="small" style={{ margin: "6px 0 0" }}>{c.text_en}</p></details>}
           </article>
-        ))}
-        {!cards.length && <p className="empty">No cards for this store today.</p>}
-      </div>
+      ) }))} />
     </>
   );
 }

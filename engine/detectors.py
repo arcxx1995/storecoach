@@ -56,7 +56,7 @@ def issue(ctx, kind, lever, scope_id, title, cause, who, what, when, rupees, for
     return {
         "key": f"{kind}:{scope_id}", "kind": kind, "lever": lever, "store_id": store_id, "city": city,
         "am_id": am, "title": title, "cause": cause, "action": {"who": who, "what": what, "when": when},
-        "rupees": int(round(max(rupees, 0))), "rupees_formula": formula, "evidence": evidence,
+        "rupees": int(round(max(rupees, 0))), "rupees_formula": f"{formula}, then × 30.4/28 to show per month", "evidence": evidence,
         "track": track, "cards": cards or {},
     }
 

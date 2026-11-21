@@ -12,9 +12,9 @@
   "sarvam": true,
   "translated": 6,
   "fallback_en": 0,
-  "audio": 6,
+  "audio": 0,
   "health": {
-   "seconds": 8.5,
+   "seconds": 2.6,
    "source": "csv",
    "sarvam_cut_off": false
   }

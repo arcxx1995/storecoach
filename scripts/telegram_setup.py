@@ -2,7 +2,9 @@
   --whoami                 check the bot token, print the bot link
   --webhook https://APP    point the bot at APP/api/telegram (the app does this itself on a production deploy; manual fallback)
   --links                  print the shared bot link for managers, your one-time admin link, and optional personal links
-  --status                 who has registered
+  --sp-links               print a personal link for every employee, area managers and salespeople (CSV: id,name,store_or_city,link)
+  --status                 who has registered (managers, and a count of salespeople)
+  --reset AM-01            free a manager's slot (links are first-use-wins) so the link can be used again
   --test AM-01             send a hello to that manager
   --ids                    legacy: list chat ids of people who pressed Start (only works while NO webhook is set)
 """
@@ -36,7 +38,9 @@ p = argparse.ArgumentParser()
 p.add_argument("--whoami", action="store_true")
 p.add_argument("--webhook")
 p.add_argument("--links", action="store_true")
+p.add_argument("--sp-links", action="store_true")
 p.add_argument("--status", action="store_true")
+p.add_argument("--reset", help="free a manager's slot so their link can be used again, e.g. --reset AM-01")
 p.add_argument("--test")
 p.add_argument("--ids", action="store_true")
 a = p.parse_args()
@@ -57,6 +61,12 @@ if a.links:
     print("Optional personal links (connect without approval):")
     for am, name, city in managers():
         print(f"{am}  {name} ({city})\n  https://t.me/{me['username']}?start={am}_{deliver.link_code(am)}")
+if a.sp_links:
+    print("id,name,store_or_city,link")
+    for am, name, city in managers():
+        print(f"{am},{name},{city},https://t.me/{me['username']}?start={am}_{deliver.link_code(am)}")
+    for r in store.read_json("roster.json")["salespeople"]:
+        print(f"{r['id']},{r['name']},{r['store_id']},https://t.me/{me['username']}?start={r['id']}_{deliver.link_code(r['id'])}")
 if a.status:
     wh = call("getWebhookInfo").get("url") or "NOT SET (deploy to production, or run --webhook)"
     print(f"Webhook: {wh}")
@@ -64,6 +74,11 @@ if a.status:
     reg = deliver.recipients([m[0] for m in managers()])
     for am, name, city in managers():
         print(f"{am}  {name:<22} {'registered' if am in reg else 'not yet'}")
+    sps = [r["id"] for r in store.read_json("roster.json")["salespeople"]]
+    print(f"Salespeople registered: {len(deliver.recipients(sps))} of {len(sps)}")
+if a.reset:
+    store.delete(f"subscribers/{a.reset}.json")
+    print(f"{a.reset} reset: their personal link works again (the next person to use it keeps it).")
 if a.test:
     chat = (deliver.recipients([a.test]).get(a.test) or {}).get("chat_id")
     if not chat:

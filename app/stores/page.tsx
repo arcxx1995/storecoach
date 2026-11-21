@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CITY, cityOf, inr, readRun, resolveRange, type SP, sum, type Card, type Digest, type Issue } from "@/lib/data";
+import { CITY, cityOf, inr, perMonth, readRun, resolveRange, type SP, sum, type Card, type Digest, type Issue } from "@/lib/data";
 import { Header } from "../ui";
 
 export default async function Stores({ searchParams }: { searchParams: Promise<SP> }) {
@@ -21,7 +21,7 @@ export default async function Stores({ searchParams }: { searchParams: Promise<S
     <>
       <Header from={from} to={to} dates={idx.dates} path="/stores" />
       <section className="hero" data-hero>
-        <h1>Salesperson</h1>
+        <h1>Stores</h1>
         <p className="sub">One behaviour, one peer, one action per card. Pick a city.</p>
       </section>
       <nav className="pills" aria-label="City">
@@ -36,7 +36,7 @@ export default async function Stores({ searchParams }: { searchParams: Promise<S
       )}
       <div className="panel rows">
         {stores.map((s) => {
-          const risk = sum(issues.filter((i) => i.store_id === s).map((i) => i.rupees));
+          const risk = perMonth(sum(issues.filter((i) => i.store_id === s).map((i) => i.rupees)));
           return (
             <Link key={s} href={`/stores/${s}?${q}`}>
               <b>{s}</b>

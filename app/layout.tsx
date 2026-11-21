@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Figtree, Rufina } from "next/font/google";
 import { Motion } from "./motion";
+import { NavButtons } from "./navbuttons";
 import { Sidebar } from "./sidebar";
 import "./globals.css";
 
@@ -20,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Motion />
         <div className="shell">
           <Sidebar />
-          <main className="wrap">{children}</main>
+          <main className="wrap"><NavButtons />{children}</main>
         </div>
       </body>
     </html>

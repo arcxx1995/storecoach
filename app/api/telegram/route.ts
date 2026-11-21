@@ -4,11 +4,15 @@
 //   pick:AM-01 (button)    -> asks the admin to approve or reject
 //   ok:<chat>:AM-01 / no:<chat> (admin only) -> save or decline
 //   /start admin_<code>    -> makes this chat the admin (code = HMAC, printed by scripts/telegram_setup.py --links)
-//   /start AM-01_<code>    -> personal link: connects without approval
-import { getIndex, readRun, type Digest } from "@/lib/data";
-import { SECRET, codeFor, limited, readSub, same, saveSub, tg } from "@/lib/telegram";
+//   /start AM-01_<code>    -> personal link: connects without approval; the first chat to use it keeps it
+//   salespeople: /start -> "I'm a salesperson" -> st:<store> -> pk:<SP id> -> their area manager (else the admin) approves.
+//   /start SP1002_<code>   -> personal link, same first-use-wins rule
+import { getIndex, readRun, type Digest, type Roster } from "@/lib/data";
+import { SECRET, claimSub, codeFor, limited, readSub, same, saveSub, tg } from "@/lib/telegram";
 
 const AM = /^AM-\d{2}$/;
+const SPID = /^SP\d{4}$/;
+const roster = () => readRun<Roster>("roster.json");
 const ok = () => Response.json({ ok: true });
 
 async function managers() {
@@ -26,15 +30,21 @@ async function onStart(chat: number, payload: string) {
     }
     return tg("sendMessage", { chat_id: chat, text: "That admin link is not valid." });
   }
-  if (AM.test(id ?? "") && code && same(code, codeFor(id))) { // personal link: no approval needed
-    await saveSub(id, chat);
-    return tg("sendMessage", { chat_id: chat, text: `Connected as ${id}. Your morning briefing will arrive here.` });
+  if ((AM.test(id ?? "") || SPID.test(id ?? "")) && code && same(code, codeFor(id))) { // personal link: no approval, first use wins
+    if (await claimSub(id, chat)) return tg("sendMessage", { chat_id: chat, text: `Connected as ${id}. Your morning briefing will arrive here.` });
+    const owner = await readSub(id);
+    return tg("sendMessage", { chat_id: chat, text: owner?.chat_id === chat
+      ? `Already connected as ${id}. Your morning briefing will arrive here.`
+      : "This link has already been used. Ask the Store Coach admin to reset it." });
   }
   const ams = await managers();
   if (!ams.length) return tg("sendMessage", { chat_id: chat, text: "Store Coach is not ready yet. Try again later." });
   return tg("sendMessage", {
-    chat_id: chat, text: "Welcome to Store Coach. Which area manager are you?",
-    reply_markup: { inline_keyboard: ams.map((a) => [{ text: `${a.name} · ${a.city}`, callback_data: `pick:${a.am_id}` }]) },
+    chat_id: chat, text: "Welcome to Store Coach. Who are you?",
+    reply_markup: { inline_keyboard: [
+      ...ams.map((a) => [{ text: `${a.name} · ${a.city}`, callback_data: `pick:${a.am_id}` }]),
+      [{ text: "I'm a salesperson", callback_data: "sp" }],
+    ] },
   });
 }
 
@@ -43,13 +53,46 @@ async function onCallback(cq: { id: string; data?: string; from: { id: number; f
   const done = (text?: string) => tg("answerCallbackQuery", { callback_query_id: cq.id, text });
   const who = cq.from.id;
 
+  if (data === "sp" || data.startsWith("st:")) { // salesperson: store, then name
+    const r = await roster();
+    if (!r) return done("Store Coach is not ready yet.");
+    const st = data.slice(3);
+    if (data === "sp") return tg("sendMessage", { chat_id: who, text: "Which store do you work in?", reply_markup: { inline_keyboard:
+      Object.entries(r.stores).map(([id, s]) => [{ text: `${id} · ${s.city}`, callback_data: `st:${id}` }]) } }).then(() => done());
+    const names = r.salespeople.filter((p) => p.store_id === st);
+    if (!names.length) return done("Unknown store.");
+    await tg("sendMessage", { chat_id: who, text: `Which one are you at ${st}?`, reply_markup: { inline_keyboard:
+      names.map((p) => [{ text: p.name, callback_data: `pk:${p.id}` }]) } });
+    return done();
+  }
+
+  if (data.startsWith("pk:")) {
+    const id = data.slice(3);
+    const r = await roster();
+    const me = SPID.test(id) ? r?.salespeople.find((p) => p.id === id) : undefined;
+    if (!me || !r) return done("Unknown salesperson.");
+    const am = r.stores[me.store_id]?.am_id;
+    const boss = (am && (await readSub(am))) || (await readSub("admin")); // their area manager if connected, else the admin
+    if (!boss) return done("Setup is not finished. Ask the Store Coach admin.");
+    if (limited(who, 10)) return done("Too many requests. Try again later.");
+    const existing = await readSub(id);
+    const handle = cq.from.username ? ` (@${cq.from.username})` : "";
+    await tg("sendMessage", {
+      chat_id: boss.chat_id,
+      text: `${cq.from.first_name ?? "Someone"}${handle} says they are ${id}, ${me.name}, ${me.store_id}.${existing ? " This replaces the current connection." : ""}`,
+      reply_markup: { inline_keyboard: [[{ text: "Approve", callback_data: `ok:${who}:${id}` }, { text: "Reject", callback_data: `no:${who}:${id}` }]] },
+    });
+    await tg("sendMessage", { chat_id: who, text: `Thanks. Waiting for approval as ${me.name}.` });
+    return done();
+  }
+
   if (data.startsWith("pick:")) {
     const am = data.slice(5);
     const target = (await managers()).find((a) => a.am_id === am);
     if (!AM.test(am) || !target) return done("Unknown manager.");
-    if (limited(who)) return done("Too many requests. Try again later.");
     const admin = await readSub("admin");
     if (!admin) return done("Setup is not finished. Ask the Store Coach admin.");
+    if (limited(who, 10)) return done("Too many requests. Try again later."); // counts only requests that reach the admin
     const existing = await readSub(am);
     const handle = cq.from.username ? ` (@${cq.from.username})` : "";
     await tg("sendMessage", {
@@ -61,11 +104,17 @@ async function onCallback(cq: { id: string; data?: string; from: { id: number; f
     return done();
   }
 
-  const m = data.match(/^(ok|no):(\d+)(?::(AM-\d{2}))?$/);
+  const m = data.match(/^(ok|no):(\d+)(?::(AM-\d{2}|SP\d{4}))?$/);
   if (!m) return done();
   const admin = await readSub("admin");
-  if (!admin || admin.chat_id !== who) return done("Not allowed.");
   const [, verdict, chat, am] = m;
+  let allowed = !!admin && admin.chat_id === who;
+  if (!allowed && am && SPID.test(am)) { // a salesperson can also be approved by their own area manager
+    const r = await roster();
+    const boss = await readSub(r?.stores[r.salespeople.find((p) => p.id === am)?.store_id ?? ""]?.am_id ?? "");
+    allowed = !!boss && boss.chat_id === who;
+  }
+  if (!allowed) return done("Not allowed.");
   if (verdict === "ok" && am) {
     await saveSub(am, Number(chat));
     await tg("sendMessage", { chat_id: Number(chat), text: `Connected as ${am}. Your morning briefing will arrive here.` });

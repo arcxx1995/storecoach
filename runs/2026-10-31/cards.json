@@ -12,9 +12,9 @@
   "sarvam": true,
   "translated": 132,
   "fallback_en": 0,
-  "audio": 132,
+  "audio": 0,
   "health": {
-   "seconds": 3.1,
+   "seconds": 4.1,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -34,7 +34,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Imran M. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे कि a stole, mala या mojari। आप लोग average 1.8 items per bill करते हैं; Imran M. average 2.0 करते हैं। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1002.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1003",
@@ -50,7 +50,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Imran M. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece add करें, जैसे कि एक stole, mala या mojari। अभी आपका average 1.7 items per bill है; Imran M. का average 2.0 है। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1003.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1004",
@@ -66,7 +66,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Imran M. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे कि a stole, mala या mojari। आप लोग average 1.8 items per bill करते हैं; Imran M. average 2.0 करते हैं। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1004.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1005",
@@ -82,7 +82,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Imran M. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे कि a stole, mala या mojari। आप लोग average 1.8 items per bill करते हैं; Imran M. average 2.0 करते हैं। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1005.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1007",
@@ -98,7 +98,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Imran M. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर bill में एक और piece जोड़ें, जैसे कि stole, mala या mojari। अभी आपका average 1.9 items per bill है; Imran M. का average 2.0 है। Billing से पहले ही add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1007.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1009",
@@ -114,7 +114,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Imran M. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे कि a stole, mala या mojari। आप लोग average 1.8 items per bill करते हैं; Imran M. average 2.0 करते हैं। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1009.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1010",
@@ -130,7 +130,7 @@
    "text_en": "Today: show a safa with every sherwani trial. You add a safa on 24% of sherwani bills; Tushar N. does it on 67%. Watch Tushar N. at the next trial.",
    "lang": "hi-IN",
    "text_local": "आज: हर sherwani trial के साथ एक safa दिखाएं। आप sherwani bills के 24% पर safa जोड़ते हैं; Tushar N. इसे 67% पर करते हैं। अगले trial में Tushar N. को observe करें।",
-   "audio": "2026-10-31/audio/card_SP1010.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1012",
@@ -146,7 +146,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Imran M. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर bill में एक और piece जोड़ें, जैसे कि stole, mala या mojari। अभी आपका average 1.9 items per bill है; Imran M. का average 2.0 है। Billing से पहले ही add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1012.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1013",
@@ -162,7 +162,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Imran M. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे कि a stole, mala या mojari। आप लोग average 1.8 items per bill करते हैं; Imran M. average 2.0 करते हैं। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1013.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1014",
@@ -178,7 +178,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 6% of kurta bills; Vikas J. does on 31%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket offer करें। आप 6% kurta bills पर इसे add करते हैं; Vikas J. 31% पर करते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छी pair होती हैं।",
-   "audio": "2026-10-31/audio/card_SP1014.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1015",
@@ -194,7 +194,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 14% of kurta bills; Vikas J. does on 31%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ matching jacket का offer दें। आप 14% kurta bills में इसे जोड़ते हैं; Vikas J. इसे 31% में जोड़ते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छी लगती हैं।",
-   "audio": "2026-10-31/audio/card_SP1015.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1016",
@@ -210,7 +210,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 9% of kurta bills; Vikas J. does on 31%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket का offer दें। आप 9% kurta bills पर एक jacket जोड़ते हैं; Vikas J. 31% पर जोड़ते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छी लगती हैं।",
-   "audio": "2026-10-31/audio/card_SP1016.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1019",
@@ -226,7 +226,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.6 items a bill; Ajay S. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece add करें, जैसे कि stole, mala या mojari। आप लोग average 1.6 items per bill बेचते हैं; Ajay S. का average 2.0 है। Billing से पहले ही add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1019.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1021",
@@ -242,7 +242,7 @@
    "text_en": "You average 1.9 items a bill, among the best in LKO-02. Today: let Faizan M. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "आपकी बिल में average 1.9 items हैं, जो LKO-02 में सबसे बेहतरीन में से एक है। आज: Faizan M. को दो trials पर अपने साथ रहने दें और दिखाएं कि आप दूसरा पीस कैसे add करते हैं।",
-   "audio": "2026-10-31/audio/card_SP1021.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1023",
@@ -258,7 +258,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Ajay S. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग एक बिल में औसतन 1.7 items लेते हैं; Ajay S. औसतन 2.0 लेते हैं। बिलिंग से पहले ही यह add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1023.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1024",
@@ -274,7 +274,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 15% of kurta bills; Jitendra V. does on 28%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket offer करें। आप 15% kurta bills पर एक jacket add करते हैं; Jitendra V. 28% पर करते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छी pair होती हैं।",
-   "audio": "2026-10-31/audio/card_SP1024.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1025",
@@ -290,7 +290,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Ajay S. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग एक बिल में औसतन 1.7 items लेते हैं; Ajay S. औसतन 2.0 लेते हैं। बिलिंग से पहले ही यह add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1025.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1026",
@@ -306,7 +306,7 @@
    "text_en": "You average 2.0 items a bill, among the best in LKO-02. Today: let Faizan M. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "आपकी बिल पर average 2.0 items आते हैं, जो LKO-02 में सबसे अच्छी performance में से एक है। आज: Faizan M. को दो trials में अपने साथ चलने दें और दिखाएं कि आप दूसरा piece कैसे add करते हैं।",
-   "audio": "2026-10-31/audio/card_SP1026.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1027",
@@ -322,7 +322,7 @@
    "text_en": "Today: call 10 of Imran C.'s past customers and invite them in; they are yours now. Be on the floor 5–9 pm on Sat 7 Nov and Sun 8 Nov.",
    "lang": "hi-IN",
    "text_local": "आज: Imran C. के 10 पुराने customers को call करके अंदर बुलाइए; अब वे आपके हैं। Sat 7 Nov और Sun 8 Nov को शाम 5–9 बजे तक floor पर मौजूद रहें।",
-   "audio": "2026-10-31/audio/card_SP1027.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1028",
@@ -338,7 +338,7 @@
    "text_en": "You average 1.9 items a bill, among the best in LKO-03. Today: let Shivam M. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "आपकी बिल पर average 1.9 items आती हैं, जो LKO-03 में सबसे अच्छी हैं। आज: Shivam M. को दो trials पर अपने साथ रखें और दिखाएं कि आप दूसरा piece कैसे add करते हैं।",
-   "audio": "2026-10-31/audio/card_SP1028.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1029",
@@ -354,7 +354,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Rizwan J. averages 1.9. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। अभी आपका एवरेज 1.7 आइटम प्रति बिल है; Rizwan J. का एवरेज 1.9 है। बिलिंग से पहले ही add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1029.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1030",
@@ -370,7 +370,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.6 items a bill; Rizwan J. averages 1.9. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे कि stole, mala या mojari। अभी आपका average 1.6 items per bill है; Rizwan J. का average 1.9 है। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1030.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1032",
@@ -386,7 +386,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Rizwan J. averages 1.9. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। अभी आपका एवरेज 1.7 आइटम प्रति बिल है; Rizwan J. का एवरेज 1.9 है। बिलिंग से पहले ही add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1032.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1033",
@@ -402,7 +402,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 11% of kurta bills; Naveen R. does on 35%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ matching jacket का offer दें। आप 11% kurta bills पर एक jacket add करते हैं; Naveen R. 35% पर करते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छी pair होती हैं।",
-   "audio": "2026-10-31/audio/card_SP1033.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1034",
@@ -418,7 +418,7 @@
    "text_en": "Today: show a safa with every sherwani trial. You add a safa on 17% of sherwani bills; Kamal A. does it on 36%. Watch Kamal A. at the next trial.",
    "lang": "hi-IN",
    "text_local": "आज: हर sherwani trial के साथ एक safa दिखाएं। आप 17% sherwani bills पर safa जोड़ते हैं; Kamal A. इसे 36% पर करते हैं। अगले trial में Kamal A. को ध्यान से देखें।",
-   "audio": "2026-10-31/audio/card_SP1034.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1036",
@@ -434,7 +434,7 @@
    "text_en": "Today: show a mala with every sherwani trial. You add a mala on 7% of sherwani bills; Kamal A. does it on 36%. Watch Kamal A. at the next trial.",
    "lang": "hi-IN",
    "text_local": "आज: हर sherwani trial के साथ एक mala ज़रूर दिखाएँ। आप sherwani bills में 7% पर mala add करते हैं; Kamal A. इसे 36% पर करते हैं। अगले trial में Kamal A. को ध्यान से देखें।",
-   "audio": "2026-10-31/audio/card_SP1036.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1037",
@@ -450,7 +450,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 22% of kurta bills; Naveen R. does on 35%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket offer करें। आप 22% kurta bills पर एक jacket जोड़ते हैं; Naveen R. 35% पर जोड़ते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छी लगती हैं।",
-   "audio": "2026-10-31/audio/card_SP1037.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1038",
@@ -466,7 +466,7 @@
    "text_en": "You average 1.9 items a bill, among the best in LKO-04. Today: let Ravi K. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "आपकी एवरेज 1.9 items per bill है, जो LKO-04 में सबसे बेहतरीन में से एक है। आज: Ravi K. दो trials पर आपके साथ रहें और दिखाएं कि आप second piece कैसे add करते हैं।",
-   "audio": "2026-10-31/audio/card_SP1038.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1041",
@@ -482,7 +482,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 15% of kurta bills; Naveen R. does on 35%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket offer करें। आप लोग 15% kurta bills पर एक जोड़ते हैं; Naveen R. 35% पर जोड़ते हैं। पूछें कि कौन सी jackets सबसे अच्छी लगती हैं।",
-   "audio": "2026-10-31/audio/card_SP1041.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1042",
@@ -498,7 +498,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Kunal C. averages 1.9. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece add करें, जैसे कि एक stole, mala या mojari। आप लोग per bill 1.8 items average करते हैं; Kunal C. का average 1.9 है। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1042.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1043",
@@ -514,7 +514,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Kunal C. averages 1.9. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि stole, mala या mojari। आप लोग एक बिल में औसतन 1.7 आइटम्स लेते हैं; Kunal C. औसतन 1.9 लेते हैं। बिलिंग से पहले ही add-on ऑफर कर दें।",
-   "audio": "2026-10-31/audio/card_SP1043.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1044",
@@ -530,7 +530,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Nikhil S. averages 2.1. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग औसतन 1.7 आइटम प्रति बिल बेचते हैं; Nikhil S. औसतन 2.1 बेचते हैं। बिलिंग से पहले ही add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1044.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1045",
@@ -546,7 +546,7 @@
    "text_en": "Today: show a safa with every sherwani trial. You add a safa on 12% of sherwani bills; Nikhil S. does it on 44%. Watch Nikhil S. at the next trial.",
    "lang": "hi-IN",
    "text_local": "आज: हर sherwani trial के साथ एक safa ज़रूर दिखाएं। आप 12% sherwani bills पर एक safa जोड़ते हैं; Nikhil S. 44% पर ऐसा करते हैं। अगले trial में Nikhil S. को ध्यान से देखें।",
-   "audio": "2026-10-31/audio/card_SP1045.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1047",
@@ -562,7 +562,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 9% of kurta bills; Dheeraj R. does on 28%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket ऑफर करें। आप 9% kurta bills पर एक jacket जोड़ते हैं; Dheeraj R. 28% पर जोड़ते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छी लगती हैं।",
-   "audio": "2026-10-31/audio/card_SP1047.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1048",
@@ -578,7 +578,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Nikhil S. averages 2.1. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे एक stole, mala या mojari। आप लोग per bill 1.8 items का average लेते हैं; Nikhil S. का average 2.1 है। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1048.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1050",
@@ -594,7 +594,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Nikhil S. averages 2.1. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे एक stole, mala या mojari। आप लोग per bill 1.8 items का average लेते हैं; Nikhil S. का average 2.1 है। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1050.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1052",
@@ -610,7 +610,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.6 items a bill; Nikhil S. averages 2.1. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और piece जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग एक बिल में औसतन 1.6 items बेचते हैं; Nikhil S. औसतन 2.1 बेचते हैं। बिलिंग से पहले add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1052.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1053",
@@ -626,7 +626,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Nikhil S. averages 2.1. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे एक stole, mala या mojari। आप लोग per bill 1.8 items का average लेते हैं; Nikhil S. का average 2.1 है। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1053.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1054",
@@ -642,7 +642,7 @@
    "text_en": "Today: show a mala with every sherwani trial. You add a mala on 12% of sherwani bills; Sachin T. does it on 43%. Watch Sachin T. at the next trial.",
    "lang": "hi-IN",
    "text_local": "आज: हर sherwani trial के साथ एक mala दिखाएं। आप sherwani bills के 12% पर mala add करते हैं; Sachin T. इसे 43% पर करते हैं। अगले trial में Sachin T. को ध्यान से देखें।",
-   "audio": "2026-10-31/audio/card_SP1054.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1055",
@@ -658,7 +658,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.5 items a bill; Kamal R. averages 1.8. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर bill में एक piece और जोड़ें, जैसे कि stole, mala या mojari। आप लोग एक bill में average 1.5 items लेते हैं; Kamal R. average 1.8 लेते हैं। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1055.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1056",
@@ -674,7 +674,7 @@
    "text_en": "You average 1.8 items a bill, among the best in KNP-02. Today: let Manoj T. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "आपकी एक बिल में औसतन 1.8 items आते हैं, जो KNP-02 में सबसे अच्छे में से हैं। आज: Manoj T. को दो trials में अपने साथ चलने दें और दिखाएं कि आप दूसरा पीस कैसे जोड़ते हैं।",
-   "audio": "2026-10-31/audio/card_SP1056.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1058",
@@ -690,7 +690,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 7% of kurta bills; Kamal R. does on 29%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket ऑफर करें। आप 7% kurta bills पर एक jacket जोड़ते हैं; Kamal R. 29% पर जोड़ते हैं। पूछें कि कौन सी jackets सबसे अच्छी लगती हैं।",
-   "audio": "2026-10-31/audio/card_SP1058.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1059",
@@ -706,7 +706,7 @@
    "text_en": "You average 1.7 items a bill, among the best in KNP-02. Today: let Manoj T. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "आपकी प्रति बिल औसत 1.7 items है, जो KNP-02 में सबसे अच्छी है। आज: Manoj T. को दो trials पर अपने साथ चलने दें और दिखाएं कि आप दूसरा piece कैसे जोड़ते हैं।",
-   "audio": "2026-10-31/audio/card_SP1059.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1060",
@@ -722,7 +722,7 @@
    "text_en": "You average 1.7 items a bill, among the best in KNP-03. Today: let Om K. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "आपकी बिल पर average 1.7 items आ रही है, जो KNP-03 में सबसे अच्छी है। आज: Om K. को दो trials पर अपने साथ रहने दें और दिखाएं कि आप दूसरा पीस कैसे जोड़ते हैं।",
-   "audio": "2026-10-31/audio/card_SP1060.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1061",
@@ -738,7 +738,7 @@
    "text_en": "You average 1.8 items a bill, among the best in KNP-03. Today: let Om K. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "आपका average 1.8 items per bill है, जो KNP-03 में सबसे बेहतरीन में से एक है। आज: Om K. को दो trials में अपने साथ चलने दें और दिखाएं कि आप दूसरा पीस कैसे add करते हैं।",
-   "audio": "2026-10-31/audio/card_SP1061.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1063",
@@ -754,7 +754,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.6 items a bill; Kunal N. averages 1.8. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और piece add करें, जैसे कि एक stole, mala या mojari। आप लोग average 1.6 items per bill करते हैं; Kunal N. average 1.8 करते हैं। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1063.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1064",
@@ -770,7 +770,7 @@
    "text_en": "Today: sell at MRP and ask the manager before any discount. You gave 7.1% off MRP; the rest of the store gives 1.9%. Tarun T. closes at MRP; copy their pitch.",
    "lang": "hi-IN",
    "text_local": "आज: MRP पर sell करें और कोई भी discount देने से पहले manager से पूछें। आपने MRP पर 7.1% off दिया; बाकी store 1.9% देता है। Tarun T. MRP पर close करते हैं; उनकी pitch copy करें।",
-   "audio": "2026-10-31/audio/card_SP1064.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1065",
@@ -786,7 +786,7 @@
    "text_en": "Today: sell at MRP and ask the manager before any discount. You gave 6.0% off MRP; the rest of the store gives 2.0%. Tarun T. closes at MRP; copy their pitch.",
    "lang": "hi-IN",
    "text_local": "आज: MRP पर बेचें और किसी भी डिस्काउंट से पहले मैनेजर से पूछें। आपने MRP पर 6.0% off दिया; बाकी स्टोर 2.0% देता है। Tarun T. MRP पर ही क्लोज़ करते हैं; उनकी pitch कॉपी करें।",
-   "audio": "2026-10-31/audio/card_SP1065.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1067",
@@ -802,7 +802,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Mukesh D. averages 2.4. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर बिल में एक और piece जोड़ें, जैसे एक stole, mala या mojari। आप लोग एक बिल में 1.8 items का average लेते हैं; Mukesh D. का average 2.4 है। Billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1067.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1069",
@@ -818,7 +818,7 @@
    "text_en": "Today: show a safa with every sherwani trial. You add a safa on 25% of sherwani bills; Sanjay K. does it on 82%. Watch Sanjay K. at the next trial.",
    "lang": "hi-IN",
    "text_local": "आज: हर sherwani trial के साथ एक safa दिखाएं। आप 25% sherwani bills पर एक safa जोड़ते हैं; Sanjay K. 82% पर ऐसा करते हैं। अगले trial में Sanjay K. को देखें।",
-   "audio": "2026-10-31/audio/card_SP1069.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1070",
@@ -834,7 +834,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 15% of kurta bills; Rizwan N. does on 39%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ matching jacket का offer दें। आप 15% kurta bills पर इसे add करते हैं; Rizwan N. 39% पर करते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छी लगती हैं।",
-   "audio": "2026-10-31/audio/card_SP1070.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1072",
@@ -850,7 +850,7 @@
    "text_en": "Today: call 15 past wedding customers who haven't been back and invite them in. 1.3% of your customers return; 6.8% of Sanjay K.'s do. Ask Sanjay K. what they say on the call.",
    "lang": "hi-IN",
    "text_local": "आज: उन wedding customers को 15 पर call करें जो वापस नहीं आए हैं और उन्हें store में बुलाएं। आपके 1.3% customers वापस आते हैं; Sanjay K. के 6.8% आते हैं। Sanjay K. से पूछें कि वे call पर क्या कहते हैं।",
-   "audio": "2026-10-31/audio/card_SP1072.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1073",
@@ -866,7 +866,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 2.1 items a bill; Mukesh D. averages 2.4. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग औसतन 2.1 आइटम्स प्रति बिल बेचते हैं; Mukesh D. औसतन 2.4 बेचते हैं। बिलिंग से पहले ही add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1073.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1075",
@@ -882,7 +882,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 2.0 items a bill; Mukesh D. averages 2.4. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर बिल में एक और पीस ऐड करें, जैसे कि stole, mala या mojari। आप लोग एक बिल में 2.0 items का एवरेज निकालते हैं; Mukesh D. का एवरेज 2.4 है। बिलिंग से पहले ही add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1075.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1076",
@@ -898,7 +898,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 2.1 items a bill; Mukesh D. averages 2.4. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग औसतन 2.1 आइटम्स प्रति बिल बेचते हैं; Mukesh D. औसतन 2.4 बेचते हैं। बिलिंग से पहले ही add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1076.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1077",
@@ -914,7 +914,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Mukesh D. averages 2.4. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। अभी आप लोग एक बिल में औसतन 1.9 items बेचते हैं, जबकि Mukesh D. 2.4 का एवरेज लेते हैं। बिलिंग से पहले ही add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1077.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1078",
@@ -930,7 +930,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 2.1 items a bill; Mukesh D. averages 2.4. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग औसतन 2.1 आइटम्स प्रति बिल बेचते हैं; Mukesh D. औसतन 2.4 बेचते हैं। बिलिंग से पहले ही add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1078.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1079",
@@ -946,7 +946,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 20% of kurta bills; Rizwan N. does on 39%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket offer करें। आप 20% kurta bills पर एक jacket add करते हैं; Rizwan N. 39% पर करते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छे से pair होती हैं।",
-   "audio": "2026-10-31/audio/card_SP1079.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1081",
@@ -962,7 +962,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Prakash J. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece add करें, जैसे stole, mala या mojari। अभी आपका average 1.9 items per bill है; Prakash J. का average 2.0 है। billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1081.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1083",
@@ -978,7 +978,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Prakash J. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर बिल में एक और पीस ऐड करें, जैसे कि stole, mala या mojari। अभी आपका एवरेज 1.7 items per bill है; Prakash J. का एवरेज 2.0 है। Billing से पहले ही add-on ऑफर कर दें।",
-   "audio": "2026-10-31/audio/card_SP1083.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1084",
@@ -994,7 +994,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Prakash J. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर बिल में एक और पीस ऐड करें, जैसे कि stole, mala या mojari। अभी आपका एवरेज 1.7 items per bill है; Prakash J. का एवरेज 2.0 है। Billing से पहले ही add-on ऑफर कर दें।",
-   "audio": "2026-10-31/audio/card_SP1084.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1085",
@@ -1010,7 +1010,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 23% of kurta bills; Jitendra K. does on 28%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket offer करें। आप 23% kurta bills पर एक jacket add करते हैं; Jitendra K. 28% पर करते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छी pair होती हैं।",
-   "audio": "2026-10-31/audio/card_SP1085.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1087",
@@ -1026,7 +1026,7 @@
    "text_en": "Today: show a safa, mojari and mala with every sherwani trial. You add a mojari on 26% of sherwani bills; Saurabh P. does it on 85%. Watch Saurabh P. at the next trial.",
    "lang": "hi-IN",
    "text_local": "आज: हर sherwani trial के साथ safa, mojari और mala दिखाएं। आप sherwani bills के 26% पर mojari add करते हैं; Saurabh P. 85% पर ऐसा करते हैं। अगले trial में Saurabh P. को ध्यान से देखें।",
-   "audio": "2026-10-31/audio/card_SP1087.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1088",
@@ -1042,7 +1042,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Prakash J. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece add करें, जैसे stole, mala या mojari। अभी आपका average 1.9 items per bill है; Prakash J. का average 2.0 है। billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1088.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1089",
@@ -1058,7 +1058,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.6 items a bill; Prakash J. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे एक stole, mala या mojari। आप लोग एक bill में 1.6 items का average लेते हैं; Prakash J. का average 2.0 है। Billing से पहले ही add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1089.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1090",
@@ -1074,7 +1074,7 @@
    "text_en": "Today: show a mala with every sherwani trial. You add a mala on 13% of sherwani bills; Saurabh P. does it on 60%. Watch Saurabh P. at the next trial.",
    "lang": "hi-IN",
    "text_local": "आज: हर sherwani trial के साथ एक mala दिखाएं। आप sherwani bills के 13% पर एक mala add करते हैं; Saurabh P. इसे 60% पर करते हैं। अगले trial में Saurabh P. को observe करें।",
-   "audio": "2026-10-31/audio/card_SP1090.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1092",
@@ -1090,7 +1090,7 @@
    "text_en": "Today: show a mala with every sherwani trial. You add a mala on 11% of sherwani bills; your best colleague does it on 38%. Watch your best colleague at the next trial.",
    "lang": "hi-IN",
    "text_local": "आज: हर sherwani trial के साथ एक mala दिखाएं। आप sherwani bills के 11% पर mala add करते हैं; आपके सबसे अच्छे साथी इसे 38% पर करते हैं। अगले trial में अपने सबसे अच्छे साथी को ध्यान से देखें।",
-   "audio": "2026-10-31/audio/card_SP1092.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1093",
@@ -1106,7 +1106,7 @@
    "text_en": "Today: show two Sherwani looks to every wedding customer. Sherwani is on 2.8% of your bills and 7.2% across Patna. Amit A. sells it most here; ask for their best look.",
    "lang": "hi-IN",
    "text_local": "आज: हर शादी वाले customer को 2 Sherwani looks दिखाएं। Sherwani आपके 2.8% bills में है और पूरे Patna में 7.2% है। Amit A. यहाँ इसे सबसे ज़्यादा बेचते हैं; उनसे उनका best look मांगें।",
-   "audio": "2026-10-31/audio/card_SP1093.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1094",
@@ -1122,7 +1122,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.5 items a bill; Arjun A. averages 1.8. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि stole, mala या mojari। आप लोग एवरेज 1.5 आइटम्स प्रति बिल करते हैं; Arjun A. का एवरेज 1.8 है। बिलिंग से पहले ही ऐड-ऑन ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1094.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1095",
@@ -1138,7 +1138,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 5% of kurta bills; Jitendra N. does on 22%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket offer करें। आप 5% kurta bills पर इसे add करते हैं; Jitendra N. 22% पर करते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छे से pair होती हैं।",
-   "audio": "2026-10-31/audio/card_SP1095.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1098",
@@ -1154,7 +1154,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.4 items a bill; Imran C. averages 1.7. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर बिल में एक और पीस जोड़ें, जैसे कि stole, mala या mojari। आप लोग एक बिल में 1.4 आइटम का एवरेज लेते हैं; Imran C. का एवरेज 1.7 है। बिलिंग से पहले ऐड-ऑन ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1098.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1099",
@@ -1170,7 +1170,7 @@
    "text_en": "You average 1.7 items a bill, among the best in PAT-04. Today: let Zaid A. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "PAT-04 में आपकी per bill average 1.7 items है, जो सबसे अच्छी है। आज: Zaid A. दो trials में आपके साथ रहेंगे और दिखाएंगे कि आप second piece कैसे add करते हैं।",
-   "audio": "2026-10-31/audio/card_SP1099.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1101",
@@ -1186,7 +1186,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 13% of kurta bills; Raju S. does on 21%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ matching jacket offer करें। आप kurta bills के 13% पर एक jacket add करते हैं; Raju S. 21% पर करते हैं। उनसे पूछें कि कौन सी jackets सबसे अच्छे से pair होती हैं।",
-   "audio": "2026-10-31/audio/card_SP1101.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1102",
@@ -1202,7 +1202,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.6 items a bill; Saurabh Y. averages 1.7. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग हर बिल पर औसतन 1.6 आइटम्स लेते हैं; Saurabh Y. औसतन 1.7 लेते हैं। बिलिंग से पहले ही यह add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1102.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1103",
@@ -1218,7 +1218,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.5 items a bill; Saurabh Y. averages 1.7. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज: हर bill में एक और piece जोड़ें, जैसे कि stole, mala या mojari। आप लोग औसतन 1.5 items per bill लेते हैं, जबकि Saurabh Y. का average 1.7 है। billing से पहले add-on offer करें।",
-   "audio": "2026-10-31/audio/card_SP1103.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1104",
@@ -1234,7 +1234,7 @@
    "text_en": "You average 1.7 items a bill, among the best in MZF-01. Today: let Raju S. shadow you on two trials and show how you add the second piece.",
    "lang": "hi-IN",
    "text_local": "आपकी average 1.7 items per bill है, जो MZF-01 में सबसे अच्छी है। आज: Raju S. को दो trials पर अपने साथ रहने दें और दिखाएं कि आप दूसरा piece कैसे add करते हैं।",
-   "audio": "2026-10-31/audio/card_SP1104.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1105",
@@ -1250,7 +1250,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.4 items a bill; Ankit P. averages 1.7. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग एक बिल में औसतन 1.4 items लेते हैं; Ankit P. औसतन 1.7 लेते हैं। बिलिंग से पहले ही यह add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1105.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1106",
@@ -1266,7 +1266,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 10% of kurta bills; Rahul Y. does on 23%. Ask which jackets pair best.",
    "lang": "hi-IN",
    "text_local": "आज: हर kurta set trial के साथ एक matching jacket offer करें। आप 10% kurta bills पर एक jacket add करते हैं; Rahul Y. 23% पर करते हैं। पूछें कि कौन सी jackets सबसे अच्छे से match करती हैं।",
-   "audio": "2026-10-31/audio/card_SP1106.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1108",
@@ -1282,7 +1282,7 @@
    "text_en": "Today: show two Mala looks to every wedding customer. Mala is on 1.4% of your bills and 6.9% across Muzaffarpur. Ankit P. sells it most here; ask for their best look.",
    "lang": "hi-IN",
    "text_local": "आज हर शादी वाले customer को दो Mala looks दिखाएं। Mala आपके 1.4% bills में है और Muzaffarpur में 6.9% है। यहाँ Ankit P. इसे सबसे ज़्यादा बेचते हैं; उनसे उनका best look मांगें।",
-   "audio": "2026-10-31/audio/card_SP1108.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1110",
@@ -1298,7 +1298,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Yogesh G. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೆ ಒಂದು extra piece ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನಿಮ್ಮ average bill ಗೆ 1.9 items ಇದೆ; Yogesh G. ಅವರ average 2.1 ಇದೆ. Billing ಮಾಡುವುದಕ್ಕಿಂತ ಮುಂಚೆ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1110.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1111",
@@ -1314,7 +1314,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Yogesh G. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಅಂದ್ರೆ stole, mala ಅಥವಾ mojari ತರಹ. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ average 1.7 items ಮಾಡ್ತೀರಾ; Yogesh G. average 2.1 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1111.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1112",
@@ -1330,7 +1330,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Yogesh G. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೆ ಇನ್ನೊಂದು ಪೀಸ್‌ ಸೇರಿಸಿ, ಅಂದ್ರೆ ಒಂದು stole, mala ಅಥವಾ mojari ತರ. ನೀವು ಬಿಲ್‌ಗೆ 1.8 ಐಟಂ ಆವರೇಜ್ ಮಾಡ್ತೀರಾ; Yogesh G. 2.1 ಆವರೇಜ್ ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋಕು ಮುಂಚೆನೇ ಈ add-on ಆಫರ್ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1112.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1113",
@@ -1346,7 +1346,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Yogesh G. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೆ ಇನ್ನೊಂದು ಪೀಸ್‌ ಸೇರಿಸಿ, ಅಂದ್ರೆ ಒಂದು stole, mala ಅಥವಾ mojari ತರ. ನೀವು ಬಿಲ್‌ಗೆ 1.8 ಐಟಂ ಆವರೇಜ್ ಮಾಡ್ತೀರಾ; Yogesh G. 2.1 ಆವರೇಜ್ ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋಕು ಮುಂಚೆನೇ ಈ add-on ಆಫರ್ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1113.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1114",
@@ -1362,7 +1362,7 @@
    "text_en": "Today: call 15 past wedding customers who haven't been back and invite them in. 2.1% of your customers return; 12.0% of Karthik J.'s do. Ask Karthik J. what they say on the call.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಮದುವೆಗೆ ಬಂದು ಮತ್ತೆ ಬಾರದ wedding customers-ಗೆ 15 ನಿಮಿಷ ಕಳೆದ ಮೇಲೆ call ಮಾಡಿ, ಅವರನ್ನು ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ. ನಿಮ್ಮ customers-ನಲ್ಲಿ 2.1% ಜನ ವಾಪಸ್ ಬರುತ್ತಾರೆ; ಆದರೆ Karthik J. ಅವರ customers-ನಲ್ಲಿ 12.0% ಜನ ಬರುತ್ತಾರೆ. call ಮಾಡಿದಾಗ ಅವರು ಏನು ಹೇಳುತ್ತಾರೆಂದು Karthik J. ಅವರನ್ನು ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1114.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1116",
@@ -1378,7 +1378,7 @@
    "text_en": "Today: show a mala with every sherwani trial. You add a mala on 16% of sherwani bills; Sunil T. does it on 39%. Watch Sunil T. at the next trial.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಬ್ಬರು sherwani ಟ್ರೈ ಮಾಡುವಾಗ ಒಂದು mala ತೋರಿಸಿ. ನೀವು sherwani ಬಿಲ್‌ಗಳಲ್ಲಿ 16% ರಷ್ಟು ಬಿಲ್‌ಗೆ ಒಂದು mala ಸೇರಿಸುತ್ತೀರಿ; Sunil T. ಅವರು 39% ರಷ್ಟು ಬಿಲ್‌ಗೆ ಮಾಡುತ್ತಾರೆ. ಮುಂದಿನ trial ನಲ್ಲಿ Sunil T. ಅವರನ್ನ ಗಮನಿಸಿ.",
-   "audio": "2026-10-31/audio/card_SP1116.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1118",
@@ -1394,7 +1394,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Yogesh G. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೆ ಒಂದು extra piece ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನಿಮ್ಮ average bill ಗೆ 1.9 items ಇದೆ; Yogesh G. ಅವರ average 2.1 ಇದೆ. Billing ಮಾಡುವುದಕ್ಕಿಂತ ಮುಂಚೆ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1118.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1119",
@@ -1410,7 +1410,7 @@
    "text_en": "You average 2.1 items a bill, among the best in BLR-01. Today: let Suresh V. shadow you on two trials and show how you add the second piece.",
    "lang": "kn-IN",
    "text_local": "BLR-01 ನಲ್ಲಿ ನೀವು ಒಂದು ಬಿಲ್ ಗೆ 2.1 items ಆವರೇಜ್ ಮಾಡುತ್ತೀರಿ, ಇದು ತುಂಬಾ ಚೆನ್ನಾಗಿದೆ. ಇವತ್ತು: Suresh V. ಅವರು ಎರಡು trials ನಲ್ಲಿ ನಿಮ್ಮ ಜೊತೆ ಇದ್ದು, ನೀವು ಎರಡನೇ piece ಹೇಗೆ ಸೇರಿಸುತ್ತೀರಿ ಅಂತ ತೋರಿಸಲಿ.",
-   "audio": "2026-10-31/audio/card_SP1119.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1120",
@@ -1426,7 +1426,7 @@
    "text_en": "Today: call 14 past wedding customers who haven't been back and invite them in. 2.7% of your customers return; 12.0% of Karthik J.'s do. Ask Karthik J. what they say on the call.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಮದುವೆಗೆ ಬಂದು ವಾಪಸ್ ಬಂದಿಲ್ಲದ 14 ಕಸ್ಟಮರ್ಸ್ ಗೆ ಕಾಲ್ ಮಾಡಿ ಅವರನ್ನು ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ. ನಿಮ್ಮ ಕಸ್ಟಮರ್ಸ್ ನಲ್ಲಿ 2.7% ಜನ ವಾಪಸ್ ಬರುತ್ತಾರೆ; ಆದರೆ Karthik J. ಅವರ ಕಸ್ಟಮರ್ಸ್ ನಲ್ಲಿ 12.0% ಜನ ಬರುತ್ತಾರೆ. ಕಾಲ್ ಮಾಡಿದಾಗ ಅವರು ಏನು ಹೇಳ್ತಾರೆ ಅಂತ Karthik J. ಅವರನ್ನು ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1120.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1122",
@@ -1442,7 +1442,7 @@
    "text_en": "Today: sell at MRP and ask the manager before any discount. You gave 3.6% off MRP; the rest of the store gives 1.2%. Prasad M. closes at MRP; copy their pitch.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: MRP ಗೆ ಸೇಲ್ ಮಾಡಿ ಮತ್ತು ಯಾವುದೇ ಡಿಸ್ಕೌಂಟ್ ಕೊಡುವ ಮೊದಲು ಮ್ಯಾನೇಜರ್ ಹತ್ತಿರ ಕೇಳಿ. ನೀವು MRP ಮೇಲೆ 3.6% ಡಿಸ್ಕೌಂಟ್ ಕೊಟ್ಟಿದ್ದೀರಿ; ಉಳಿದ ಸ್ಟೋರ್‌ನಲ್ಲಿ 1.2% ಮಾತ್ರ ಕೊಡ್ತಾರೆ. Prasad M. ಅವರು MRP ಗೆ ಸೇಲ್ ಮಾಡ್ತಾರೆ; ಅವರ ಪಿಚ್ ಅನ್ನೇ ನೀವು ಕಾಪಿ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1122.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1123",
@@ -1458,7 +1458,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 2.0 items a bill; Yogesh G. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು bill-ಗೆ ಸರಾಸರಿ 2.0 items ಮಾಡುತ್ತೀರಿ; Yogesh G. ಸರಾಸರಿ 2.1 ಮಾಡುತ್ತಾರೆ. ಬಿಲ್ ಮಾಡುವ ಮುನ್ನವೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1123.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1124",
@@ -1474,7 +1474,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 31% of kurta bills; Yogesh G. does on 36%. Ask which jackets pair best.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು kurta set trial ಜೊತೆಗೂ ಮ್ಯಾಚಿಂಗ್ jacket ಕೊಡಿ. ನೀವು 31% kurta ಬಿಲ್‌ಗಳಲ್ಲಿ ಒಂದನ್ನು ಸೇರಿಸುತ್ತಿದ್ದೀರಿ; Yogesh G. ಅವರು 36% ರಲ್ಲಿ ಸೇರಿಸುತ್ತಾರೆ. ಯಾವ jacket ಗಳು ಚೆನ್ನಾಗಿ ಮ್ಯಾಚ್ ಆಗುತ್ತವೆ ಅಂತ ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1124.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1125",
@@ -1490,7 +1490,7 @@
    "text_en": "Today: show two Indo-Western looks to every wedding customer. Indo-Western is on 1.3% of your bills and 8.0% across Bengaluru. Venkatesh Y. sells it most here; ask for their best look.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಬ್ಬ ಮದುವೆ ಗ್ರಾಹಕರಿಗೆ ಎರಡು Indo-Western ಲುಕ್ಸ್ ತೋರಿಸಿ. ನಿಮ್ಮ ಬಿಲ್‌ಗಳಲ್ಲಿ 1.3% ಮತ್ತು ಬೆಂಗಳೂರುದಾದ್ಯಂತ 8.0% Indo-Western ಸೇಲ್ ಆಗ್ತಿದೆ. ಇಲ್ಲಿ Venkatesh Y. ಅವರು ಇದನ್ನ ಅತಿ ಹೆಚ್ಚು ಸೇಲ್ ಮಾಡ್ತಾರೆ; ಅವರ ಬೆಸ್ಟ್ ಲುಕ್ ಬಗ್ಗೆ ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1125.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1126",
@@ -1506,7 +1506,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Girish V. averages 2.0. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿ bill-ಗೆ ಒಂದು extra piece ಸೇರಿಸಿ, ಅಂದ್ರೆ stole, mala ಅಥವಾ mojari ತರಹ. ನೀವು bill-ಗೆ average 1.9 items ಮಾಡ್ತೀರಾ; Girish V. ಅವರು average 2.0 ಮಾಡ್ತಾರೆ. Billing ಮಾಡೋಕಿಂತ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1126.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1128",
@@ -1522,7 +1522,7 @@
    "text_en": "Today: show a mala with every sherwani trial. You add a mala on 10% of sherwani bills; Venkatesh S. does it on 62%. Watch Venkatesh S. at the next trial.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿ sherwani trial ಜೊತೆ ಒಂದು mala ತೋರಿಸಿ. ನೀವು 10% sherwani ಬಿಲ್‌ಗಳ ಮೇಲೆ mala ಸೇರಿಸುತ್ತೀರಿ; Venkatesh S. ಅವರು 62% ರಷ್ಟು ಮಾಡುತ್ತಾರೆ. ಮುಂದಿನ trial ನಲ್ಲಿ Venkatesh S. ಅವರನ್ನು ಗಮನಿಸಿ.",
-   "audio": "2026-10-31/audio/card_SP1128.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1129",
@@ -1538,7 +1538,7 @@
    "text_en": "Today: call 15 past wedding customers who haven't been back and invite them in. 1.4% of your customers return; 6.2% of Deepak V.'s do. Ask Deepak V. what they say on the call.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಮದುವೆಗೆ ಬಂದು ಮತ್ತೆ ವಾಪಸ್ ಬಂದಿಲ್ಲದ 15 customers-ಗೆ call ಮಾಡಿ ಅವರನ್ನ ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ. ನಿಮ್ಮ 1.4% customers ವಾಪಸ್ ಬರ್ತಾರೆ; ಆದರೆ Deepak V. ಅವರದ್ದು 6.2% ಬರ್ತಾರೆ. call-ನಲ್ಲಿ ಅವರು ಏನು ಹೇಳ್ತಾರೆ ಅಂತ Deepak V. ಅವರನ್ನೇ ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1129.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1130",
@@ -1554,7 +1554,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Girish V. averages 2.0. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ average 1.8 items ಮಾಡುತ್ತೀರಿ; Girish V. ಅವರು average 2.0 ಮಾಡುತ್ತಾರೆ. ಬಿಲ್ ಮಾಡುವುದಕ್ಕೂ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1130.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1133",
@@ -1570,7 +1570,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Girish V. averages 2.0. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ average 1.8 items ಮಾಡುತ್ತೀರಿ; Girish V. ಅವರು average 2.0 ಮಾಡುತ್ತಾರೆ. ಬಿಲ್ ಮಾಡುವುದಕ್ಕೂ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1133.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1134",
@@ -1586,7 +1586,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 26% of kurta bills; Nagaraj G. does on 36%. Ask which jackets pair best.",
    "lang": "kn-IN",
    "text_local": "ಇಂದು: ಪ್ರತಿಯೊಂದು kurta set trial ಜೊತೆಗೂ ಒಂದು matching jacket ಆಫರ್ ಮಾಡಿ. ನೀವು 26% kurta ಬಿಲ್‌ಗಳಲ್ಲಿ ಒಂದನ್ನು ಸೇರಿಸುತ್ತೀರಿ; Nagaraj G. ಅವರು 36% ರಲ್ಲಿ ಮಾಡುತ್ತಾರೆ. ಯಾವ jackets ಚೆನ್ನಾಗಿ ಹೊಂದಿಕೊಳ್ಳುತ್ತವೆ ಎಂದು ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1134.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1135",
@@ -1602,7 +1602,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Girish V. averages 2.0. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ average 1.8 items ಮಾಡುತ್ತೀರಿ; Girish V. ಅವರು average 2.0 ಮಾಡುತ್ತಾರೆ. ಬಿಲ್ ಮಾಡುವುದಕ್ಕೂ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1135.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1136",
@@ -1618,7 +1618,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Girish V. averages 2.0. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ average 1.8 items ಮಾಡುತ್ತೀರಿ; Girish V. ಅವರು average 2.0 ಮಾಡುತ್ತಾರೆ. ಬಿಲ್ ಮಾಡುವುದಕ್ಕೂ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1136.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1137",
@@ -1634,7 +1634,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 11% of kurta bills; Nagaraj G. does on 36%. Ask which jackets pair best.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು kurta set trial ಜೊತೆಗೂ matching jacket ಆಫರ್ ಮಾಡಿ. ನೀವು 11% kurta ಬಿಲ್‌ಗಳಿಗೆ ಒಂದನ್ನು ಸೇರಿಸುತ್ತೀರಿ; Nagaraj G. ಅವರು 36% ರಷ್ಟು ಮಾಡುತ್ತಾರೆ. ಯಾವ jackets ಚೆನ್ನಾಗಿ ಮ್ಯಾಚ್ ಆಗುತ್ತವೆ ಅಂತ ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1137.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1139",
@@ -1650,7 +1650,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 22% of kurta bills; Nagaraj G. does on 36%. Ask which jackets pair best.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು kurta set trial ಜೊತೆಗೂ matching jacket offer ಮಾಡಿ. ನೀವು 22% kurta ಬಿಲ್‌ಗಳಲ್ಲಿ ಒಂದನ್ನು ಸೇರಿಸುತ್ತಿದ್ದೀರಿ; Nagaraj G. ಅವರು 36% ರಲ್ಲಿ ಸೇರಿಸುತ್ತಾರೆ. ಯಾವ jackets ಚೆನ್ನಾಗಿ ಮ್ಯಾಚ್ ಆಗುತ್ತವೆ ಅಂತ ಕೇಳಿ ಅವರು ಏನು ಮಾಡುತ್ತಾರೆ ಅಂತ ನೋಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1139.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1140",
@@ -1666,7 +1666,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 24% of kurta bills; Nagaraj G. does on 36%. Ask which jackets pair best.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು kurta set trial ಜೊತೆಗೆ matching jacket offer ಮಾಡಿ. ನೀವು 24% kurta ಬಿಲ್‌ಗಳಲ್ಲಿ ಒಂದನ್ನು ಸೇರಿಸುತ್ತೀರಿ; Nagaraj G. ಅವರು 36% ರಲ್ಲಿ ಮಾಡುತ್ತಾರೆ. ಯಾವ jacket ಗಳು ಒಟ್ಟಿಗೆ ಚೆನ್ನಾಗಿ ಹೊಂದಿಕೊಳ್ಳುತ್ತವೆ ಎಂದು ಅವರನ್ನು ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1140.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1141",
@@ -1682,7 +1682,7 @@
    "text_en": "This weekend: work Sat 7 Nov and Sun 8 Nov, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
    "lang": "kn-IN",
    "text_local": "ಈ ವೀಕೆಂಡ್: Sat 7 Nov ಮತ್ತು Sun 8 Nov ಕೆಲಸ ಮಾಡಿ, ಮತ್ತು ವಾರದ ರಜೆಯನ್ನು ವಾರದ ಮಧ್ಯದ ಯಾವುದಾದರೂ ದಿನ ತೆಗೆದುಕೊಳ್ಳಿ. ಕಳೆದ 8 ಬ್ಯುಸಿ ದಿನಗಳಲ್ಲಿ ನೀವು 8 ದಿನ ರಜೆ ಹಾಕಿದ್ದೀರಿ ಮತ್ತು floor ನಲ್ಲಿ staff shortage ಇತ್ತು. Santosh V. ವೀಕೆಂಡ್ಸ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಾರೆ; ಅವರು ವಾರದ ಪ್ಲಾನ್ ಹೇಗೆ ಮಾಡುತ್ತಾರೆ ಅಂತ ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1141.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1142",
@@ -1698,7 +1698,7 @@
    "text_en": "This weekend: work Sat 7 Nov and Sun 8 Nov, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
    "lang": "kn-IN",
    "text_local": "ಈ ವೀಕೆಂಡ್: Sat 7 Nov ಮತ್ತು Sun 8 Nov ಕೆಲಸ ಮಾಡಿ, ಮತ್ತು ವಾರದ ರಜೆಯನ್ನು ವಾರದ ಮಧ್ಯದ ಯಾವುದಾದರೂ ದಿನ ತೆಗೆದುಕೊಳ್ಳಿ. ಕಳೆದ 8 ಬ್ಯುಸಿ ದಿನಗಳಲ್ಲಿ ನೀವು 8 ದಿನ ರಜೆ ಹಾಕಿದ್ದೀರಿ ಮತ್ತು floor ನಲ್ಲಿ staff shortage ಇತ್ತು. Santosh V. ವೀಕೆಂಡ್ಸ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಾರೆ; ಅವರು ವಾರದ ಪ್ಲಾನ್ ಹೇಗೆ ಮಾಡುತ್ತಾರೆ ಅಂತ ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1142.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1143",
@@ -1714,7 +1714,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 23% of kurta bills; Pradeep A. does on 31%. Ask which jackets pair best.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಬ್ಬರೂ kurta set trial ಮಾಡುವಾಗ ಅದಕ್ಕೆ ಮ್ಯಾಚ್ ಆಗುವ jacket ಆಫರ್ ಮಾಡಿ. ನೀವು 23% kurta ಬಿಲ್‌ಗಳಿಗೆ ಒಂದು jacket ಸೇರಿಸುತ್ತಿದ್ದೀರಿ; Pradeep A. ಅವರು 31% ರಷ್ಟು ಮಾಡುತ್ತಿದ್ದಾರೆ. ಯಾವ jacket ಗಳು ಚೆನ್ನಾಗಿ ಮ್ಯಾಚ್ ಆಗುತ್ತವೆ ಅಂತ ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1143.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1144",
@@ -1730,7 +1730,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Santosh V. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಇನ್ನೊಂದು ಪೀಸ್ ಸೇರಿಸಿ, ಅಂದ್ರೆ stole, mala ಅಥವಾ mojari ತರಹ. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ ಸರಾಸರಿ 1.9 items ಮಾಡ್ತೀರಾ; Santosh V. ಅವರು ಸರಾಸರಿ 2.1 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋ ಮುಂಚೆನೇ ಈ add-on ಆಫರ್ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1144.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1145",
@@ -1746,7 +1746,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Santosh V. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra ಪೀಸ್ ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು ಬಿಲ್ ಒಂದಕ್ಕೆ average 1.8 items ಮಾಡುತ್ತೀರಿ; Santosh V. ಅವರು average 2.1 ಮಾಡುತ್ತಾರೆ. ಬಿಲ್ ಮಾಡುವ ಮುಂಚೆನೇ ಈ add-on ಆಫರ್ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1145.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1149",
@@ -1762,7 +1762,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Santosh V. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಇನ್ನೊಂದು ಪೀಸ್ ಸೇರಿಸಿ, ಅಂದ್ರೆ stole, mala ಅಥವಾ mojari ತರಹ. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ ಸರಾಸರಿ 1.9 items ಮಾಡ್ತೀರಾ; Santosh V. ಅವರು ಸರಾಸರಿ 2.1 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋ ಮುಂಚೆನೇ ಈ add-on ಆಫರ್ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1149.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1150",
@@ -1778,7 +1778,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Santosh V. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra ಪೀಸ್ ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು ಬಿಲ್ ಒಂದಕ್ಕೆ average 1.8 items ಮಾಡುತ್ತೀರಿ; Santosh V. ಅವರು average 2.1 ಮಾಡುತ್ತಾರೆ. ಬಿಲ್ ಮಾಡುವ ಮುಂಚೆನೇ ಈ add-on ಆಫರ್ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1150.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1151",
@@ -1794,7 +1794,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Santosh V. averages 2.1. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra ಪೀಸ್ ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು ಬಿಲ್ ಒಂದಕ್ಕೆ average 1.8 items ಮಾಡುತ್ತೀರಿ; Santosh V. ಅವರು average 2.1 ಮಾಡುತ್ತಾರೆ. ಬಿಲ್ ಮಾಡುವ ಮುಂಚೆನೇ ಈ add-on ಆಫರ್ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1151.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1153",
@@ -1810,7 +1810,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 2.0 items a bill; Sunil G. averages 2.2. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಅಂದ್ರೆ stole, mala ಅಥವಾ mojari ತರ. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ ಸರಾಸರಿ 2.0 items ಮಾಡ್ತೀರಾ; Sunil G. ಸರಾಸರಿ 2.2 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋಕಿಂತ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1153.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1154",
@@ -1826,7 +1826,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Sunil G. averages 2.2. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಅಂದ್ರೆ stole, mala ಅಥವಾ mojari ತರಹ. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ average 1.9 items ಮಾಡ್ತೀರಾ; Sunil G. average 2.2 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1154.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1156",
@@ -1842,7 +1842,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Sunil G. averages 2.2. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಅಂದ್ರೆ stole, mala ಅಥವಾ mojari ತರಹ. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ average 1.9 items ಮಾಡ್ತೀರಾ; Sunil G. average 2.2 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1156.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1157",
@@ -1858,7 +1858,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.9 items a bill; Sunil G. averages 2.2. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಅಂದ್ರೆ stole, mala ಅಥವಾ mojari ತರಹ. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ average 1.9 items ಮಾಡ್ತೀರಾ; Sunil G. average 2.2 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1157.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1159",
@@ -1874,7 +1874,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Sunil G. averages 2.2. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೆ ಒಂದು extra piece ಸೇರಿಸಿ, ಅಂದ್ರೆ ಒಂದು stole, mala ಅಥವಾ mojari. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ average 1.7 items ಮಾಡುತ್ತೀರಿ; Sunil G. average 2.2 ಮಾಡುತ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋದಕ್ಕಿಂತ ಮುಂಚೆ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1159.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1160",
@@ -1890,7 +1890,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.6 items a bill; Sunil G. averages 2.2. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು bill-ಗೂ ಒಂದು stole, mala ಅಥವಾ mojari ತರಹ ಇನ್ನೊಂದು piece ಸೇರಿಸಿ. ನೀವು bill-ಗೆ ಸರಾಸರಿ 1.6 items ಮಾಡ್ತೀರಾ; Sunil G. ಸರಾಸರಿ 2.2 ಮಾಡ್ತಾರೆ. Billing ಮಾಡೋ ಮುಂಚೆ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1160.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1161",
@@ -1906,7 +1906,7 @@
    "text_en": "You average 2.2 items a bill, among the best in BLR-04. Today: let Ganesh P. shadow you on two trials and show how you add the second piece.",
    "lang": "kn-IN",
    "text_local": "BLR-04 ನಲ್ಲಿ ನಿಮ್ಮ ಬಿಲ್ ಸರಾಸರಿ 2.2 items ಇದೆ, ಇದು ತುಂಬಾ ಚೆನ್ನಾಗಿದೆ. ಇಂದು: Ganesh P. ಅವರು ನಿಮ್ಮ ಜೊತೆ ಎರಡು trials ನಲ್ಲಿ ಬಂದು, ನೀವು ಎರಡನೇ piece ಅನ್ನು ಹೇಗೆ ಸೇರಿಸುತ್ತೀರಿ ಅಂತ ತೋರಿಸಲಿ.",
-   "audio": "2026-10-31/audio/card_SP1161.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1162",
@@ -1922,7 +1922,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.8 items a bill; Sunil G. averages 2.2. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೂ ಒಂದು extra piece ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ 1.8 items average ಮಾಡ್ತೀರಾ; ಆದರೆ Sunil G. ಅವರು 2.2 average ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋಕೆ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1162.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1166",
@@ -1938,7 +1938,7 @@
    "text_en": "Today: offer a matching jacket with every kurta set trial. You add one on 14% of kurta bills; Darshan G. does on 21%. Ask which jackets pair best.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು kurta set trial ಜೊತೆಗೂ ಒಂದು matching jacket offer ಮಾಡಿ. ನೀವು 14% kurta bills ಮೇಲೆ ಒಂದನ್ನು add ಮಾಡುತ್ತೀರಿ; Darshan G. ಅವರು 21% ಮೇಲೆ ಮಾಡುತ್ತಾರೆ. ಯಾವ jackets ಚೆನ್ನಾಗಿ match ಆಗುತ್ತದೆ ಅಂತ ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1166.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1167",
@@ -1954,7 +1954,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Anand B. averages 1.8. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್-ಗೆ ಒಂದು extra piece ಸೇರಿಸಿ, ಅಂದ್ರೆ ಒಂದು stole, mala ಅಥವಾ mojari ತರಹ. ನೀವು ಒಂದು ಬಿಲ್-ಗೆ average 1.7 items ಮಾಡ್ತೀರಾ; Anand B. ಅವರು 1.8 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋ ಮುಂಚೆನೇ ಈ add-on offer ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1167.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1169",
@@ -1970,7 +1970,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.5 items a bill; Anand B. averages 1.8. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ನಲ್ಲೂ ಇನ್ನೊಂದು ಪೀಸ್‌ ಸೇರಿಸಿ, ಉದಾಹರಣೆಗೆ stole, mala ಅಥವಾ mojari. ನೀವು ಪ್ರತಿ ಬಿಲ್‌ಗೆ ಸರಾಸರಿ 1.5 ಐಟಂ ಮಾಡ್ತೀರಾ; Anand B. ಸರಾಸರಿ 1.8 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋ ಮುಂಚೆನೇ ಈ add-on ಆಫರ್ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1169.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1172",
@@ -1986,7 +1986,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.3 items a bill; Madhu G. averages 1.9. Offer the add-on before billing.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಂದು ಬಿಲ್‌ಗೆ ಒಂದು extra ಪೀಸ್ ಸೇರಿಸಿ, ಅಂದ್ರೆ stole, mala ಅಥವಾ mojari ತರಹ. ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ ಸರಾಸರಿ 1.3 items ಮಾಡ್ತೀರಾ; Madhu G. ಅವರು ಸರಾಸರಿ 1.9 ಮಾಡ್ತಾರೆ. ಬಿಲ್ ಮಾಡೋಕಿಂತ ಮುಂಚೆನೇ ಈ add-on ಆಫರ್ ಮಾಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1172.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1173",
@@ -2002,7 +2002,7 @@
    "text_en": "Today: show two Indo-Western looks to every wedding customer. Indo-Western is on 2.4% of your bills and 6.2% across Mysuru. Madhu G. sells it most here; ask for their best look.",
    "lang": "kn-IN",
    "text_local": "ಇವತ್ತು: ಪ್ರತಿಯೊಬ್ಬ wedding customer ಗೆ 2 Indo-Western looks ತೋರಿಸಿ. Indo-Western ನಿಮ್ಮ ಬಿಲ್‌ಗಳಲ್ಲಿ 2.4% ಇದೆ ಮತ್ತು ಮೈಸೂರಿನಲ್ಲಿ 6.2% ಇದೆ. ಇಲ್ಲಿ Madhu G. ಅವರು ಇದನ್ನು ಅತಿ ಹೆಚ್ಚು ಮಾರಾಟ ಮಾಡುತ್ತಾರೆ; ಅವರ ಅತ್ಯುತ್ತಮ look ಬಗ್ಗೆ ಕೇಳಿ.",
-   "audio": "2026-10-31/audio/card_SP1173.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1174",
@@ -2018,7 +2018,7 @@
    "text_en": "You average 1.9 items a bill, among the best in MYS-02. Today: let Mohan Y. shadow you on two trials and show how you add the second piece.",
    "lang": "kn-IN",
    "text_local": "ನೀವು ಒಂದು ಬಿಲ್‌ಗೆ ಸರಾಸರಿ 1.9 items ಸೇಲ್ ಮಾಡ್ತೀರಾ, ಇದು MYS-02 ನಲ್ಲಿ ಅತ್ಯುತ್ತಮವಾದದ್ದು. ಇವತ್ತು: Mohan Y. ಅವರು ನಿಮ್ಮ ಜೊತೆ ಎರಡು trials ನಲ್ಲಿ ಇರ್ತಾರೆ, ನೀವು ಎರಡನೇ piece ಅನ್ನು ಹೇಗೆ add ಮಾಡ್ತೀರಾ ಅಂತ ತೋರಿಸಿಕೊಡಿ.",
-   "audio": "2026-10-31/audio/card_SP1174.mp3"
+   "audio": null
   },
   {
    "salesperson_id": "SP1175",
@@ -2034,7 +2034,7 @@
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.7 items a bill; Ajay S. averages 2.0. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": "आज हर बिल में एक और पीस जोड़ें, जैसे कि एक stole, mala या mojari। आप लोग एक बिल में औसतन 1.7 items लेते हैं; Ajay S. औसतन 2.0 लेते हैं। बिलिंग से पहले ही यह add-on ऑफर करें।",
-   "audio": "2026-10-31/audio/card_SP1175.mp3"
+   "audio": null
   }
  ]
 }

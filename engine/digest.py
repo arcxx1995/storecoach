@@ -6,13 +6,14 @@ from engine.followup import check
 from engine.text import LANG, day, inr
 
 COOLDOWN_DAYS = 14
+MONTH = 30.4 / 28  # engine ₹ are per 4 weeks; people see per month
 MIN_RUPEES = 5000  # per 4 weeks; smaller gaps still coach the salesperson via their card, not the AM
 
 
 def issue_text(i: dict) -> str:
     a = i["action"]
     return (f"{i['title']}. Cause: {i['cause']} Action for {a['who']}: {a['what']}, {a['when']}. "
-            f"At stake: {inr(i['rupees'])} per 4 weeks.")
+            f"At stake: {inr(i['rupees'] * MONTH)} per month.")
 
 
 def build_digests(ctx: Ctx, issues: list, data_issues: list, history: dict) -> tuple[dict, list]:
@@ -57,7 +58,7 @@ def briefing_text(dg: dict) -> str:
         parts.append(f"{len(dg['new_today'])} new {'issue' if len(dg['new_today']) == 1 else 'issues'} today.")
         for n, i in enumerate(dg["new_today"], 1):
             parts.append(f"{n}. {i['title']}. {i['action']['what']}, {i['action']['when']}. "
-                         f"{inr(i['rupees'])} at stake.")
+                         f"{inr(i['rupees'] * MONTH)} at stake.")
     else:
         parts.append("No new issues today.")
     moved = [f for f in dg["followups"] if f["status"] != "too_early"]

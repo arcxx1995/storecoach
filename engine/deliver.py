@@ -4,6 +4,7 @@ Env: TELEGRAM_BOT_TOKEN, TELEGRAM_SECRET (webhook auth + personal links), option
 "Open dashboard" button), DELIVERY_DRY_RUN=1 (print instead of send), TELEGRAM_API_URL (tests).
 A bot cannot message first: each manager presses Start on their personal link (scripts/telegram_setup.py --links); the webhook
 in app/api/telegram/route.ts then saves their chat_id as subscribers/<am>.json.
+Salespeople get their card the same way (deliver_cards, <date>/delivered_cards.json).
 Status per manager goes to <date>/delivered.json; managers already "ok" are skipped, so reruns never double-send.
 """
 import hashlib
@@ -15,6 +16,7 @@ import time
 import urllib.error
 import urllib.request
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 from engine import sarvam, store  # noqa: F401  (sarvam import loads .env)
@@ -32,11 +34,10 @@ def link_code(am_id: str) -> str:
 
 def recipients(am_ids=()) -> dict:
     """Managers who pressed Start on their link (subscribers/<am>.json), overridden by env DELIVERY_RECIPIENTS."""
-    out = {}
-    for am in am_ids:
-        sub = store.read_json(f"subscribers/{am}.json")
-        if sub and sub.get("chat_id"):
-            out[am] = {"chat_id": sub["chat_id"]}
+    am_ids = list(am_ids)
+    with ThreadPoolExecutor(8) as ex:  # ~130 salespeople: one small file read each
+        subs = list(ex.map(lambda a: store.read_json(f"subscribers/{a}.json"), am_ids))
+    out = {a: {"chat_id": s["chat_id"]} for a, s in zip(am_ids, subs) if s and s.get("chat_id")}
     return out | json.loads(os.environ.get("DELIVERY_RECIPIENTS") or "{}")
 
 
@@ -58,7 +59,7 @@ def format_message(dg: dict, date: str, app_url: str | None = None) -> str:
         out.append(("\n" if local else "") + e(f"All clear for {dg['city']}: no new issues today."))
     for n, i in enumerate(new[:MAX_ISSUES], 1):
         a = i["action"]
-        out.append(f"\n<b>{n}. {e(i['title'])}</b>\n{_inr(i['rupees'])} at stake per 4 weeks\n"
+        out.append(f"\n<b>{n}. {e(i['title'])}</b>\n{_inr(i['rupees'] * 30.4 / 28)} at stake per month\n"
                    f"Who: {e(a['who'])}\nWhat: {e(a['what'])}\nWhen: {e(a['when'])}")
     if len(new) > MAX_ISSUES:
         out.append(f"\n+{len(new) - MAX_ISSUES} more in the dashboard.")
@@ -152,4 +153,45 @@ def deliver(date: str, resend: bool = False) -> dict:
             res["failed"][am_id] = str(e)
     if not dry:
         store.write_json(f"{date}/delivered.json", done)
+    return res
+
+
+def format_card(c: dict) -> str:
+    e = html.escape
+    out = [f"<b>Good morning {e(c['name'].split()[0])}</b>", f"<b>{e(c['behaviour'])}</b>"]
+    if c.get("rupees"):
+        out.append(f"{_inr(c['rupees'] * 30.4 / 28)} at stake per month")  # same per-month basis as the AM digest
+    out.append(e(c.get("text_local") or c["text_en"]))
+    if c.get("text_local"):  # local language first, English below so a manager reading over their shoulder can follow
+        out.append("\n" + e(c["text_en"]))
+    return "\n".join(out)
+
+
+def deliver_cards(date: str, resend: bool = False) -> dict:
+    """Send each salesperson their card of `date` (one short text). Same status file idea as deliver(): <date>/delivered_cards.json."""
+    cards = (store.read_json(f"{date}/cards.json") or {}).get("cards", [])
+    done = store.read_json(f"{date}/delivered_cards.json") or {}
+    dry = bool(os.environ.get("DELIVERY_DRY_RUN"))
+    to = recipients([c["salesperson_id"] for c in cards])
+    res = {"ok": [], "failed": {}, "skipped": []}
+    for c in cards:
+        sp = c["salesperson_id"]
+        chat = (to.get(sp) or {}).get("chat_id")
+        if not chat or (not resend and done.get(sp, {}).get("status") == "ok"):
+            res["skipped"].append(sp)
+            continue
+        now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        try:
+            if dry:
+                print(f"--- {sp} -> {chat}\n{format_card(c)}")
+            else:
+                send_text(chat, format_card(c))
+                time.sleep(0.05)  # stay far below Telegram's ~30 msgs/s
+            done[sp] = {"status": "ok", "at": now, "dry": dry}
+            res["ok"].append(sp)
+        except Exception as ex:  # one failing never blocks the rest
+            done[sp] = {"status": "failed", "at": now, "error": str(ex)}
+            res["failed"][sp] = str(ex)
+    if not dry:
+        store.write_json(f"{date}/delivered_cards.json", done)
     return res

@@ -12,9 +12,9 @@
   "sarvam": true,
   "translated": 6,
   "fallback_en": 0,
-  "audio": 6,
+  "audio": 0,
   "health": {
-   "seconds": 8.9,
+   "seconds": 3.8,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -48,7 +48,7 @@
    "notes": [],
    "briefing_en": "Good morning Rakesh. Store Coach for Mon 12 Oct. No new issues today.",
    "briefing_local": "गुड मॉर्निंग राकेश। मंडे 12 Oct के लिए स्टोर कोच। आज कोई नई समस्या नहीं है।",
-   "briefing_audio": "2026-10-11/audio/briefing_AM-01.mp3"
+   "briefing_audio": null
   },
   "AM-02": {
    "am_id": "AM-02",
@@ -89,7 +89,7 @@
    "notes": [],
    "briefing_en": "Good morning Alok. Store Coach for Mon 12 Oct. No new issues today. Role model: Kunal N. at KNP-03; 7% of their customers come back.",
    "briefing_local": "गुड मॉर्निंग आलोक। Mon 12 Oct के लिए Store Coach। आज कोई नया issue नहीं है। रोल मॉडल: KNP-03 में Kunal N.; उनके 7% कस्टमर्स वापस आते हैं।",
-   "briefing_audio": "2026-10-11/audio/briefing_AM-02.mp3"
+   "briefing_audio": null
   },
   "AM-03": {
    "am_id": "AM-03",
@@ -143,7 +143,7 @@
    "notes": [],
    "briefing_en": "Good morning Nitin. Store Coach for Mon 12 Oct. No new issues today.",
    "briefing_local": "गुड मॉर्निंग नितिन जी। 12 Oct सोमवार के लिए Store Coach। आज कोई नया issue नहीं है।",
-   "briefing_audio": "2026-10-11/audio/briefing_AM-03.mp3"
+   "briefing_audio": null
   },
   "AM-04": {
    "am_id": "AM-04",
@@ -171,7 +171,7 @@
    "notes": [],
    "briefing_en": "Good morning Pankaj. Store Coach for Mon 12 Oct. No new issues today. Role model: Ankit P. at MZF-02; 8% of their customers come back.",
    "briefing_local": "गुड मॉर्निंग पंकज। Monday 12 Oct के लिए Store Coach। आज कोई नया issue नहीं है। रोल मॉडल: MZF-02 में Ankit P.; उनके 8% customers वापस आते हैं।",
-   "briefing_audio": "2026-10-11/audio/briefing_AM-04.mp3"
+   "briefing_audio": null
   },
   "AM-05": {
    "am_id": "AM-05",
@@ -236,7 +236,7 @@
    "notes": [],
    "briefing_en": "Good morning Harish. Store Coach for Mon 12 Oct. No new issues today. Role model: Karthik J. at BLR-01; 13% of their customers come back.",
    "briefing_local": "ಶುಭೋದಯ ಹರೀಶ್ ಅವರೇ. Mon 12 Oct ಗೆ Store Coach. ಇಂದು ಯಾವುದೇ ಹೊಸ ಸಮಸ್ಯೆಗಳಿಲ್ಲ. Role model: BLR-01 ನಲ್ಲಿರುವ ಕಾರ್ತಿಕ್ J.; ಅವರಲ್ಲಿ 13% ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಾರೆ.",
-   "briefing_audio": "2026-10-11/audio/briefing_AM-05.mp3"
+   "briefing_audio": null
   },
   "AM-06": {
    "am_id": "AM-06",
@@ -261,7 +261,7 @@
       "when": "today"
      },
      "rupees": 45487,
-     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill",
+     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill, then × 30.4/28 to show per month",
      "evidence": {
       "mix": 0.025735294117647058,
       "city_median": 0.06481481481481481,
@@ -281,8 +281,8 @@
       "better": "up",
       "window_days": 365
      },
-     "text_en": "Santosh B. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.6% of Santosh B.'s bills vs 6.5% for other Mysuru salespeople (272 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Santosh B.: Show two Indo-Western looks to every wedding customer; ask Mohan Y. for their best look first, today. At stake: ₹45k per 4 weeks.",
-     "text_local": "ಸಂತೋಷ್ ಬಿ. (MYS-02) ಅವರು ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಸೇಲ್ಸ್ ಮಾಡೋದು ತುಂಬಾ ಅಪರೂಪ. ಇದಕ್ಕೆ ಕಾರಣ: ಸಂತೋಷ್ ಬಿ. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಕೇವಲ 2.6% ಇದೆ, ಆದ್ರೆ ಮೈಸೂರಿನ ಇತರ ಸೇಲ್ಸ್‌ಪರ್ಸನ್‌ಗಳ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.5% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳ 272 ಬಿಲ್‌ಗಳು). ಮೈಸೂರಿನ ಗ್ರಾಹಕರು ಇದನ್ನ ಖರೀದಿಸುತ್ತಾರೆ; ಇದು ಒಬ್ಬರ ಗ್ಯಾಪ್ ಅಷ್ಟೇ. ಸಂತೋಷ್ ಬಿ. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಪ್ರತಿಯೊಂದು ಮದುವೆ ಕಸ್ಟಮರ್‌ಗೂ ಎರಡು ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಲುಕ್ಸ್ ತೋರಿಸಬೇಕು; ಇವತ್ತೇ ಮೋಹನ್ ವೈ. ಅವರ ಹತ್ತಿರ ಅವರ ಬೆಸ್ಟ್ ಲುಕ್ ಬಗ್ಗೆ ಮೊದಲು ಕೇಳಬೇಕು. ಇಲ್ಲಿ ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹45k."
+     "text_en": "Santosh B. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.6% of Santosh B.'s bills vs 6.5% for other Mysuru salespeople (272 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Santosh B.: Show two Indo-Western looks to every wedding customer; ask Mohan Y. for their best look first, today. At stake: ₹49k per month.",
+     "text_local": "ಸಂತೋಷ್ ಬಿ. (MYS-02) ಅವರು ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಸೇಲ್ಸ್ ಮಾಡೋದು ತುಂಬಾ ಅಪರೂಪ. ಕಾರಣ: ಸಂತೋಷ್ ಬಿ. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಸೇಲ್ಸ್ 2.6% ಇದೆ, ಆದ್ರೆ ಮೈಸೂರಿನ ಬೇರೆ ಸೇಲ್ಸ್‌ಪರ್ಸನ್‌ಗಳ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.5% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳ 272 ಬಿಲ್‌ಗಳು). ಮೈಸೂರಿನ ಕಸ್ಟಮರ್ಸ್ ಇದನ್ನ ಖರೀದಿ ಮಾಡ್ತಾರೆ; ಇದು ಒಬ್ಬರ ಪರ್ಫಾರ್ಮೆನ್ಸ್ ಗ್ಯಾಪ್ ಅಷ್ಟೇ. ಸಂತೋಷ್ ಬಿ. ಅವರಿಗೆ ಆಕ್ಷನ್: ಪ್ರತಿಯೊಂದು ವೆಡ್ಡಿಂಗ್ ಕಸ್ಟಮರ್‌ಗೂ ಎರಡು ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಲುಕ್ಸ್ ತೋರಿಸಿ; ಇವತ್ತೇ ಮೋಹನ್ ವೈ. ಅವರ ಹತ್ತಿರ ಅವರ ಬೆಸ್ಟ್ ಲುಕ್ ಯಾವುದು ಅಂತ ಕೇಳಿ ತಿಳಿದುಕೊಳ್ಳಿ. ರಿಸ್ಕ್‌ನಲ್ಲಿ ಇರುವುದು: ತಿಂಗಳಿಗೆ ₹49k."
     }
    ],
    "earlier_this_week": [
@@ -302,7 +302,7 @@
       "when": "today"
      },
      "rupees": 47539,
-     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill",
+     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill, then × 30.4/28 to show per month",
      "evidence": {
       "mix": 0.022099447513812154,
       "city_median": 0.06289308176100629,
@@ -322,8 +322,8 @@
       "better": "up",
       "window_days": 365
      },
-     "text_en": "Mohan Y. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.2% of Mohan Y.'s bills vs 6.3% for other Mysuru salespeople (181 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Mohan Y.: Show two Indo-Western looks to every wedding customer; ask Santosh B. for their best look first, today. At stake: ₹48k per 4 weeks.",
-     "text_local": "ಮೋಹನ್ Y. (MYS-02) ಅವರು Indo-Western ಅನ್ನು ತುಂಬಾ ಅಪರೂಪವಾಗಿ ಸೇಲ್ ಮಾಡುತ್ತಾರೆ. ಕಾರಣ: ಮೋಹನ್ Y. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ Indo-Western ಕೇವಲ 2.2% ಇದೆ, ಆದರೆ ಮೈಸೂರಿನ ಇತರ ಸೇಲ್ಸ್‌ಪೀಪಲ್ ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.3% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳ 181 ಬಿಲ್‌ಗಳು). ಮೈಸೂರಿನ ಕಸ್ಟಮರ್ಸ್ ಇದನ್ನು ಖರೀದಿಸುತ್ತಾರೆ; ಇದು ಒಬ್ಬ ವ್ಯಕ್ತಿಯ ಗ್ಯಾಪ್ ಅಷ್ಟೇ. ಮೋಹನ್ Y. ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಆಕ್ಷನ್: ಪ್ರತಿ ವೆಡ್ಡಿಂಗ್ ಕಸ್ಟಮರ್‌ಗೆ ಎರಡು Indo-Western ಲುಕ್ಸ್ ತೋರಿಸಿ; ಇಂದು ಮೊದಲು ಸಂತೋಷ್ B. ಅವರ ಬಳಿ ಬೆಸ್ಟ್ ಲುಕ್ ಯಾವುದು ಅಂತ ಕೇಳಿ. ಇಲ್ಲಿ ರಿಸ್ಕ್ ಇರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹48k."
+     "text_en": "Mohan Y. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.2% of Mohan Y.'s bills vs 6.3% for other Mysuru salespeople (181 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Mohan Y.: Show two Indo-Western looks to every wedding customer; ask Santosh B. for their best look first, today. At stake: ₹52k per month.",
+     "text_local": "ಮೋಹನ್ Y. (MYS-02) ಅವರು Indo-Western ಅನ್ನು ತುಂಬಾ ಕಡಿಮೆ ಮಾರಾಟ ಮಾಡುತ್ತಾರೆ. ಕಾರಣ: ಮೋಹನ್ Y. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ Indo-Western ಕೇವಲ 2.2% ಇದೆ, ಆದರೆ ಇತರ ಮೈಸೂರು ಸೇಲ್ಸ್‌ಪರ್ಸನ್‌ಗಳ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.3% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳಲ್ಲಿ 181 ಬಿಲ್‌ಗಳು). ಮೈಸೂರು ಗ್ರಾಹಕರು ಇದನ್ನು ಖರೀದಿಸುತ್ತಾರೆ; ಇದು ಒಬ್ಬ ವ್ಯಕ್ತಿಯ ಗ್ಯಾಪ್ ಆಗಿದೆ. ಮೋಹನ್ Y. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಪ್ರತಿಯೊಬ್ಬ ಮದುವೆ ಗ್ರಾಹಕರಿಗೆ ಎರಡು Indo-Western ಲುಕ್‌ಗಳನ್ನು ತೋರಿಸಿ; ಇಂದು ಮೊದಲು Santosh B. ಅವರ ಬಳಿ ಅತ್ಯುತ್ತಮ ಲುಕ್ ಬಗ್ಗೆ ಕೇಳಿ. ಅಪಾಯದಲ್ಲಿರುವುದು: ತಿಂಗಳಿಗೆ ₹52k."
     }
    ],
    "held_back": 0,
@@ -341,9 +341,9 @@
     }
    ],
    "notes": [],
-   "briefing_en": "Good morning Mahesh. Store Coach for Mon 12 Oct. 1 new issue today. 1. Santosh B. (MYS-02) rarely sells Indo-Western. Show two Indo-Western looks to every wedding customer; ask Mohan Y. for their best look first, today. ₹45k at stake. Role model: Santosh B. at MYS-02; 7% of their customers come back.",
-   "briefing_local": "ಶುಭೋದಯ Mahesh. Mon 12 Oct ಗೆ Store Coach. ಇಂದು 1 ಹೊಸ ವಿಷಯ ಇದೆ. 1. Santosh B. (MYS-02) ಅವರು Indo-Western ಅನ್ನು ತುಂಬಾ ಅಪರೂಪಕ್ಕೆ ಮಾರುತ್ತಾರೆ. ಮದುವೆಗೆ ಬರುವ ಪ್ರತಿಯೊಬ್ಬ ಗ್ರಾಹಕರಿಗೂ ಎರಡು Indo-Western ಲುಕ್ಸ್ ತೋರಿಸಿ; ಇಂದು ಮೊದಲು Mohan Y. ಅವರ ಹತ್ತಿರ ಅತ್ಯುತ್ತಮ ಲುಕ್ ಬಗ್ಗೆ ಕೇಳಿ. ₹45k ಪಣಕ್ಕಿದೆ. Role model: MYS-02 ನಲ್ಲಿರುವ Santosh B.; ಅವರ 7% ಗ್ರಾಹಕರು ಮತ್ತೆ ವಾಪಸ್ ಬರುತ್ತಾರೆ.",
-   "briefing_audio": "2026-10-11/audio/briefing_AM-06.mp3"
+   "briefing_en": "Good morning Mahesh. Store Coach for Mon 12 Oct. 1 new issue today. 1. Santosh B. (MYS-02) rarely sells Indo-Western. Show two Indo-Western looks to every wedding customer; ask Mohan Y. for their best look first, today. ₹49k at stake. Role model: Santosh B. at MYS-02; 7% of their customers come back.",
+   "briefing_local": "ಶುಭೋದಯ Mahesh ಅವರೆ. Mon 12 Oct ಗೆ Store Coach. ಇಂದು 1 ಹೊಸ issue ಇದೆ. 1. Santosh B. (MYS-02) ಅವರು Indo-Western ಸೇಲ್ಸ್ ತುಂಬಾ ಕಡಿಮೆ ಮಾಡುತ್ತಾರೆ. ಮದುವೆಗೆ ಬರುವ ಪ್ರತಿಯೊಬ್ಬ ಕಸ್ಟಮರ್ ಗೂ ಎರಡು Indo-Western ಲುಕ್ಸ್ ತೋರಿಸಿ; ಇಂದು ಮೊದಲು ಅವರ ಬೆಸ್ಟ್ ಲುಕ್ ಬಗ್ಗೆ Mohan Y. ಅವರ ಹತ್ತಿರ ಕೇಳಿ. ಇಲ್ಲಿ ₹49k ರಿಸ್ಕ್ ಇದೆ. Role model: MYS-02 ನಲ್ಲಿರುವ Santosh B.; ಅವರ 7% ಕಸ್ಟಮರ್ಸ್ ಮತ್ತೆ ವಾಪಸ್ ಬರುತ್ತಾರೆ.",
+   "briefing_audio": null
   }
  }
 }

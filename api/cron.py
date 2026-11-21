@@ -97,11 +97,12 @@ class handler(BaseHTTPRequestHandler):
                 budget = max(0, LIMIT - SAFETY - (time.time() - t0))
                 ran.append(run(d, use_sarvam=True, voice_cards=last, budget=budget))
             out = {"status": "ran", "days": ran, "data_ends": end, "synced": synced}
-            try:  # the data is already saved; a delivery problem must not turn the run into a failure
-                out["delivered"] = deliver.deliver(ran[-1], resend=bool(q.get("resend")))
-            except Exception as e:
-                print("delivery failed:", repr(e), file=sys.stderr)
-                out["delivery_error"] = repr(e)
+            for key, fn in (("delivered", deliver.deliver), ("delivered_cards", deliver.deliver_cards)):
+                try:  # the data is already saved; a delivery problem must not fail the run or skip the other send
+                    out[key] = fn(ran[-1], resend=bool(q.get("resend")))
+                except Exception as e:
+                    print(f"{key} failed:", repr(e), file=sys.stderr)
+                    out[f"{key}_error"] = repr(e)
             out["seconds"] = round(time.time() - t0, 1)
             return self._send(200, out)
         except Exception as e:  # surfaces in Vercel logs and in the response

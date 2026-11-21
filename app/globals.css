@@ -307,3 +307,28 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 .sk i { height: 120px; border-radius: var(--radius); background: linear-gradient(90deg, var(--flat-soft), var(--panel), var(--flat-soft)); background-size: 200% 100%; animation: sk 1.4s linear infinite; }
 @keyframes sk { to { background-position: -200% 0; } }
 @media (prefers-reduced-motion: reduce) { .sk i { animation: none; } }
+
+/* sortable/filterable tables + meters */
+.filters { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 0 0 14px; }
+.filters input[type="search"] { font: inherit; font-size: 14px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: var(--ink); min-width: 180px; }
+.fgroup { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.fchip { font: inherit; font-size: 12px; font-weight: 500; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--muted); cursor: pointer; }
+.fchip:hover { border-color: var(--brand); color: var(--ink); }
+.fchip.on { background: var(--brand); border-color: var(--brand); color: var(--brand-ink); }
+.fclear { font: inherit; font-size: 12px; background: none; border: 0; color: var(--accent); cursor: pointer; text-decoration: underline; }
+.fcount { margin-left: auto; }
+table.sortable th button { font: inherit; font-weight: 600; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; white-space: nowrap; }
+table.sortable th[aria-sort="ascending"] button, table.sortable th[aria-sort="descending"] button { color: var(--ink); }
+table.sortable th.num { text-align: right; }
+.meter { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; font-size: 12px; font-weight: 600; }
+.meter .bars { display: inline-flex; gap: 2px; }
+.meter .bars i { width: 8px; height: 14px; border-radius: 2px; background: var(--line); }
+.meter .bars i.on.low { background: var(--ok); }
+.meter .bars i.on.med { background: var(--gold-fill); }
+.meter .bars i.on.high { background: var(--gold); }
+.meter .bars i.on.crit { background: var(--bad); }
+
+.navbtns { display: flex; gap: 8px; padding: 14px 0 0; }
+.navbtns button { font: inherit; font-size: 13px; color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.navbtns button:hover { color: var(--ink); background: var(--flat-soft); }
+@media (max-width: 860px) { .navbtns { padding-top: 56px; } }

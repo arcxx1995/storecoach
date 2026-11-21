@@ -47,7 +47,7 @@ dg = lambda name, new=(), fu=(), local=None, audio=None: {  # noqa: E731
 
 # formatting
 t = deliver.format_message(dg("Rakesh S", [issue]), "2026-10-31")
-assert "Bills &lt;down&gt; &amp; out" in t and "₹2.7 lakh" in t and t.startswith("<b>Good morning Rakesh")
+assert "Bills &lt;down&gt; &amp; out" in t and "₹3.0 lakh" in t and t.startswith("<b>Good morning Rakesh")
 assert "All clear" in deliver.format_message(dg("Rakesh S"), "2026-10-31")
 assert "All clear" in deliver.format_message(dg("A B", fu=[{"status": "too_early", "summary": "x"}]), "d")  # too-early is not news
 assert "All clear" not in deliver.format_message(dg("A B", fu=[{"status": "improved", "summary": "Better"}]), "d")

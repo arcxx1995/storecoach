@@ -151,13 +151,19 @@ export function Donut({ parts, total }: { parts: { label: string; value: number;
 }
 
 // KPI tile: label, big value, delta vs a week ago, sparkline.
+// bracket text is fixed: each daily run is computed over a trailing window ending on its own date
+const TIPS: [string, string][] = [
+  ["28 days", "Trailing 28 days ending on the selected end date. The date range changes the end date and the trend line, not the window."],
+  ["per month", "Estimated ₹ lost per month if the issue continues, as of the selected end date. Fixed window; the date range only moves the end date."],
+];
+
 export function Kpi({ label, value, delta, pts, vs, goodUp = true }: {
   label: string; value: string; delta?: number | null; pts: Pt[]; vs: string; goodUp?: boolean;
 }) {
   const good = delta == null ? true : goodUp ? delta >= 0 : delta <= 0;
   return (
     <div className="panel kpi" data-reveal>
-      <div className="small">{label}</div>
+      <div className="small" title={TIPS.find(([k]) => label.includes(k))?.[1]} style={{ cursor: "help" }}>{label}</div>
       <div className="stat">{value}</div>
       <div className="kpi-foot">
         {delta != null && pts.length > 1 && <span className={`delta ${good ? "ok" : "bad"}`}>{delta >= 0 ? "▲" : "▼"} {Math.abs(delta * 100).toFixed(1)}% <small>vs {vs}</small></span>}

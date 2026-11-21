@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { DatePicker } from "./datepicker";
 import Listen from "./listen";
-import { audioUrl, day, inr, type Followup, type Issue } from "@/lib/data";
+import { audioUrl, day, inr, perMonth, type Followup, type Issue } from "@/lib/data";
 
 // Empty bar (its bottom border is the line); the date picker sits just below it.
 export function Header({ from, to, dates, path = "/" }: { from: string; to: string; dates: string[]; path?: string }) {
@@ -28,7 +28,7 @@ export function IssueCard({ i, fb = false }: { i: Issue; fb?: boolean }) {
         <Fallback on={fb && !i.text_local} />
       </div>
       <h3>{i.title}</h3>
-      <div><span className="rupees">{inr(i.rupees)}</span> <span className="small">at stake per 4 weeks</span></div>
+      <div><span className="rupees">{inr(perMonth(i.rupees))}</span> <span className="small">at stake per month</span></div>
       <p className="small" style={{ margin: "8px 0 0" }}><b>Cause.</b> {i.cause}</p>
       <div className="action">
         <div><b>Who</b> {i.action.who}</div>

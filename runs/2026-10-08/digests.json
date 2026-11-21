@@ -12,9 +12,9 @@
   "sarvam": true,
   "translated": 6,
   "fallback_en": 0,
-  "audio": 6,
+  "audio": 0,
   "health": {
-   "seconds": 8.5,
+   "seconds": 2.6,
    "source": "csv",
    "sarvam_cut_off": false
   }
@@ -60,7 +60,7 @@
    "notes": [],
    "briefing_en": "Good morning Rakesh. Store Coach for Fri 9 Oct. No new issues today. Last week's alerts: LKO-02: top seller Imran C. has left: conversion got worse, 11.6% → 9.2% in the week since.",
    "briefing_local": "गुड मॉर्निंग राकेश। स्टोर कोच फ्राइडे 9 Oct के लिए। आज कोई नया इश्यू नहीं है। पिछले हफ्ते के अलर्ट्स: LKO-02 में टॉप सेलर इमरान C. चले गए हैं, जिससे कन्वर्जन और खराब हो गया है। पिछले हफ्ते यह 11.6% था, जो इस हफ्ते 9.2% हो गया।",
-   "briefing_audio": "2026-10-08/audio/briefing_AM-01.mp3"
+   "briefing_audio": null
   },
   "AM-02": {
    "am_id": "AM-02",
@@ -101,7 +101,7 @@
    "notes": [],
    "briefing_en": "Good morning Alok. Store Coach for Fri 9 Oct. No new issues today. Role model: Kunal N. at KNP-03; 7% of their customers come back.",
    "briefing_local": "गुड मॉर्निंग आलोक। फ्राइडे 9 ऑक्ट के लिए स्टोर कोच। आज कोई नया इश्यू नहीं है। रोल मॉडल: KNP-03 में कुणाल N.; उनके 7% कस्टमर्स वापस आते हैं।",
-   "briefing_audio": "2026-10-08/audio/briefing_AM-02.mp3"
+   "briefing_audio": null
   },
   "AM-03": {
    "am_id": "AM-03",
@@ -167,7 +167,7 @@
    "notes": [],
    "briefing_en": "Good morning Nitin. Store Coach for Fri 9 Oct. No new issues today. Last week's alerts: PAT-01: discounts well above the store norm: discount off MRP got worse, 8.2% → 9.6% in the week since.",
    "briefing_local": "गुड मॉर्निंग नितिन। फ्राइडे 9 ऑक्ट के लिए स्टोर कोच। आज कोई नया इश्यू नहीं है। पिछले हफ्ते के अलर्ट्स: PAT-01: डिस्काउंट स्टोर नॉर्म से काफी ऊपर है: MRP पर डिस्काउंट पहले से और खराब हुआ है, जो पिछले हफ्ते 8.2% था, वो अब 9.6% हो गया है।",
-   "briefing_audio": "2026-10-08/audio/briefing_AM-03.mp3"
+   "briefing_audio": null
   },
   "AM-04": {
    "am_id": "AM-04",
@@ -195,7 +195,7 @@
    "notes": [],
    "briefing_en": "Good morning Pankaj. Store Coach for Fri 9 Oct. No new issues today. Role model: Ankit P. at MZF-02; 8% of their customers come back.",
    "briefing_local": "गुड मॉर्निंग पंकज। 9 Oct को स्टोर कोच। आज कोई नया इश्यू नहीं है। रोल मॉडल: MZF-02 में Ankit P. हैं; उनके 8% कस्टमर्स वापस आते हैं।",
-   "briefing_audio": "2026-10-08/audio/briefing_AM-04.mp3"
+   "briefing_audio": null
   },
   "AM-05": {
    "am_id": "AM-05",
@@ -284,7 +284,7 @@
    "notes": [],
    "briefing_en": "Good morning Harish. Store Coach for Fri 9 Oct. No new issues today. Last week's alerts: Bengaluru: conversion down across the city: conversion has not moved, 13.1% → 11.9% in the week since. BLR-03: short-staffed on weekends and wedding days: busy-day conversion got worse, 7.7% → 4.7% in the week since. Role model: Karthik J. at BLR-01; 13% of their customers come back.",
    "briefing_local": "ಶುಭೋದಯ ಹರೀಶ್ ಅವರೇ. Fri 9 Oct ಗೆ Store Coach. ಇಂದು ಯಾವುದೇ ಹೊಸ ಸಮಸ್ಯೆಗಳಿಲ್ಲ. ಕಳೆದ ವಾರದ alerts: ಬೆಂಗಳೂರು: ನಗರದಾದ್ಯಂತ conversion ಕಡಿಮೆಯಾಗಿದೆ: ಕಳೆದ ವಾರದಲ್ಲಿ conversion ಬದಲಾಗಿಲ್ಲ, 13.1% → 11.9%. BLR-03: ವಾರಾಂತ್ಯಗಳಲ್ಲಿ ಮತ್ತು ಮದುವೆ ದಿನಗಳಲ್ಲಿ ಸಿಬ್ಬಂದಿ ಕೊರತೆ ಇದೆ: ಬ್ಯುಸಿ-ದಿನದ conversion ಇನ್ನೂ ಹದಗೆಟ್ಟಿದೆ, 7.7% → 4.7% ಕಳೆದ ವಾರದಲ್ಲಿ. Role model: BLR-01 ನಲ್ಲಿರುವ ಕಾರ್ತಿಕ್ J.; ಅವರ 13% ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಾರೆ.",
-   "briefing_audio": "2026-10-08/audio/briefing_AM-05.mp3"
+   "briefing_audio": null
   },
   "AM-06": {
    "am_id": "AM-06",
@@ -311,7 +311,7 @@
       "when": "today"
      },
      "rupees": 47539,
-     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill",
+     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill, then × 30.4/28 to show per month",
      "evidence": {
       "mix": 0.022099447513812154,
       "city_median": 0.06289308176100629,
@@ -331,8 +331,8 @@
       "better": "up",
       "window_days": 365
      },
-     "text_en": "Mohan Y. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.2% of Mohan Y.'s bills vs 6.3% for other Mysuru salespeople (181 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Mohan Y.: Show two Indo-Western looks to every wedding customer; ask Santosh B. for their best look first, today. At stake: ₹48k per 4 weeks.",
-     "text_local": "ಮೋಹನ್ Y. (MYS-02) ಅವರು Indo-Western ಅನ್ನು ತುಂಬಾ ಅಪರೂಪವಾಗಿ ಸೇಲ್ ಮಾಡುತ್ತಾರೆ. ಕಾರಣ: ಮೋಹನ್ Y. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ Indo-Western ಕೇವಲ 2.2% ಇದೆ, ಆದರೆ ಮೈಸೂರಿನ ಇತರ ಸೇಲ್ಸ್‌ಪೀಪಲ್ ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.3% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳ 181 ಬಿಲ್‌ಗಳು). ಮೈಸೂರಿನ ಕಸ್ಟಮರ್ಸ್ ಇದನ್ನು ಖರೀದಿಸುತ್ತಾರೆ; ಇದು ಒಬ್ಬ ವ್ಯಕ್ತಿಯ ಗ್ಯಾಪ್ ಅಷ್ಟೇ. ಮೋಹನ್ Y. ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಆಕ್ಷನ್: ಪ್ರತಿ ವೆಡ್ಡಿಂಗ್ ಕಸ್ಟಮರ್‌ಗೆ ಎರಡು Indo-Western ಲುಕ್ಸ್ ತೋರಿಸಿ; ಇಂದು ಮೊದಲು ಸಂತೋಷ್ B. ಅವರ ಬಳಿ ಬೆಸ್ಟ್ ಲುಕ್ ಯಾವುದು ಅಂತ ಕೇಳಿ. ಇಲ್ಲಿ ರಿಸ್ಕ್ ಇರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹48k."
+     "text_en": "Mohan Y. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.2% of Mohan Y.'s bills vs 6.3% for other Mysuru salespeople (181 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Mohan Y.: Show two Indo-Western looks to every wedding customer; ask Santosh B. for their best look first, today. At stake: ₹52k per month.",
+     "text_local": "ಮೋಹನ್ Y. (MYS-02) ಅವರು Indo-Western ಅನ್ನು ತುಂಬಾ ಕಡಿಮೆ ಮಾರಾಟ ಮಾಡುತ್ತಾರೆ. ಕಾರಣ: ಮೋಹನ್ Y. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ Indo-Western ಕೇವಲ 2.2% ಇದೆ, ಆದರೆ ಇತರ ಮೈಸೂರು ಸೇಲ್ಸ್‌ಪರ್ಸನ್‌ಗಳ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.3% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳಲ್ಲಿ 181 ಬಿಲ್‌ಗಳು). ಮೈಸೂರು ಗ್ರಾಹಕರು ಇದನ್ನು ಖರೀದಿಸುತ್ತಾರೆ; ಇದು ಒಬ್ಬ ವ್ಯಕ್ತಿಯ ಗ್ಯಾಪ್ ಆಗಿದೆ. ಮೋಹನ್ Y. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಪ್ರತಿಯೊಬ್ಬ ಮದುವೆ ಗ್ರಾಹಕರಿಗೆ ಎರಡು Indo-Western ಲುಕ್‌ಗಳನ್ನು ತೋರಿಸಿ; ಇಂದು ಮೊದಲು Santosh B. ಅವರ ಬಳಿ ಅತ್ಯುತ್ತಮ ಲುಕ್ ಬಗ್ಗೆ ಕೇಳಿ. ಅಪಾಯದಲ್ಲಿರುವುದು: ತಿಂಗಳಿಗೆ ₹52k."
     }
    ],
    "held_back": 0,
@@ -365,7 +365,7 @@
    "notes": [],
    "briefing_en": "Good morning Mahesh. Store Coach for Fri 9 Oct. No new issues today. Last week's alerts: Mysuru: conversion down across the city: conversion has not moved, 8.0% → 8.2% in the week since. Role model: Santosh B. at MYS-02; 7% of their customers come back.",
    "briefing_local": "ಗುಡ್ ಮಾರ್ನಿಂಗ್ Mahesh ಅವರೇ. Fri 9 Oct ಗೆ Store Coach. ಇವತ್ತು ಯಾವುದೇ ಹೊಸ ಸಮಸ್ಯೆಗಳಿಲ್ಲ. ಕಳೆದ ವಾರದ alerts: Mysuru: ನಗರದಾದ್ಯಂತ conversion down ಆಗಿದೆ: ಕಳೆದ ವಾರದಲ್ಲಿ conversion ಬದಲಾಗಿಲ್ಲ, 8.0% → 8.2% ಆಗಿದೆ. Role model: MYS-02 ನಲ್ಲಿ Santosh B. ಅವರು; ಅವರ 7% customers ವಾಪಸ್ ಬರುತ್ತಾರೆ.",
-   "briefing_audio": "2026-10-08/audio/briefing_AM-06.mp3"
+   "briefing_audio": null
   }
  }
 }

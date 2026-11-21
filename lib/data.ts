@@ -41,6 +41,7 @@ export type Card = {
   peer_name: string | null; source: string; rupees: number; text_en: string; lang: string;
   text_local: string | null; audio: string | null;
 };
+export type Roster = { stores: Record<string, { city: string; am_id: string }>; salespeople: { id: string; name: string; store_id: string }[] };
 export type Meta = { as_of: string; today: string; issues_found: number; cards: number; sarvam: boolean };
 export type DataIssue = { type: string; store_id?: string; note?: string; [k: string]: unknown };
 
@@ -60,6 +61,20 @@ export async function resolveRange(sp: SP) {
   const from = f && f <= to ? f : ds[Math.max(0, ds.indexOf(to) - 29)] ?? to;
   return { idx, date: to, from, to, q: `from=${from}&to=${to}` };
 }
+
+// Engine ₹ figures are per 4 weeks (28 days); the UI shows per month.
+export const perMonth = (x: number) => (x * 30.4) / 28;
+
+// Fixed severity bands on monthly ₹ at stake.
+export const SEV = ["Low", "Medium", "High", "Critical"] as const;
+export const severity = (monthly: number) => (monthly >= 1e5 ? 4 : monthly >= 5e4 ? 3 : monthly >= 2e4 ? 2 : 1);
+
+// Follow-up urgency: worse > not moved > too early > improved; +1 when a big (High/Critical) issue hasn't improved.
+export const URG = ["Done", "Low", "Medium", "High", "Urgent"] as const;
+export const urgency = (status: string, monthly: number | null) => {
+  const base = { improved: 0, too_early: 1, flat: 2, worse: 3 }[status] ?? 1;
+  return Math.min(4, base + (base > 0 && (monthly ?? 0) >= 5e4 ? 1 : 0));
+};
 
 export const audioUrl = (p: string | null | undefined) => (p ? `/runs/${p}` : null);
 

@@ -1,9 +1,137 @@
 # Store Coach
 
-Manyavar (Vedant Fashions) AI Hackathon, brief A.
+*A daily coach for Manyavar stores. Built for the Manyavar (Vedant Fashions) AI Hackathon, brief A.*
 
-> Every morning, without anyone asking, tell each area manager which stores need attention and why,
-> and tell each salesperson one thing to do better today.
+```
+   ┌──────────────────────────────────────────────────────────┐
+   │   "Every morning, without anyone asking, tell each area   │
+   │    manager which stores need attention and why, and tell  │
+   │    each salesperson ONE thing to do better today."        │
+   └──────────────────────────────────────────────────────────┘
+```
+
+# PART 1 — What it does (plain English)
+
+## The idea
+
+Imagine a smart assistant who reads every bill, every day, from every Manyavar store. Each morning it
+writes a short note to each person: *"here is what to fix, here is how much money it is worth, here
+is what to do today."* Nobody has to ask. It just shows up.
+
+```
+   YESTERDAY'S SHOP DATA                    THE COACH                      TODAY'S MESSAGES
+  ┌─────────────────────┐            ┌───────────────────┐          ┌──────────────────────────┐
+  │ bills, shoppers,    │            │  🔍 spots what's  │          │ 👔 Area manager:         │
+  │ who worked, what    │  ───────►  │     going wrong   │  ──────► │   "Top 5 problems, with  │
+  │ was bought          │            │  💰 puts a ₹ value│          │    ₹ at stake + a fix"   │
+  └─────────────────────┘            │  ✍️  writes advice │          │                          │
+                                     └───────────────────┘          │ 🧍 Salesperson:          │
+                                                                    │   "One tip, 60 words,    │
+                                                                    │    in your language"     │
+                                                                    └──────────────────────────┘
+```
+
+## What a store can improve (the three "levers")
+
+```
+   MORE BILLS            BIGGER BASKETS           MORE REPEAT
+   ──────────            ──────────────           ───────────
+   Of the families       Customer buys a          Customer comes
+   who walk in, more     sherwani... but no       back to buy
+   should buy            safa or mojari.          again later.
+   🚪➜🧾                 👘 ➜ 👘 + 🧣 + 👞         🔁🙂
+```
+
+## Who gets what
+
+```
+ ┌─────────────────────┬──────────────────────────────────────────────────┐
+ │ AREA MANAGER        │ • At most 5 issues a week, biggest ₹ first       │
+ │ (one per city)      │ • Each one says: what, why, and ONE action       │
+ │                     │ • A short spoken briefing (voice note)           │
+ │                     │ • Delivered on Telegram, in Hindi or Kannada     │
+ ├─────────────────────┼──────────────────────────────────────────────────┤
+ │ SALESPERSON         │ • A tiny card (60 words or fewer)                │
+ │                     │ • One habit to change + a colleague in the same  │
+ │                     │   store who does it well + one thing to do today │
+ │                     │ • Also available as a short voice note           │
+ └─────────────────────┴──────────────────────────────────────────────────┘
+```
+
+## What kind of advice it gives
+
+- **Doable today.** "Keep 6 people on the floor Sat–Sun 4–8 pm." No budget, no approvals, no new tools.
+- **Fair.** People are compared with colleagues in their own store first, then city, then state.
+- **Not alarmist.** Normal wedding-season and festival ups and downs are ignored.
+- **Honest about bad data.** If a number looks impossible (e.g. a broken door counter), it is set aside as a
+  *data issue* and is **never** sent to a manager as if it were real.
+- **Checks itself.** A week later it looks again and says: *got better / no change / got worse.*
+
+## Examples of what it can notice
+
+```
+ • A top salesperson quietly left the store         → "Hire or cover, ₹X per month at risk"
+ • Not enough staff on busy weekends                → "Move a weekly off, keep 6 on the floor"
+ • A whole city is buying less than last year       → "Market problem, not one store's fault"
+ • Customers buy a sherwani but never a safa        → "Offer the matching safa at billing"
+ • One person gives far bigger discounts than peers → "Coach on discounting"
+ • Door counter reads zero on busy days             → "Data issue, not shown to the manager"
+```
+
+## The screens (the website)
+
+```
+ ┌───────────────┐
+ │ ▣ Dashboard   │  the big picture, pick a date range
+ │ 👥 Area mgrs  │  each manager's top issues + voice briefing
+ │ 🏬 Salesperson│  cards and voice notes, by city and store
+ │ ⚠  Issues     │  everything found, sorted by severity (₹ at stake)
+ │ ⟲  Follow-ups │  "did it get better a week later?"
+ │ 🧑 Employees  │  the people list
+ │ 🗄 Data issues│  numbers we don't trust, plus Telegram status
+ └───────────────┘
+```
+
+## A day in the life
+
+```
+  07:00 IST   ⏰ coach wakes up on its own
+     │
+     ▼
+  reads new data ──► finds problems ──► ranks by ₹ ──► writes short advice
+     │
+     ▼
+  📱 Telegram message + 🔊 voice note to each area manager
+  🖥  website updated for everyone
+     │
+     ▼
+  7 days later: 🔎 "did it help?"
+```
+
+> Note: the data here is **synthetic** (made up for the hackathon) and runs from Nov 2024 to Oct 2026.
+> The coach replays October 2026 day by day so you can see how it behaves.
+
+---
+
+# PART 2 — For developers
+
+Everything below is the technical detail: stack, data, detectors, deploy and run steps.
+
+```
+   CSV / live API ─► engine (Python, pandas) ─► runs/<date>/*.json (+ mp3) ─► Next.js app (Vercel)
+                          │                              ▲                         │
+                          ├─ Sarvam (phrase + TTS)       └── Vercel Blob           └─ Telegram bot
+                          └─ api/cron.py (Vercel Cron, daily)
+```
+
+| Folder | What lives there |
+|---|---|
+| `engine/` | Python: load, metrics, detectors, cards, digest, follow-up, Sarvam, Telegram delivery |
+| `api/cron.py` | Vercel Python function run by Cron |
+| `app/`, `lib/` | Next.js App Router UI, API routes (`chat`, `tts`, `telegram`), data helpers |
+| `runs/` | Output per day (`runs/<as_of>/`) |
+| `data/` | Bundled synthetic CSVs |
+| `tests/`, `scripts/` | Python tests, mock API, Telegram setup |
 
 ## 1. Problem
 
@@ -259,7 +387,7 @@ Setup (one time, you):
 
 Each area manager (one time): open the shared bot link, press **Start**, tap their own name. You get "X says they are AM-01 ... [Approve] [Reject]" in Telegram; one tap connects them and the bot tells them. `--status` (or the Data page) shows who is connected.
 
-Optional: `--links` also prints personal links per manager. Opening one connects that manager without your approval, so send each only to its manager.
+Personal links: `--links` prints one per manager. Opening one connects that manager without approval, and **the first chat to use a link keeps it**: a second person is told the link was already used, and the same person pressing again is told they are already connected. To free a slot (new phone, new manager), run `python scripts/telegram_setup.py --reset AM-01`; the next person to open the link then owns it. Send each link only to its manager.
 
 A link only works for its own manager (the code is an HMAC of the manager id), so nobody can claim another manager's slot. Changing `TELEGRAM_SECRET` invalidates all old links. `DELIVERY_RECIPIENTS` still works as a manual override. Saved chat ids sit in the public run store next to the digests; a chat id alone cannot message anyone without the bot token.
 

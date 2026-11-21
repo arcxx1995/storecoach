@@ -1,7 +1,7 @@
 import { C, Bars, Donut, HBars, Kpi, Line, change } from "./charts";
 import { Header } from "./ui";
 import {
-  CITY, cityOf, conv, inr, num, pct, readRun, resolveRange, type SP, series, short, sum,
+  CITY, cityOf, conv, inr, num, pct, perMonth, readRun, resolveRange, type SP, series, short, sum,
   type Digest, type Followup, type Issue, type StoreMetric,
 } from "@/lib/data";
 
@@ -22,7 +22,7 @@ export default async function Dashboard({ searchParams }: { searchParams: Promis
   const bills = sm.map((s) => sum(rows(s).map((r) => r.bills)));
   const convS = sm.map((s) => conv(rows(s)));
   const issueN = is.map((s) => s.data?.issues.length ?? 0);
-  const issueR = is.map((s) => sum((s.data?.issues ?? []).map((i) => i.rupees)));
+  const issueR = is.map((s) => perMonth(sum((s.data?.issues ?? []).map((i) => i.rupees))));
   const abv = sm.map((s) => { const b = sum(rows(s).map((r) => r.bills)); return b ? sum(rows(s).map((r) => r.revenue)) / b : null; });
   const n = sm.length - 1, w = 0; // KPI change is range end vs range start
   const vs = labels[0] ?? "";
@@ -32,7 +32,7 @@ export default async function Dashboard({ searchParams }: { searchParams: Promis
   const todayIssues = [...new Map(is.flatMap((r) => r.data?.issues ?? []).map((i) => [i.key, i])).values()];
   const followups = [...new Map(fus.flatMap((r) => r.data?.followups ?? []).map((f) => [f.key + f.alerted_on, f])).values()];
   const byLever = Object.entries(Object.groupBy(todayIssues, (i) => i.lever))
-    .map(([k, v]) => ({ label: k, value: sum(v!.map((i) => i.rupees)), sub: `${v!.length} issue${v!.length > 1 ? "s" : ""}` }))
+    .map(([k, v]) => ({ label: k, value: perMonth(sum(v!.map((i) => i.rupees))), sub: `${v!.length} issue${v!.length > 1 ? "s" : ""}` }))
     .sort((a, b) => b.value - a.value);
   const cities = Object.values(CITY);
   const cityIdx = (c: string) => cities.indexOf(c);
@@ -53,7 +53,7 @@ export default async function Dashboard({ searchParams }: { searchParams: Promis
         <Kpi label="Walk-in conversion" value={pct(convS[n])} delta={change(convS[n], convS[w])} pts={convS} vs={vs} />
         <Kpi label="Bills (28 days)" value={num(bills[n] ?? 0)} delta={change(bills[n], bills[w])} pts={bills} vs={vs} />
         <Kpi label="Avg bill value" value={inr(abv[n] ?? 0)} delta={change(abv[n], abv[w])} pts={abv} vs={vs} />
-        <Kpi label="₹ at stake (per 4 weeks)" value={inr(issueR[n] ?? 0)} delta={change(issueR[n], issueR[w])} pts={issueR} vs={vs} goodUp={false} />
+        <Kpi label="₹ at stake (per month)" value={inr(issueR[n] ?? 0)} delta={change(issueR[n], issueR[w])} pts={issueR} vs={vs} goodUp={false} />
       </div>
 
       <div className="grid two" style={{ marginTop: 14 }}>
@@ -96,7 +96,7 @@ export default async function Dashboard({ searchParams }: { searchParams: Promis
           <div className="ph"><h3>₹ at stake by area manager</h3><span className="small">issues in range</span></div>
           <HBars fmt={inr} items={cities.map((c) => ({
             label: am(c)?.name ?? c, sub: c, color: C[cityIdx(c) % 6], href: am(c) ? `/am/${am(c)!.am_id}?${q}` : undefined,
-            value: sum(todayIssues.filter((i) => i.city === c).map((i) => i.rupees)) })).sort((a, b) => b.value - a.value)} />
+            value: perMonth(sum(todayIssues.filter((i) => i.city === c).map((i) => i.rupees))) })).sort((a, b) => b.value - a.value)} />
         </section>
       </div>
 
@@ -110,7 +110,7 @@ export default async function Dashboard({ searchParams }: { searchParams: Promis
                 <td className="issue-cell">{i.title}</td>
                 <td data-label="City">{i.city}</td>
                 <td data-label="Lever">{i.lever}</td>
-                <td className="num"><span className="rupees">{inr(i.rupees)}</span></td>
+                <td className="num"><span className="rupees">{inr(perMonth(i.rupees))}</span></td>
               </tr>
             ))}
           </tbody>

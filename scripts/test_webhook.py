@@ -64,7 +64,7 @@ assert post(say(MGR, "/start"), "wrong") == 401
 
 # no admin yet: a manager's pick cannot be routed
 post(say(MGR, "/start")); kb = take()
-assert kb[0][0] == "sendMessage" and len(kb[0][1]["reply_markup"]["inline_keyboard"]) == 6, kb
+assert kb[0][0] == "sendMessage" and len(kb[0][1]["reply_markup"]["inline_keyboard"]) == 7, kb
 assert kb[0][1]["reply_markup"]["inline_keyboard"][0][0]["callback_data"] == "pick:AM-01"
 post(tap(MGR, "pick:AM-01")); assert not SUBS.exists() and take()[0][0] == "answerCallbackQuery"
 
@@ -95,10 +95,35 @@ post(say(400, f"/start AM-02_{deliver.link_code('AM-02')}")); take()
 assert json.loads((SUBS / "AM-02.json").read_text())["chat_id"] == 400
 post(say(401, f"/start AM-03_{deliver.link_code('AM-02')}")); take()
 assert not (SUBS / "AM-03.json").exists()
+# first use wins: same person again is fine, a different person is refused and the owner is unchanged
+post(say(400, f"/start AM-02_{deliver.link_code('AM-02')}")); assert "Already connected" in take()[0][1]["text"]
+post(say(402, f"/start AM-02_{deliver.link_code('AM-02')}")); assert "already been used" in take()[0][1]["text"]
+assert json.loads((SUBS / "AM-02.json").read_text())["chat_id"] == 400
+# admin reset frees the slot for the next person
+from engine import store  # noqa: E402
+store.delete("subscribers/AM-02.json")
+post(say(402, f"/start AM-02_{deliver.link_code('AM-02')}")); take()
+assert json.loads((SUBS / "AM-02.json").read_text())["chat_id"] == 402
+
+# salesperson flow: store -> name -> approval goes to their area manager (AM-01 = MGR here), who can approve; strangers cannot
+SP, SPCHAT = "SP1002", 500
+post(tap(SPCHAT, "sp")); kb = take()[0][1]["reply_markup"]["inline_keyboard"]
+assert kb[0][0]["callback_data"] == "st:LKO-01", kb
+post(tap(SPCHAT, "st:LKO-01")); kb = take()[0][1]["reply_markup"]["inline_keyboard"]
+assert f"pk:{SP}" in [r[0]["callback_data"] for r in kb], kb
+post(tap(SPCHAT, f"pk:{SP}")); calls = take()
+ask = [b for m, b in calls if m == "sendMessage" and b["chat_id"] == MGR][0]  # the area manager, not the admin
+assert [b["callback_data"] for b in ask["reply_markup"]["inline_keyboard"][0]] == [f"ok:{SPCHAT}:{SP}", f"no:{SPCHAT}:{SP}"]
+post(tap(STRANGER, f"ok:{SPCHAT}:{SP}")); take()
+assert not (SUBS / f"{SP}.json").exists()
+post(tap(MGR, f"ok:{SPCHAT}:{SP}")); take()
+assert json.loads((SUBS / f"{SP}.json").read_text())["chat_id"] == SPCHAT
+post(say(501, f"/start SP1003_{deliver.link_code('SP1003')}")); take()  # personal link, no approval
+assert json.loads((SUBS / "SP1003.json").read_text())["chat_id"] == 501
 
 # group chats are ignored; picks are rate limited
 post(say(9, "/start", "group")); assert not take()
-for _ in range(7):
+for _ in range(12):
     post(tap(MGR, "pick:AM-01"))
 assert any(m == "answerCallbackQuery" and "Too many" in b.get("text", "") for m, b in take())
 

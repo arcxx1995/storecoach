@@ -110,6 +110,11 @@ def run(as_of=None, use_sarvam=True, budget=None, voice_cards=None) -> str:
     store.write_json(f"{date}/salesperson_metrics.json", {"meta": meta, "rows": records(
         salesperson_metrics(d, start, E).join(repeat_metrics(d, c_start, c_end, "salesperson_id")))})
     dates = sorted(set(store.run_dates()) | {date})  # Blob index is read-modify-write, so add today explicitly
+    active = set(d.bills[d.bills.bill_date > E - pd.Timedelta(days=30)].salesperson_id)  # leavers stay out of the sign-up picker
+    store.write_json("roster.json", {  # read by the Telegram sign-up flow (app/api/telegram/route.ts)
+        "stores": {r.store_id: {"city": r.city, "am_id": r.area_manager_id} for r in d.stores.itertuples()},
+        "salespeople": [{"id": r.salesperson_id, "name": r.name, "store_id": r.store_id}
+                        for r in d.salespeople.itertuples() if r.salesperson_id in active]})
     store.write_json("index.json", {"dates": dates, "latest": dates[-1]})
     return date
 

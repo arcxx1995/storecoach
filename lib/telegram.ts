@@ -33,6 +33,30 @@ export async function saveSub(name: string, chat: number) {
   await writeFile(p, body);
 }
 
+// First use of a link wins: creates subscribers/<name>.json only if it does not exist yet. Returns false if taken.
+export async function claimSub(name: string, chat: number): Promise<boolean> {
+  const body = JSON.stringify({ chat_id: chat, at: new Date().toISOString() });
+  const rel = `subscribers/${name}.json`;
+  if (process.env.BLOB_READ_WRITE_TOKEN) {
+    try {
+      await put(`runs/${rel}`, body, { access: "public", allowOverwrite: false, addRandomSuffix: false, contentType: "application/json", cacheControlMaxAge: 60 });
+      return true;
+    } catch (e) {
+      if (/already exists/i.test(String((e as Error)?.message))) return false;
+      throw e;
+    }
+  }
+  const p = path.join(process.cwd(), "runs", rel);
+  await mkdir(path.dirname(p), { recursive: true });
+  try {
+    await writeFile(p, body, { flag: "wx" });
+    return true;
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code === "EEXIST") return false;
+    throw e;
+  }
+}
+
 // Fresh read (the page cache in lib/data.ts keeps 404s and old values for a minute).
 export async function readSub(name: string): Promise<{ chat_id: number } | null> {
   const rel = `subscribers/${name}.json`;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { cityOf, conv, inr, num, pct, readRun, resolveRange, type SP, series, short, sum, type Card, type Digest, type Meta, type Issue, type StoreMetric } from "@/lib/data";
+import { cityOf, conv, inr, num, pct, perMonth, readRun, resolveRange, type SP, series, short, sum, type Card, type Digest, type Meta, type Issue, type StoreMetric } from "@/lib/data";
 import { Bars, C, HBars, Kpi, Line, change } from "../../charts";
 import { Audio, Fallback, FollowupRow, Header, IssueCard } from "../../ui";
 import Chat from "./chat";
@@ -28,7 +28,7 @@ export default async function AreaManager({ params, searchParams }: {
   const bills = sm.map((_, i) => sum(mine(i).map((r) => r.bills)));
   const cv = sm.map((_, i) => conv(mine(i)));
   const iss = is.map((s) => (s.data?.issues ?? []).filter((i) => i.am_id === id));
-  const issN = iss.map((x) => x.length), issR = iss.map((x) => sum(x.map((i) => i.rupees)));
+  const issN = iss.map((x) => x.length), issR = iss.map((x) => perMonth(sum(x.map((i) => i.rupees))));
   const storeIds = mine(n).map((r) => r.store_id).sort();
 
   return (
@@ -50,7 +50,7 @@ export default async function AreaManager({ params, searchParams }: {
         <Kpi label="Revenue (28 days)" value={inr(rev[n] ?? 0)} delta={change(rev[n], rev[w])} pts={rev} vs={vs} />
         <Kpi label="Walk-in conversion" value={pct(cv[n])} delta={change(cv[n], cv[w])} pts={cv} vs={vs} />
         <Kpi label="Bills (28 days)" value={num(bills[n] ?? 0)} delta={change(bills[n], bills[w])} pts={bills} vs={vs} />
-        <Kpi label="₹ at stake (per 4 weeks)" value={inr(issR[n] ?? 0)} delta={change(issR[n], issR[w])} pts={issR} vs={vs} goodUp={false} />
+        <Kpi label="₹ at stake (per month)" value={inr(issR[n] ?? 0)} delta={change(issR[n], issR[w])} pts={issR} vs={vs} goodUp={false} />
       </div>
       <div className="grid two" style={{ marginTop: 14 }}>
         <section className="panel" data-reveal>

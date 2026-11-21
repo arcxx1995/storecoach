@@ -36,6 +36,18 @@ def write_bytes(rel: str, data: bytes) -> None:
     p.write_bytes(data)
 
 
+def delete(rel: str) -> None:
+    """Remove a file from the run store (no error if it is already gone)."""
+    if TOKEN:
+        req = urllib.request.Request("https://vercel.com/api/blob/delete", method="POST",
+                                     data=json.dumps({"urls": [f"{PUBLIC}/runs/{rel}"]}).encode(),
+                                     headers={"authorization": f"Bearer {TOKEN}", "x-api-version": "13",
+                                              "x-vercel-blob-store-id": STORE_ID, "content-type": "application/json"})
+        urllib.request.urlopen(req, timeout=60).read()
+        return
+    (RUNS / rel).unlink(missing_ok=True)
+
+
 def read_bytes(rel: str) -> bytes | None:
     if TOKEN:
         for k in range(3):

@@ -1,0 +1,741 @@
+{
+ "stores": {
+  "LKO-01": {
+   "city": "Lucknow",
+   "am_id": "AM-01"
+  },
+  "LKO-02": {
+   "city": "Lucknow",
+   "am_id": "AM-01"
+  },
+  "LKO-03": {
+   "city": "Lucknow",
+   "am_id": "AM-01"
+  },
+  "LKO-04": {
+   "city": "Lucknow",
+   "am_id": "AM-01"
+  },
+  "KNP-01": {
+   "city": "Kanpur",
+   "am_id": "AM-02"
+  },
+  "KNP-02": {
+   "city": "Kanpur",
+   "am_id": "AM-02"
+  },
+  "KNP-03": {
+   "city": "Kanpur",
+   "am_id": "AM-02"
+  },
+  "PAT-01": {
+   "city": "Patna",
+   "am_id": "AM-03"
+  },
+  "PAT-02": {
+   "city": "Patna",
+   "am_id": "AM-03"
+  },
+  "PAT-03": {
+   "city": "Patna",
+   "am_id": "AM-03"
+  },
+  "PAT-04": {
+   "city": "Patna",
+   "am_id": "AM-03"
+  },
+  "MZF-01": {
+   "city": "Muzaffarpur",
+   "am_id": "AM-04"
+  },
+  "MZF-02": {
+   "city": "Muzaffarpur",
+   "am_id": "AM-04"
+  },
+  "BLR-01": {
+   "city": "Bengaluru",
+   "am_id": "AM-05"
+  },
+  "BLR-02": {
+   "city": "Bengaluru",
+   "am_id": "AM-05"
+  },
+  "BLR-03": {
+   "city": "Bengaluru",
+   "am_id": "AM-05"
+  },
+  "BLR-04": {
+   "city": "Bengaluru",
+   "am_id": "AM-05"
+  },
+  "BLR-05": {
+   "city": "Bengaluru",
+   "am_id": "AM-05"
+  },
+  "MYS-01": {
+   "city": "Mysuru",
+   "am_id": "AM-06"
+  },
+  "MYS-02": {
+   "city": "Mysuru",
+   "am_id": "AM-06"
+  }
+ },
+ "salespeople": [
+  {
+   "id": "SP1002",
+   "name": "Shahid K.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1003",
+   "name": "Ankit N.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1004",
+   "name": "Gaurav V.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1005",
+   "name": "Vikas J.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1007",
+   "name": "Kamal G.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1009",
+   "name": "Ashish K.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1010",
+   "name": "Om S.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1012",
+   "name": "Manoj T.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1013",
+   "name": "Arif M.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1014",
+   "name": "Arjun A.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1015",
+   "name": "Tushar N.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1016",
+   "name": "Imran M.",
+   "store_id": "LKO-01"
+  },
+  {
+   "id": "SP1019",
+   "name": "Faizan M.",
+   "store_id": "LKO-02"
+  },
+  {
+   "id": "SP1021",
+   "name": "Varun S.",
+   "store_id": "LKO-02"
+  },
+  {
+   "id": "SP1023",
+   "name": "Jitendra V.",
+   "store_id": "LKO-02"
+  },
+  {
+   "id": "SP1024",
+   "name": "Jitendra G.",
+   "store_id": "LKO-02"
+  },
+  {
+   "id": "SP1025",
+   "name": "Faizan J.",
+   "store_id": "LKO-02"
+  },
+  {
+   "id": "SP1026",
+   "name": "Ajay S.",
+   "store_id": "LKO-02"
+  },
+  {
+   "id": "SP1027",
+   "name": "Sumit A.",
+   "store_id": "LKO-02"
+  },
+  {
+   "id": "SP1028",
+   "name": "Rizwan J.",
+   "store_id": "LKO-03"
+  },
+  {
+   "id": "SP1029",
+   "name": "Sumit R.",
+   "store_id": "LKO-03"
+  },
+  {
+   "id": "SP1030",
+   "name": "Shivam M.",
+   "store_id": "LKO-03"
+  },
+  {
+   "id": "SP1032",
+   "name": "Yash C.",
+   "store_id": "LKO-03"
+  },
+  {
+   "id": "SP1033",
+   "name": "Kunal C.",
+   "store_id": "LKO-04"
+  },
+  {
+   "id": "SP1034",
+   "name": "Ravi K.",
+   "store_id": "LKO-04"
+  },
+  {
+   "id": "SP1036",
+   "name": "Vivek V.",
+   "store_id": "LKO-04"
+  },
+  {
+   "id": "SP1037",
+   "name": "Gopal Y.",
+   "store_id": "LKO-04"
+  },
+  {
+   "id": "SP1038",
+   "name": "Naveen R.",
+   "store_id": "LKO-04"
+  },
+  {
+   "id": "SP1041",
+   "name": "Kamal A.",
+   "store_id": "LKO-04"
+  },
+  {
+   "id": "SP1042",
+   "name": "Arif C.",
+   "store_id": "LKO-04"
+  },
+  {
+   "id": "SP1043",
+   "name": "Zaid N.",
+   "store_id": "LKO-04"
+  },
+  {
+   "id": "SP1044",
+   "name": "Rohit V.",
+   "store_id": "KNP-01"
+  },
+  {
+   "id": "SP1045",
+   "name": "Ravi C.",
+   "store_id": "KNP-01"
+  },
+  {
+   "id": "SP1047",
+   "name": "Nikhil S.",
+   "store_id": "KNP-01"
+  },
+  {
+   "id": "SP1048",
+   "name": "Vivek D.",
+   "store_id": "KNP-01"
+  },
+  {
+   "id": "SP1050",
+   "name": "Sachin T.",
+   "store_id": "KNP-01"
+  },
+  {
+   "id": "SP1052",
+   "name": "Jitendra J.",
+   "store_id": "KNP-01"
+  },
+  {
+   "id": "SP1053",
+   "name": "Dheeraj R.",
+   "store_id": "KNP-01"
+  },
+  {
+   "id": "SP1054",
+   "name": "Shahid A.",
+   "store_id": "KNP-01"
+  },
+  {
+   "id": "SP1055",
+   "name": "Manoj T.",
+   "store_id": "KNP-02"
+  },
+  {
+   "id": "SP1056",
+   "name": "Kamal R.",
+   "store_id": "KNP-02"
+  },
+  {
+   "id": "SP1058",
+   "name": "Arjun Y.",
+   "store_id": "KNP-02"
+  },
+  {
+   "id": "SP1059",
+   "name": "Dinesh D.",
+   "store_id": "KNP-02"
+  },
+  {
+   "id": "SP1060",
+   "name": "Sumit S.",
+   "store_id": "KNP-03"
+  },
+  {
+   "id": "SP1061",
+   "name": "Kunal N.",
+   "store_id": "KNP-03"
+  },
+  {
+   "id": "SP1063",
+   "name": "Om K.",
+   "store_id": "KNP-03"
+  },
+  {
+   "id": "SP1064",
+   "name": "Manoj N.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1065",
+   "name": "Sanjay K.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1067",
+   "name": "Gopal R.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1069",
+   "name": "Kamal G.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1070",
+   "name": "Mukesh D.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1072",
+   "name": "Faizan K.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1073",
+   "name": "Rizwan N.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1075",
+   "name": "Vivek S.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1076",
+   "name": "Raju P.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1077",
+   "name": "Tarun B.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1078",
+   "name": "Tarun T.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1079",
+   "name": "Tarun C.",
+   "store_id": "PAT-01"
+  },
+  {
+   "id": "SP1081",
+   "name": "Manoj R.",
+   "store_id": "PAT-02"
+  },
+  {
+   "id": "SP1083",
+   "name": "Aman B.",
+   "store_id": "PAT-02"
+  },
+  {
+   "id": "SP1084",
+   "name": "Vinod S.",
+   "store_id": "PAT-02"
+  },
+  {
+   "id": "SP1085",
+   "name": "Prakash J.",
+   "store_id": "PAT-02"
+  },
+  {
+   "id": "SP1087",
+   "name": "Arjun D.",
+   "store_id": "PAT-02"
+  },
+  {
+   "id": "SP1088",
+   "name": "Saurabh P.",
+   "store_id": "PAT-02"
+  },
+  {
+   "id": "SP1089",
+   "name": "Hemant M.",
+   "store_id": "PAT-02"
+  },
+  {
+   "id": "SP1090",
+   "name": "Jitendra K.",
+   "store_id": "PAT-02"
+  },
+  {
+   "id": "SP1092",
+   "name": "Amit A.",
+   "store_id": "PAT-03"
+  },
+  {
+   "id": "SP1093",
+   "name": "Jitendra N.",
+   "store_id": "PAT-03"
+  },
+  {
+   "id": "SP1094",
+   "name": "Aman Y.",
+   "store_id": "PAT-03"
+  },
+  {
+   "id": "SP1095",
+   "name": "Arjun A.",
+   "store_id": "PAT-03"
+  },
+  {
+   "id": "SP1097",
+   "name": "Prakash V.",
+   "store_id": "PAT-04"
+  },
+  {
+   "id": "SP1098",
+   "name": "Zaid A.",
+   "store_id": "PAT-04"
+  },
+  {
+   "id": "SP1099",
+   "name": "Imran C.",
+   "store_id": "PAT-04"
+  },
+  {
+   "id": "SP1101",
+   "name": "Saurabh Y.",
+   "store_id": "MZF-01"
+  },
+  {
+   "id": "SP1102",
+   "name": "Amit C.",
+   "store_id": "MZF-01"
+  },
+  {
+   "id": "SP1103",
+   "name": "Raju S.",
+   "store_id": "MZF-01"
+  },
+  {
+   "id": "SP1104",
+   "name": "Chandan S.",
+   "store_id": "MZF-01"
+  },
+  {
+   "id": "SP1105",
+   "name": "Rahul Y.",
+   "store_id": "MZF-02"
+  },
+  {
+   "id": "SP1106",
+   "name": "Ankit P.",
+   "store_id": "MZF-02"
+  },
+  {
+   "id": "SP1108",
+   "name": "Manish C.",
+   "store_id": "MZF-02"
+  },
+  {
+   "id": "SP1110",
+   "name": "Karthik J.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1111",
+   "name": "Deepak S.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1112",
+   "name": "Nithin J.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1113",
+   "name": "Sachin R.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1114",
+   "name": "Manjunath C.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1116",
+   "name": "Chetan S.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1118",
+   "name": "Prasad M.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1119",
+   "name": "Yogesh G.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1120",
+   "name": "Suresh V.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1122",
+   "name": "Sunil T.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1123",
+   "name": "Srinivas B.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1124",
+   "name": "Umesh N.",
+   "store_id": "BLR-01"
+  },
+  {
+   "id": "SP1125",
+   "name": "Suresh K.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1126",
+   "name": "Prasad B.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1128",
+   "name": "Venkatesh Y.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1129",
+   "name": "Pavan N.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1130",
+   "name": "Vinay K.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1133",
+   "name": "Nagaraj G.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1134",
+   "name": "Girish V.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1135",
+   "name": "Prasad D.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1136",
+   "name": "Deepak V.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1137",
+   "name": "Deepak C.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1139",
+   "name": "Mahesh J.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1140",
+   "name": "Venkatesh S.",
+   "store_id": "BLR-02"
+  },
+  {
+   "id": "SP1141",
+   "name": "Manjunath K.",
+   "store_id": "BLR-03"
+  },
+  {
+   "id": "SP1142",
+   "name": "Vijay N.",
+   "store_id": "BLR-03"
+  },
+  {
+   "id": "SP1143",
+   "name": "Santosh V.",
+   "store_id": "BLR-03"
+  },
+  {
+   "id": "SP1144",
+   "name": "Pradeep A.",
+   "store_id": "BLR-03"
+  },
+  {
+   "id": "SP1145",
+   "name": "Yogesh N.",
+   "store_id": "BLR-03"
+  },
+  {
+   "id": "SP1149",
+   "name": "Suresh B.",
+   "store_id": "BLR-03"
+  },
+  {
+   "id": "SP1150",
+   "name": "Mohan M.",
+   "store_id": "BLR-03"
+  },
+  {
+   "id": "SP1151",
+   "name": "Arun D.",
+   "store_id": "BLR-03"
+  },
+  {
+   "id": "SP1153",
+   "name": "Karthik V.",
+   "store_id": "BLR-04"
+  },
+  {
+   "id": "SP1154",
+   "name": "Arun R.",
+   "store_id": "BLR-04"
+  },
+  {
+   "id": "SP1156",
+   "name": "Deepak C.",
+   "store_id": "BLR-04"
+  },
+  {
+   "id": "SP1157",
+   "name": "Kumar B.",
+   "store_id": "BLR-04"
+  },
+  {
+   "id": "SP1159",
+   "name": "Venkatesh T.",
+   "store_id": "BLR-04"
+  },
+  {
+   "id": "SP1160",
+   "name": "Ganesh P.",
+   "store_id": "BLR-04"
+  },
+  {
+   "id": "SP1161",
+   "name": "Sunil G.",
+   "store_id": "BLR-04"
+  },
+  {
+   "id": "SP1162",
+   "name": "Sachin M.",
+   "store_id": "BLR-04"
+  },
+  {
+   "id": "SP1163",
+   "name": "Umesh P.",
+   "store_id": "BLR-05"
+  },
+  {
+   "id": "SP1164",
+   "name": "Harsha Y.",
+   "store_id": "BLR-05"
+  },
+  {
+   "id": "SP1165",
+   "name": "Sunil G.",
+   "store_id": "BLR-05"
+  },
+  {
+   "id": "SP1166",
+   "name": "Anand B.",
+   "store_id": "MYS-01"
+  },
+  {
+   "id": "SP1167",
+   "name": "Nithin C.",
+   "store_id": "MYS-01"
+  },
+  {
+   "id": "SP1169",
+   "name": "Darshan G.",
+   "store_id": "MYS-01"
+  },
+  {
+   "id": "SP1170",
+   "name": "Mohan R.",
+   "store_id": "MYS-01"
+  },
+  {
+   "id": "SP1172",
+   "name": "Santosh B.",
+   "store_id": "MYS-02"
+  },
+  {
+   "id": "SP1173",
+   "name": "Mohan Y.",
+   "store_id": "MYS-02"
+  },
+  {
+   "id": "SP1174",
+   "name": "Madhu G.",
+   "store_id": "MYS-02"
+  },
+  {
+   "id": "SP1175",
+   "name": "Arif A.",
+   "store_id": "LKO-02"
+  }
+ ]
+}
