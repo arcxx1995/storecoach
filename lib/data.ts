@@ -48,7 +48,7 @@ export async function getIndex() {
   return (await readRun<{ dates: string[]; latest: string }>("index.json")) ?? { dates: [], latest: "" };
 }
 
-export type SP = { date?: string; from?: string; to?: string };
+export type SP = { date?: string; from?: string; to?: string; city?: string };
 
 // Range from ?from=&to= (legacy ?date= means to). Default: the last 30 runs. `date` = `to` drives digests, cards and issues.
 export async function resolveRange(sp: SP) {

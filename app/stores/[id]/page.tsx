@@ -34,7 +34,7 @@ export default async function StoreCards({ params, searchParams }: {
 
   return (
     <>
-      <Header from={from} to={to} dates={idx.dates} path={`/stores/${id}`} title={`Salesperson cards / ${id}`} />
+      <Header from={from} to={to} dates={idx.dates} path={`/stores/${id}`} />
       <section className="hero" data-hero>
         <h1>{id}</h1>
         <p className="sub">{city}{am && <> · Area manager <Link href={`/am/${am.am_id}?${q}`}>{am.name}</Link></>} · {cards.length} cards today</p>
@@ -84,18 +84,21 @@ export default async function StoreCards({ params, searchParams }: {
       </>) : <p className="empty">No metrics for this store on this date.</p>}
 
       <h2>Today&apos;s cards</h2>
-      <div className="grid">
+      <div className="grid cards">
         {cards.map((c) => (
-          <article className="panel" key={c.salesperson_id} data-reveal>
+          <article className="panel scard" key={c.salesperson_id} data-reveal>
+            <div className="scard-top">
+              <h3>{c.name}</h3>
+              {c.rupees > 0 && <span className="rupees" title="at stake per 4 weeks">{inr(c.rupees)}</span>}
+            </div>
             <div className="chips">
               <span className="chip lever">{c.behaviour}</span>
               {c.peer_name && <span className="chip">peer: {c.peer_name}</span>}
               <Fallback on={!!cr?.meta.sarvam && !c.text_local} />
             </div>
-            <h3>{c.name}</h3>
-            <p className="local" style={{ margin: "6px 0" }}>{c.text_local ?? c.text_en}</p>
+            <p className="quote local">{c.text_local ?? c.text_en}</p>
             <Audio src={c.audio} date={date} sp={c.salesperson_id} />
-            {c.text_local && <details><summary>English</summary><p>{c.text_en}</p></details>}
+            {c.text_local && <details><summary>English</summary><p className="small" style={{ margin: "6px 0 0" }}>{c.text_en}</p></details>}
           </article>
         ))}
         {!cards.length && <p className="empty">No cards for this store today.</p>}

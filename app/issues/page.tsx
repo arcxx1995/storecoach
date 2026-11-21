@@ -10,8 +10,8 @@ export default async function Issues({ searchParams }: { searchParams: Promise<S
   return (
     <>
       <Header from={from} to={to} dates={idx.dates} path="/issues" />
-      <h1>Everything found</h1>
-      <p className="sub">Every problem the detectors found, ranked by ₹ at stake. Only the top few reach area managers. Gaps under ₹5k go to the salesperson&apos;s card instead.</p>
+      <h1>All issues</h1>
+      <p className="sub">Every problem found, ranked by ₹ at stake. Only the top few reach managers; gaps under ₹5k go to salesperson cards.</p>
       <div className="panel tablewrap">
         <table className="stack">
           <thead><tr><th>₹ / 4 wks</th><th>Lever</th><th>Issue</th><th>Manager</th><th>Status</th></tr></thead>

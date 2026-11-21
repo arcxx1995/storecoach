@@ -3,12 +3,13 @@ import { DatePicker } from "./datepicker";
 import Listen from "./listen";
 import { audioUrl, day, inr, type Followup, type Issue } from "@/lib/data";
 
-export function Header({ from, to, dates, path = "/", title }: { from: string; to: string; dates: string[]; path?: string; title?: string }) {
+// Empty bar (its bottom border is the line); the date picker sits just below it.
+export function Header({ from, to, dates, path = "/" }: { from: string; to: string; dates: string[]; path?: string }) {
   return (
-    <header className="top">
-      <div className="crumb">{title}</div>
-      <DatePicker dates={dates} from={from} to={to} path={path} />
-    </header>
+    <>
+      <header className="top" />
+      <div className="toolbar"><DatePicker dates={dates} from={from} to={to} path={path} /></div>
+    </>
   );
 }
 

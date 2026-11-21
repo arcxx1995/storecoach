@@ -12,8 +12,7 @@ export default async function Followups({ searchParams }: { searchParams: Promis
       <Header from={from} to={to} dates={idx.dates} path="/followups" />
       <h1>Follow-ups</h1>
       <p className="sub">
-        A week after each alert, the coach re-measures the same number for the 7 days since. So far:{" "}
-        {counts.improved ?? 0} improved, {counts.flat ?? 0} not moved, {counts.worse ?? 0} got worse, {counts.too_early ?? 0} too early to tell.
+        Each alert re-measured a week later: {counts.improved ?? 0} improved, {counts.flat ?? 0} not moved, {counts.worse ?? 0} worse, {counts.too_early ?? 0} too early.
       </p>
       <div className="grid">{all.map((f) => <FollowupRow key={f.key + f.alerted_on} f={f} />)}</div>
     </>

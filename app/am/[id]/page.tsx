@@ -33,7 +33,7 @@ export default async function AreaManager({ params, searchParams }: {
 
   return (
     <>
-      <Header from={from} to={to} dates={idx.dates} path={`/am/${id}`} title={`Area managers / ${d.name}`} />
+      <Header from={from} to={to} dates={idx.dates} path={`/am/${id}`} />
       <h1>{d.name}</h1>
       <p className="sub">Area manager, {d.city} · stores: {stores.map((s, n) => (
         <span key={s}>{n > 0 && ", "}<Link href={`/stores/${s}?${q}`}>{s}</Link></span>))}</p>

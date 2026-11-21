@@ -42,10 +42,10 @@ export default async function Dashboard({ searchParams }: { searchParams: Promis
 
   return (
     <>
-      <Header from={from} to={to} dates={idx.dates} path="/" title="Dashboard" />
+      <Header from={from} to={to} dates={idx.dates} path="/" />
       <section className="hero" data-hero>
         <h1>Dashboard</h1>
-        <p className="sub">{todayRows.length} stores, {short(from)} to {short(date)}. Each point is one daily run and covers the 28 days before it, so lines are smoothed. KPI changes compare the last run with the first in the range.</p>
+        <p className="sub">{todayRows.length} stores, {short(from)} to {short(date)}. Each point is a daily run over the prior 28 days, so lines are smooth. Changes compare the last run with the first.</p>
       </section>
 
       <div className="grid kpis">
