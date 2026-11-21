@@ -44,7 +44,8 @@ export function Sidebar() {
       <aside className="side" data-mini={mini} data-open={open}>
         <div className="side-head">
           <Link href="/" className="brand" aria-label="Store Coach home">
-            <Image src="/manyavar-logo.png" alt="Manyavar" width={120} height={40} priority />
+            <Image className="full" src="/manyavar-logo.png" alt="Manyavar" width={120} height={30} priority />
+            <Image className="mark" src="/manyavar-mark.png" alt="" width={24} height={30} priority />
             <span>Store Coach</span>
           </Link>
         </div>

@@ -1,8 +1,6 @@
 .venv
-runs
 .cache
 node_modules
 .next
 tests
 hello_sarvam.py
-*.png
