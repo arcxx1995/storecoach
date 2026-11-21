@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DatePicker } from "./datepicker";
+import { LangSwitch } from "./langswitch";
 import Listen from "./listen";
 import { audioUrl, day, inr, perMonth, type Followup, type Issue } from "@/lib/data";
 
@@ -8,7 +9,7 @@ export function Header({ from, to, dates, path = "/" }: { from: string; to: stri
   return (
     <>
       <header className="top" />
-      <div className="toolbar"><DatePicker dates={dates} from={from} to={to} path={path} /></div>
+      <div className="toolbar"><LangSwitch /><DatePicker dates={dates} from={from} to={to} path={path} /></div>
     </>
   );
 }
@@ -35,7 +36,7 @@ export function IssueCard({ i, fb = false }: { i: Issue; fb?: boolean }) {
         <div><b>What</b> {i.action.what}</div>
         <div><b>When</b> {i.action.when}</div>
       </div>
-      {i.text_local && <p className="local">{i.text_local}</p>}
+      {i.text_local && <p className="local t-local">{i.text_local}</p>}
       <details><summary>How the ₹ is worked out</summary><p className="small">{i.rupees_formula}</p></details>
     </article>
   );
@@ -52,11 +53,22 @@ export function FollowupRow({ f }: { f: Followup }) {
   );
 }
 
-// Old runs have a pre-made mp3 (src); otherwise voice on first click via /api/tts (CDN-cached after that).
-export function Audio({ src, date, am, sp }: { src?: string | null; date?: string; am?: string; sp?: string }) {
-  const u = audioUrl(src);
+// Old runs have a pre-made mp3 (src, local language); otherwise voice on first click via /api/tts (CDN-cached after that).
+export function Audio({ src, date, am, sp, en }: { src?: string | null; date?: string; am?: string; sp?: string; en?: boolean }) {
+  const u = en ? null : audioUrl(src);
   if (u) return <audio controls preload="none" src={u} />;
-  return date && (am || sp) ? <Listen date={date} am={am} sp={sp} /> : null;
+  return date && (am || sp) ? <Listen date={date} am={am} sp={sp} en={en} /> : null;
+}
+
+// Local text + voice and English text + voice; the global switch (html[data-lang]) shows one. English only when no translation.
+export function Bilingual({ local, en, className, audio }: { local?: string | null; en?: string; className: string; audio: Parameters<typeof Audio>[0] }) {
+  if (!local) return <><p className={className}>{en}</p><Audio {...audio} en /></>;
+  return (
+    <>
+      <div className="t-local"><p className={`${className} local`}>{local}</p><Audio {...audio} /></div>
+      <div className="t-en"><p className={className}>{en}</p><Audio {...audio} en /></div>
+    </>
+  );
 }
 
 export const Fallback = ({ on }: { on: boolean }) =>

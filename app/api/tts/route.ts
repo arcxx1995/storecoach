@@ -11,15 +11,16 @@ export async function GET(req: Request) {
   const date = q.get("date") ?? "", am = q.get("am"), sp = q.get("sp");
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !(am ? /^AM-\d{2}$/.test(am) : sp && /^[A-Z0-9-]{3,12}$/.test(sp))) return Response.json({ error: "Bad request." }, { status: 400 });
   if (noKey()) return noKey()!;
+  const en = q.get("lang") === "en"; // the page's English/local switch
   let text: string | null | undefined, lang = "en-IN";
   if (am) {
     const d = (await readRun<{ digests: Record<string, Digest> }>(`${date}/digests.json`))?.digests[am];
-    text = d?.briefing_local ?? d?.briefing_en;
-    if (d?.briefing_local) lang = d.lang;
+    text = (!en && d?.briefing_local) || d?.briefing_en;
+    if (!en && d?.briefing_local) lang = d.lang;
   } else {
     const c = (await readRun<{ cards: Card[] }>(`${date}/cards.json`))?.cards.find((x) => x.salesperson_id === sp);
-    text = c?.text_local ?? c?.text_en;
-    if (c?.text_local) lang = c.lang;
+    text = (!en && c?.text_local) || c?.text_en;
+    if (!en && c?.text_local) lang = c.lang;
   }
   if (!text) return Response.json({ error: "Not found." }, { status: 404 });
   try { return audioResponse(await speak(text, lang, ipOf(req)), true); } catch (e) { return failure(e); }

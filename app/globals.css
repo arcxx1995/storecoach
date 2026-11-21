@@ -101,7 +101,11 @@ header.top {
   background: var(--glass); backdrop-filter: saturate(180%) blur(18px); -webkit-backdrop-filter: saturate(180%) blur(18px);
   border-bottom: 1px solid var(--line);
 }
-.toolbar { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+.toolbar { display: flex; justify-content: flex-end; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+html:not([data-lang="local"]) .t-local, html[data-lang="local"] .t-en { display: none; }
+.langsw { display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--panel); }
+.langsw button { font: inherit; font-size: 13px; color: var(--muted); background: none; border: 0; padding: 5px 12px; cursor: pointer; }
+.langsw button[aria-pressed="true"] { color: var(--ink); background: var(--flat-soft); font-weight: 600; }
 .datenav { display: flex; gap: 6px; align-items: center; font-size: 13px; color: var(--muted); }
 .datenav a, .datenav span.btn {
   width: 28px; height: 28px; display: grid; place-items: center; text-decoration: none;
@@ -135,6 +139,7 @@ a.panel { text-decoration: none; display: block; }
 .action b { display: inline-block; min-width: 46px; color: var(--muted); font-weight: 600; font-size: 13px; }
 .small { font-size: 13px; color: var(--muted); }
 .local { font-size: 16px; line-height: 1.65; }
+.brief { margin: 6px 0; font-size: 16px; line-height: 1.65; }
 /* today's cards */
 .grid.cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
 .scard { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 12px; padding: 18px 20px 16px 24px; }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Figtree, Rufina } from "next/font/google";
+import { cookies } from "next/headers";
 import { Motion } from "./motion";
 import { NavButtons } from "./navbuttons";
 import { Sidebar } from "./sidebar";
@@ -14,9 +15,10 @@ export const metadata: Metadata = {
   icons: { icon: "/manyavar-logo.png" },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const lang = (await cookies()).get("lang")?.value === "local" ? "local" : "en"; // set by LangSwitch
   return (
-    <html lang="en" className={`${figtree.variable} ${rufina.variable}`}>
+    <html lang="en" data-lang={lang} className={`${figtree.variable} ${rufina.variable}`}>
       <body>
         <Motion />
         <div className="shell">

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cityOf, conv, inr, num, pct, perMonth, readRun, resolveRange, type SP, series, short, sum, type Card, type Digest, type Meta, type Issue, type StoreMetric } from "@/lib/data";
 import { Bars, C, HBars, Kpi, Line, change } from "../../charts";
-import { Audio, Fallback, FollowupRow, Header, IssueCard } from "../../ui";
+import { Bilingual, Fallback, FollowupRow, Header, IssueCard } from "../../ui";
 import Chat from "./chat";
 
 export default async function AreaManager({ params, searchParams }: {
@@ -40,9 +40,7 @@ export default async function AreaManager({ params, searchParams }: {
 
       <div className="panel">
         <div className="chips"><span className="small">Morning briefing</span><Fallback on={sv && !d.briefing_local} /></div>
-        <p className="local" style={{ margin: "6px 0" }}>{d.briefing_local ?? d.briefing_en}</p>
-        <Audio src={d.briefing_audio} date={date} am={id} />
-        {d.briefing_local && <details><summary>English</summary><p>{d.briefing_en}</p></details>}
+        <Bilingual local={d.briefing_local} en={d.briefing_en} className="brief" audio={{ src: d.briefing_audio, date, am: id }} />
       </div>
 
       <h2>Daily analytics · {d.city}</h2>

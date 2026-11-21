@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { cityOf, conv, inr, pct, perMonth, readRun, resolveRange, type SP, series, short, type Card, type Meta, type Digest, type SalesMetric, type StoreMetric } from "@/lib/data";
-import { Audio, Fallback, Header } from "../../ui";
+import { Bilingual, Fallback, Header } from "../../ui";
 import { CardFilter } from "../../cardfilter";
 import { Bars, C, HBars, Kpi, Line, change } from "../../charts";
 
@@ -96,9 +96,7 @@ export default async function StoreCards({ params, searchParams }: {
               {c.peer_name && <span className="chip">peer: {c.peer_name}</span>}
               <Fallback on={!!cr?.meta.sarvam && !c.text_local} />
             </div>
-            <p className="quote local">{c.text_local ?? c.text_en}</p>
-            <Audio src={c.audio} date={date} sp={c.salesperson_id} />
-            {c.text_local && <details><summary>English</summary><p className="small" style={{ margin: "6px 0 0" }}>{c.text_en}</p></details>}
+            <Bilingual local={c.text_local} en={c.text_en} className="quote" audio={{ src: c.audio, date, sp: c.salesperson_id }} />
           </article>
       ) }))} />
     </>

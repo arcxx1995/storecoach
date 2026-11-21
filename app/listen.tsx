@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 
-export default function Listen({ date, am, sp }: { date: string; am?: string; sp?: string }) {
+export default function Listen({ date, am, sp, en }: { date: string; am?: string; sp?: string; en?: boolean }) {
   const [state, setState] = useState<"idle" | "loading" | "error">("idle");
   const [src, setSrc] = useState("");
-  const qs = new URLSearchParams({ date, ...(am ? { am } : { sp: sp! }) }).toString();
+  const qs = new URLSearchParams({ date, ...(am ? { am } : { sp: sp! }), ...(en ? { lang: "en" } : {}) }).toString();
 
   async function load() {
     setState("loading");
