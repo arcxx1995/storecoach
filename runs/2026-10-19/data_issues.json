@@ -1,0 +1,55 @@
+{
+ "meta": {
+  "as_of": "2026-10-19",
+  "today": "2026-10-20",
+  "data_ends": "2026-10-31",
+  "window": [
+   "2026-09-22",
+   "2026-10-19"
+  ],
+  "issues_found": 24,
+  "cards": 124,
+  "sarvam": false,
+  "translated": 0,
+  "fallback_en": 0,
+  "audio": 0
+ },
+ "rows": [
+  {
+   "type": "footfall_zero_with_bills",
+   "store_id": "PAT-03",
+   "from": "2026-10-05",
+   "to": "2026-10-16",
+   "days": 11,
+   "bills_affected": 24,
+   "note": "Door-camera count unusable; conversion excluded for these days."
+  },
+  {
+   "type": "new_store_no_baseline",
+   "store_id": "BLR-05",
+   "from": "2026-10-10",
+   "note": "Opened <90 days ago; kept out of peer comparisons."
+  },
+  {
+   "type": "placeholder_customer_id",
+   "store_id": "PAT-02",
+   "customer_id": "C99999999",
+   "from": "2026-07-27",
+   "share_last_90d": 0.386,
+   "share_before": 0.02,
+   "bills_affected": 162,
+   "top_salespeople": {
+    "SP1083": 34,
+    "SP1085": 27,
+    "SP1090": 24
+   },
+   "note": "Dummy mobile number on bills; repeat rate for this store can't be measured. Excluded from repeat."
+  },
+  {
+   "type": "salesperson_no_bills",
+   "store_id": "BLR-02",
+   "salesperson_id": "SP1138",
+   "note": "On staff list but never billed."
+  }
+ ]
+}

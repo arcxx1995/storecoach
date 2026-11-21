@@ -1,0 +1,246 @@
+{
+ "meta": {
+  "as_of": "2026-10-24",
+  "today": "2026-10-25",
+  "data_ends": "2026-10-31",
+  "window": [
+   "2026-09-27",
+   "2026-10-24"
+  ],
+  "issues_found": 25,
+  "cards": 125,
+  "sarvam": false,
+  "translated": 0,
+  "fallback_en": 0,
+  "audio": 0
+ },
+ "digests": {
+  "AM-01": {
+   "am_id": "AM-01",
+   "name": "Rakesh Srivastava",
+   "city": "Lucknow",
+   "lang": "hi-IN",
+   "as_of": "2026-10-24",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [],
+   "notes": [],
+   "briefing_en": "Good morning Rakesh. Store Coach for Sun 25 Oct. No new issues today.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-02": {
+   "am_id": "AM-02",
+   "name": "Alok Tiwari",
+   "city": "Kanpur",
+   "lang": "hi-IN",
+   "as_of": "2026-10-24",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1061",
+     "name": "Kunal N.",
+     "store_id": "KNP-03",
+     "city": "Kanpur",
+     "am_id": "AM-02",
+     "repeat_rate": 0.06220095693779904,
+     "store_rate": 0.02616279069767442,
+     "customers": 209
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Alok. Store Coach for Sun 25 Oct. No new issues today. Role model: Kunal N. at KNP-03; 6% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-03": {
+   "am_id": "AM-03",
+   "name": "Nitin Sinha",
+   "city": "Patna",
+   "lang": "hi-IN",
+   "as_of": "2026-10-24",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [],
+   "notes": [
+    "Low priority (PAT-02): 40% of bills since Mon 27 Jul use the dummy number C99999999, mostly by Aman B., Prakash J. and Jitendra K. Ask staff to type each customer's real mobile number from today; until then repeat for PAT-02 can't be tracked."
+   ],
+   "briefing_en": "Good morning Nitin. Store Coach for Sun 25 Oct. No new issues today.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-04": {
+   "am_id": "AM-04",
+   "name": "Pankaj Jha",
+   "city": "Muzaffarpur",
+   "lang": "hi-IN",
+   "as_of": "2026-10-24",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1106",
+     "name": "Ankit P.",
+     "store_id": "MZF-02",
+     "city": "Muzaffarpur",
+     "am_id": "AM-04",
+     "repeat_rate": 0.07142857142857142,
+     "store_rate": 0.033816425120772944,
+     "customers": 154
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Pankaj. Store Coach for Sun 25 Oct. No new issues today. Role model: Ankit P. at MZF-02; 7% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-05": {
+   "am_id": "AM-05",
+   "name": "Harish Gowda",
+   "city": "Bengaluru",
+   "lang": "kn-IN",
+   "as_of": "2026-10-24",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [
+    {
+     "sent_on": "2026-10-22",
+     "key": "repeat_low:SP1120",
+     "kind": "repeat_low",
+     "lever": "More repeat",
+     "store_id": "BLR-01",
+     "city": "Bengaluru",
+     "am_id": "AM-05",
+     "title": "Suresh V. (BLR-01): customers don't come back",
+     "cause": "2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (491 customers first billed 6–18 months ago). Karthik J. is the role model at 12.4%.",
+     "action": {
+      "who": "Suresh V.",
+      "what": "Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first",
+      "when": "today, before 12 noon"
+     },
+     "rupees": 11470,
+     "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+     "evidence": {
+      "repeat_rate": 0.026476578411405296,
+      "store_rate": 0.056699889258028796,
+      "z": 2.8957878120986957,
+      "customers": 491,
+      "lapsed_wedding_customers": 14,
+      "peer": "SP1110"
+     },
+     "track": {
+      "metric": "returning_share",
+      "scope": "salesperson_id",
+      "ids": [
+       "SP1120"
+      ],
+      "at_alert": null,
+      "target": null,
+      "better": "up"
+     },
+     "text_en": "Suresh V. (BLR-01): customers don't come back. Cause: 2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (491 customers first billed 6–18 months ago). Karthik J. is the role model at 12.4%. Action for Suresh V.: Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first, today, before 12 noon. At stake: ₹11k per 4 weeks.",
+     "text_local": null
+    }
+   ],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1110",
+     "name": "Karthik J.",
+     "store_id": "BLR-01",
+     "city": "Bengaluru",
+     "am_id": "AM-05",
+     "repeat_rate": 0.12566844919786097,
+     "store_rate": 0.04795698924731183,
+     "customers": 374
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Harish. Store Coach for Sun 25 Oct. No new issues today. Role model: Karthik J. at BLR-01; 13% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-06": {
+   "am_id": "AM-06",
+   "name": "Mahesh Shetty",
+   "city": "Mysuru",
+   "lang": "kn-IN",
+   "as_of": "2026-10-24",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [
+    {
+     "sent_on": "2026-10-20",
+     "key": "category_avoid:SP1173:indo_western",
+     "kind": "category_avoid",
+     "lever": "Bigger baskets",
+     "store_id": "MYS-02",
+     "city": "Mysuru",
+     "am_id": "AM-06",
+     "title": "Mohan Y. (MYS-02) rarely sells Indo-Western",
+     "cause": "Indo-Western is on 2.3% of Mohan Y.'s bills vs 6.1% for other Mysuru salespeople (171 bills, last 12 months). Mysuru buys it; this is one person's gap.",
+     "action": {
+      "who": "Mohan Y.",
+      "what": "Show two Indo-Western looks to every wedding customer; ask Madhu G. for their best look first",
+      "when": "today"
+     },
+     "rupees": 17746,
+     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill",
+     "evidence": {
+      "mix": 0.023391812865497075,
+      "city_median": 0.06114591802573055,
+      "bills_12m": 171,
+      "season_factor": 1.5642857142857143,
+      "peer": "SP1174"
+     },
+     "track": {
+      "metric": "mix",
+      "scope": "salesperson_id",
+      "ids": [
+       "SP1173"
+      ],
+      "col": "has_indo_western",
+      "at_alert": 0.023391812865497075,
+      "target": 0.06114591802573055,
+      "better": "up",
+      "window_days": 365
+     },
+     "text_en": "Mohan Y. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.3% of Mohan Y.'s bills vs 6.1% for other Mysuru salespeople (171 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Mohan Y.: Show two Indo-Western looks to every wedding customer; ask Madhu G. for their best look first, today. At stake: ₹18k per 4 weeks.",
+     "text_local": null
+    }
+   ],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1172",
+     "name": "Santosh B.",
+     "store_id": "MYS-02",
+     "city": "Mysuru",
+     "am_id": "AM-06",
+     "repeat_rate": 0.07755102040816327,
+     "store_rate": 0.030927835051546393,
+     "customers": 245
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Mahesh. Store Coach for Sun 25 Oct. No new issues today. Role model: Santosh B. at MYS-02; 8% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  }
+ }
+}

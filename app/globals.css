@@ -1,0 +1,93 @@
+:root {
+  --bg: #faf7f2;
+  --panel: #ffffff;
+  --ink: #1f1a17;
+  --muted: #6b625b;
+  --line: #e8e1d8;
+  --accent: #8a2b2b;
+  --accent-soft: #f6e9e6;
+  --gold: #a87b2a;
+  --ok: #2f6b3d;
+  --ok-soft: #e7f2ea;
+  --bad: #a3361f;
+  --bad-soft: #f9e6e1;
+  --flat: #6b625b;
+  --flat-soft: #efebe6;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161311;
+    --panel: #1f1b18;
+    --ink: #f1ebe4;
+    --muted: #a99f96;
+    --line: #342e29;
+    --accent: #e08a7c;
+    --accent-soft: #3a2420;
+    --gold: #d7ab5c;
+    --ok: #7fc28f;
+    --ok-soft: #1f3324;
+    --bad: #f08b72;
+    --bad-soft: #3b2219;
+    --flat: #b5aaa0;
+    --flat-soft: #2a2522;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", "Noto Sans", "Noto Sans Devanagari", "Noto Sans Kannada", sans-serif;
+}
+a { color: inherit; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px 64px; }
+header.top {
+  display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between;
+  padding: 18px 0; border-bottom: 1px solid var(--line); margin-bottom: 24px;
+}
+.brand { font-weight: 700; font-size: 18px; letter-spacing: -0.01em; text-decoration: none; }
+.brand span { color: var(--accent); }
+nav.links { display: flex; gap: 16px; flex-wrap: wrap; font-size: 14px; }
+nav.links a { text-decoration: none; color: var(--muted); }
+nav.links a:hover { color: var(--ink); }
+.datenav { display: flex; gap: 8px; align-items: center; font-size: 14px; }
+.datenav a, .datenav span.btn {
+  border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; text-decoration: none; background: var(--panel);
+}
+.datenav span.btn { opacity: 0.4; }
+h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.02em; }
+h2 { font-size: 17px; margin: 32px 0 12px; }
+.sub { color: var(--muted); margin: 0 0 16px; }
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+.panel h3 { margin: 0 0 6px; font-size: 16px; }
+.issue { border-left: 3px solid var(--accent); }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.chip { font-size: 12px; padding: 1px 8px; border-radius: 999px; background: var(--flat-soft); color: var(--flat); }
+.chip.lever { background: var(--accent-soft); color: var(--accent); }
+.chip.ok { background: var(--ok-soft); color: var(--ok); }
+.chip.bad { background: var(--bad-soft); color: var(--bad); }
+.rupees { font-weight: 700; color: var(--gold); font-variant-numeric: tabular-nums; }
+.action { background: var(--bg); border-radius: 8px; padding: 10px 12px; margin: 10px 0; }
+.action b { display: inline-block; min-width: 46px; color: var(--muted); font-weight: 600; font-size: 13px; }
+.small { font-size: 13px; color: var(--muted); }
+.local { font-size: 16px; }
+details summary { cursor: pointer; color: var(--muted); font-size: 13px; margin-top: 6px; }
+audio { width: 100%; height: 36px; margin-top: 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 13px; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tablewrap { overflow-x: auto; }
+.stat { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+.chat textarea {
+  width: 100%; min-height: 64px; padding: 10px; border-radius: 8px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink); font: inherit;
+}
+.chat button {
+  margin-top: 8px; padding: 8px 16px; border-radius: 8px; border: 0; background: var(--accent); color: #fff; font: inherit; cursor: pointer;
+}
+.chat button:disabled { opacity: 0.5; }
+.answer { white-space: pre-wrap; margin-top: 12px; }
+.empty { color: var(--muted); font-style: italic; }

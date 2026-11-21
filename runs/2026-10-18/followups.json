@@ -1,0 +1,31 @@
+{
+ "meta": {
+  "as_of": "2026-10-18",
+  "today": "2026-10-19",
+  "data_ends": "2026-10-31",
+  "window": [
+   "2026-09-21",
+   "2026-10-18"
+  ],
+  "issues_found": 23,
+  "cards": 125,
+  "sarvam": false,
+  "translated": 0,
+  "fallback_en": 0,
+  "audio": 0
+ },
+ "followups": [
+  {
+   "key": "category_avoid:SP1172:indo_western",
+   "title": "Santosh B. (MYS-02) rarely sells Indo-Western",
+   "am_id": "AM-06",
+   "alerted_on": "2026-10-11",
+   "metric": "share of bills",
+   "before": 0.025735294117647058,
+   "after": 0.0,
+   "sample": 5,
+   "status": "too_early",
+   "summary": "Santosh B. (MYS-02) rarely sells Indo-Western: too few bills in 7 days to tell (5)."
+  }
+ ]
+}

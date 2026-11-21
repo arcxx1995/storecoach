@@ -1,0 +1,207 @@
+{
+ "meta": {
+  "as_of": "2026-10-14",
+  "today": "2026-10-15",
+  "data_ends": "2026-10-31",
+  "window": [
+   "2026-09-17",
+   "2026-10-14"
+  ],
+  "issues_found": 26,
+  "cards": 122,
+  "sarvam": false,
+  "translated": 0,
+  "fallback_en": 0,
+  "audio": 0
+ },
+ "digests": {
+  "AM-01": {
+   "am_id": "AM-01",
+   "name": "Rakesh Srivastava",
+   "city": "Lucknow",
+   "lang": "hi-IN",
+   "as_of": "2026-10-14",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [],
+   "notes": [],
+   "briefing_en": "Good morning Rakesh. Store Coach for Thu 15 Oct. No new issues today.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-02": {
+   "am_id": "AM-02",
+   "name": "Alok Tiwari",
+   "city": "Kanpur",
+   "lang": "hi-IN",
+   "as_of": "2026-10-14",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1061",
+     "name": "Kunal N.",
+     "store_id": "KNP-03",
+     "city": "Kanpur",
+     "am_id": "AM-02",
+     "repeat_rate": 0.06698564593301436,
+     "store_rate": 0.026785714285714284,
+     "customers": 209
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Alok. Store Coach for Thu 15 Oct. No new issues today. Role model: Kunal N. at KNP-03; 7% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-03": {
+   "am_id": "AM-03",
+   "name": "Nitin Sinha",
+   "city": "Patna",
+   "lang": "hi-IN",
+   "as_of": "2026-10-14",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [],
+   "notes": [
+    "Low priority (PAT-02): 37% of bills since Mon 27 Jul use the dummy number C99999999, mostly by Aman B., Prakash J. and Jitendra K. Ask staff to type each customer's real mobile number from today; until then repeat for PAT-02 can't be tracked."
+   ],
+   "briefing_en": "Good morning Nitin. Store Coach for Thu 15 Oct. No new issues today.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-04": {
+   "am_id": "AM-04",
+   "name": "Pankaj Jha",
+   "city": "Muzaffarpur",
+   "lang": "hi-IN",
+   "as_of": "2026-10-14",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1106",
+     "name": "Ankit P.",
+     "store_id": "MZF-02",
+     "city": "Muzaffarpur",
+     "am_id": "AM-04",
+     "repeat_rate": 0.07236842105263158,
+     "store_rate": 0.030732860520094562,
+     "customers": 152
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Pankaj. Store Coach for Thu 15 Oct. No new issues today. Role model: Ankit P. at MZF-02; 7% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-05": {
+   "am_id": "AM-05",
+   "name": "Harish Gowda",
+   "city": "Bengaluru",
+   "lang": "kn-IN",
+   "as_of": "2026-10-14",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1110",
+     "name": "Karthik J.",
+     "store_id": "BLR-01",
+     "city": "Bengaluru",
+     "am_id": "AM-05",
+     "repeat_rate": 0.1366120218579235,
+     "store_rate": 0.049717759444203216,
+     "customers": 366
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Harish. Store Coach for Thu 15 Oct. No new issues today. Role model: Karthik J. at BLR-01; 14% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-06": {
+   "am_id": "AM-06",
+   "name": "Mahesh Shetty",
+   "city": "Mysuru",
+   "lang": "kn-IN",
+   "as_of": "2026-10-14",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [
+    {
+     "sent_on": "2026-10-11",
+     "key": "category_avoid:SP1172:indo_western",
+     "kind": "category_avoid",
+     "lever": "Bigger baskets",
+     "store_id": "MYS-02",
+     "city": "Mysuru",
+     "am_id": "AM-06",
+     "title": "Santosh B. (MYS-02) rarely sells Indo-Western",
+     "cause": "Indo-Western is on 2.6% of Santosh B.'s bills vs 6.5% for other Mysuru salespeople (272 bills, last 12 months). Mysuru buys it; this is one person's gap.",
+     "action": {
+      "who": "Santosh B.",
+      "what": "Show two Indo-Western looks to every wedding customer; ask Mohan Y. for their best look first",
+      "when": "today"
+     },
+     "rupees": 45487,
+     "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill",
+     "evidence": {
+      "mix": 0.025735294117647058,
+      "city_median": 0.06481481481481481,
+      "bills_12m": 272,
+      "season_factor": 2.414021164021164,
+      "peer": "SP1173"
+     },
+     "track": {
+      "metric": "mix",
+      "scope": "salesperson_id",
+      "ids": [
+       "SP1172"
+      ],
+      "col": "has_indo_western",
+      "at_alert": 0.025735294117647058,
+      "target": 0.06481481481481481,
+      "better": "up",
+      "window_days": 365
+     },
+     "text_en": "Santosh B. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.6% of Santosh B.'s bills vs 6.5% for other Mysuru salespeople (272 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Santosh B.: Show two Indo-Western looks to every wedding customer; ask Mohan Y. for their best look first, today. At stake: ₹45k per 4 weeks.",
+     "text_local": null
+    }
+   ],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1172",
+     "name": "Santosh B.",
+     "store_id": "MYS-02",
+     "city": "Mysuru",
+     "am_id": "AM-06",
+     "repeat_rate": 0.06995884773662552,
+     "store_rate": 0.031914893617021274,
+     "customers": 243
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Mahesh. Store Coach for Thu 15 Oct. No new issues today. Role model: Santosh B. at MYS-02; 7% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  }
+ }
+}

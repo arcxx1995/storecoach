@@ -1,0 +1,1202 @@
+{
+ "meta": {
+  "as_of": "2026-10-23",
+  "today": "2026-10-24",
+  "data_ends": "2026-10-31",
+  "window": [
+   "2026-09-26",
+   "2026-10-23"
+  ],
+  "issues_found": 25,
+  "cards": 125,
+  "sarvam": false,
+  "translated": 0,
+  "fallback_en": 0,
+  "audio": 0
+ },
+ "issues": [
+  {
+   "key": "leaver:LKO-02",
+   "kind": "leaver",
+   "lever": "More bills",
+   "store_id": "LKO-02",
+   "city": "Lucknow",
+   "am_id": "AM-01",
+   "title": "LKO-02: top seller Imran C. has left",
+   "cause": "Imran C. (#1 seller, 34% of store sales) last billed on Sun 13 Sep. Conversion since: 10.1%, vs 12.3% before and 12.3% in the same weeks last year.",
+   "action": {
+    "who": "LKO-02 store manager and Sumit A.",
+    "what": "Hand Imran C.'s 559 customers from the last 12 months to Sumit A.; Sumit A. calls 10 of them today, and is on the floor 5–9 pm on Sat 24 Oct and Sun 25 Oct",
+    "when": "today; Sat 24 Oct and Sun 25 Oct"
+   },
+   "rupees": 244400,
+   "rupees_formula": "(conversion before exit − since exit) × walk-ins since exit × avg bill value, per 4 weeks",
+   "evidence": {
+    "left": "SP1018",
+    "last_bill": "2026-09-13",
+    "conv_since": 0.10136674259681093,
+    "conv_before": 0.1227224008574491,
+    "conv_last_year": 0.12284293653114946,
+    "customers_12m": 559
+   },
+   "track": {
+    "metric": "conversion",
+    "scope": "store_id",
+    "ids": [
+     "LKO-02"
+    ],
+    "at_alert": 0.10136674259681093,
+    "target": 0.1227224008574491,
+    "better": "up"
+   },
+   "cards": {
+    "SP1027": {
+     "behaviour": "Look after Imran C.'s customers",
+     "text": "Today: call 10 of Imran C.'s past customers and invite them in; they are yours now. Be on the floor 5–9 pm on Sat 24 Oct and Sun 25 Oct.",
+     "peer": null
+    }
+   }
+  },
+  {
+   "key": "staffing:BLR-03",
+   "kind": "staffing",
+   "lever": "More bills",
+   "store_id": "BLR-03",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "BLR-03: short-staffed on weekends and wedding days",
+   "cause": "Busy-day headcount fell from 7.2 to 6.0 and busy-day conversion from 12.4% to 8.7% (last 4 weeks vs the store's norm since May). Manjunath K. was off 8 of 8 busy days; Vijay N. was off 8 of 8 busy days.",
+   "action": {
+    "who": "BLR-03 store manager",
+    "what": "Keep 7 people on the floor both days; Manjunath K. and Vijay N. work both days and take their weekly off on Tue or Wed",
+    "when": "Sat 24 Oct and Sun 25 Oct"
+   },
+   "rupees": 200571,
+   "rupees_formula": "(busy-day conversion before − now) × busy-day walk-ins (4 wks) × avg bill value",
+   "evidence": {
+    "busy_conv_now": 0.0865561694290976,
+    "busy_conv_before": 0.12401574803149606,
+    "busy_headcount_now": 6.0,
+    "busy_headcount_before": 7.219512195121951,
+    "missing": [
+     "SP1141",
+     "SP1142"
+    ]
+   },
+   "track": {
+    "metric": "busy_conversion",
+    "scope": "store_id",
+    "ids": [
+     "BLR-03"
+    ],
+    "at_alert": 0.0865561694290976,
+    "target": 0.12401574803149606,
+    "better": "up"
+   },
+   "cards": {
+    "SP1141": {
+     "behaviour": "Be on the floor on busy days",
+     "text": "This weekend: work Sat 24 Oct and Sun 25 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+     "peer": "SP1143"
+    },
+    "SP1142": {
+     "behaviour": "Be on the floor on busy days",
+     "text": "This weekend: work Sat 24 Oct and Sun 25 Oct, and take your weekly off on a weekday. You were off 8 of the last 8 busy days and the floor was short. Santosh V. works weekends; ask how they plan the week.",
+     "peer": "SP1143"
+    }
+   }
+  },
+  {
+   "key": "category_avoid:SP1125:indo_western",
+   "kind": "category_avoid",
+   "lever": "Bigger baskets",
+   "store_id": "BLR-02",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "Suresh K. (BLR-02) rarely sells Indo-Western",
+   "cause": "Indo-Western is on 1.3% of Suresh K.'s bills vs 7.9% for other Bengaluru salespeople (447 bills, last 12 months). Bengaluru buys it; this is one person's gap.",
+   "action": {
+    "who": "Suresh K.",
+    "what": "Show two Indo-Western looks to every wedding customer; ask Venkatesh Y. for their best look first",
+    "when": "today"
+   },
+   "rupees": 89002,
+   "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill",
+   "evidence": {
+    "mix": 0.013422818791946308,
+    "city_median": 0.07857142857142857,
+    "bills_12m": 447,
+    "season_factor": 1.7681420972644377,
+    "peer": "SP1128"
+   },
+   "track": {
+    "metric": "mix",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1125"
+    ],
+    "col": "has_indo_western",
+    "at_alert": 0.013422818791946308,
+    "target": 0.07857142857142857,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1125": {
+     "behaviour": "Show Indo-Western to wedding customers",
+     "text": "Today: show two Indo-Western looks to every wedding customer. Indo-Western is on 1.3% of your bills and 7.9% across Bengaluru. Venkatesh Y. sells it most here; ask for their best look.",
+     "peer": "SP1128"
+    }
+   }
+  },
+  {
+   "key": "city_slowdown:Mysuru",
+   "kind": "city_slowdown",
+   "lever": "More bills",
+   "store_id": null,
+   "city": "Mysuru",
+   "am_id": "AM-06",
+   "title": "Mysuru: conversion down across the city",
+   "cause": "Market problem, not one store: city conversion 7.7% vs 9.0% in the same 13 weeks last year (-15%, rest of the network -4%); 2 of 2 stores are down.",
+   "action": {
+    "who": "Mahesh Shetty",
+    "what": "At today's morning call, tell both Mysuru store managers the drop is city-wide, not their store; keep full Saturday and Sunday rosters and compare stores with each other, not with last year",
+    "when": "today's morning call"
+   },
+   "rupees": 87272,
+   "rupees_formula": "(city conversion last year − now) × walk-ins (13 wks) × avg bill value, per 4 weeks",
+   "evidence": {
+    "conv_now": 0.0766990291262136,
+    "conv_last_year": 0.0899848583171101,
+    "network_change": -0.04180533519396612,
+    "per_store_change": {
+     "MYS-01": -0.148,
+     "MYS-02": -0.147
+    }
+   },
+   "track": {
+    "metric": "conversion",
+    "scope": "store_id",
+    "ids": [
+     "MYS-01",
+     "MYS-02"
+    ],
+    "at_alert": 0.0766990291262136,
+    "target": 0.0899848583171101,
+    "better": "up",
+    "window_days": 91
+   },
+   "cards": {}
+  },
+  {
+   "key": "category_avoid:SP1093:sherwani",
+   "kind": "category_avoid",
+   "lever": "Bigger baskets",
+   "store_id": "PAT-03",
+   "city": "Patna",
+   "am_id": "AM-03",
+   "title": "Jitendra N. (PAT-03) rarely sells Sherwani",
+   "cause": "Sherwani is on 2.7% of Jitendra N.'s bills vs 7.5% for other Patna salespeople (184 bills, last 12 months). Patna buys it; this is one person's gap.",
+   "action": {
+    "who": "Jitendra N.",
+    "what": "Show two Sherwani looks to every wedding customer; ask Amit A. for their best look first",
+    "when": "today"
+   },
+   "rupees": 26900,
+   "rupees_formula": "(city Sherwani share − own) × own bills per 4 weeks × season factor × avg Sherwani value per bill",
+   "evidence": {
+    "mix": 0.02717391304347826,
+    "city_median": 0.07547169811320754,
+    "bills_12m": 184,
+    "season_factor": 1.51578073089701,
+    "peer": "SP1092"
+   },
+   "track": {
+    "metric": "mix",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1093"
+    ],
+    "col": "has_sherwani",
+    "at_alert": 0.02717391304347826,
+    "target": 0.07547169811320754,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1093": {
+     "behaviour": "Show Sherwani to wedding customers",
+     "text": "Today: show two Sherwani looks to every wedding customer. Sherwani is on 2.7% of your bills and 7.5% across Patna. Amit A. sells it most here; ask for their best look.",
+     "peer": "SP1092"
+    }
+   }
+  },
+  {
+   "key": "discount_outlier:PAT-01",
+   "kind": "discount_outlier",
+   "lever": "Bigger baskets",
+   "store_id": "PAT-01",
+   "city": "Patna",
+   "am_id": "AM-03",
+   "title": "PAT-01: discounts well above the store norm",
+   "cause": "Manoj N. gives 7.6% off MRP vs 2.0% for the rest of the store; Sanjay K. gives 6.2% off MRP vs 2.2% for the rest of the store (last 90 days).",
+   "action": {
+    "who": "PAT-01 store manager with Manoj N. and Sanjay K.",
+    "what": "No discount without the store manager's OK; sell at MRP like Tarun T.",
+    "when": "from today's first bill"
+   },
+   "rupees": 24326,
+   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90",
+   "evidence": {
+    "people": {
+     "SP1064": {
+      "discount_pct": 0.07555048836496675,
+      "norm": 0.020174185810391976
+     },
+     "SP1065": {
+      "discount_pct": 0.06194531783348237,
+      "norm": 0.0216142530005224
+     }
+    },
+    "peer": "SP1078"
+   },
+   "track": {
+    "metric": "discount_pct",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1064",
+     "SP1065"
+    ],
+    "at_alert": 0.06864013332804254,
+    "target": 0.014435900086155399,
+    "better": "down",
+    "window_days": 90
+   },
+   "cards": {
+    "SP1064": {
+     "behaviour": "Sell at MRP",
+     "text": "Today: sell at MRP and ask the manager before any discount. You gave 7.6% off MRP; the rest of the store gives 2.0%. Tarun T. closes at MRP; copy their pitch.",
+     "peer": "SP1078"
+    },
+    "SP1065": {
+     "behaviour": "Sell at MRP",
+     "text": "Today: sell at MRP and ask the manager before any discount. You gave 6.2% off MRP; the rest of the store gives 2.2%. Tarun T. closes at MRP; copy their pitch.",
+     "peer": "SP1078"
+    }
+   }
+  },
+  {
+   "key": "repeat_low:SP1072",
+   "kind": "repeat_low",
+   "lever": "More repeat",
+   "store_id": "PAT-01",
+   "city": "Patna",
+   "am_id": "AM-03",
+   "title": "Faizan K. (PAT-01): customers don't come back",
+   "cause": "1.1% of Faizan K.'s customers came back 30+ days later vs 4.8% for the rest of PAT-01 (459 customers first billed 6–18 months ago). Raju P. is the role model at 7.5%.",
+   "action": {
+    "who": "Faizan K.",
+    "what": "Call 15 of the 47 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Raju P. for their follow-up words first",
+    "when": "today, before 12 noon"
+   },
+   "rupees": 14009,
+   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+   "evidence": {
+    "repeat_rate": 0.010893246187363835,
+    "store_rate": 0.04790575916230366,
+    "z": 3.7129669452495695,
+    "customers": 459,
+    "lapsed_wedding_customers": 47,
+    "peer": "SP1076"
+   },
+   "track": {
+    "metric": "returning_share",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1072"
+    ],
+    "at_alert": null,
+    "target": null,
+    "better": "up"
+   },
+   "cards": {
+    "SP1072": {
+     "behaviour": "Bring past customers back",
+     "text": "Today: call 15 past wedding customers who haven't been back and invite them in. 1.1% of your customers return; 7.5% of Raju P.'s do. Ask Raju P. what they say on the call.",
+     "peer": "SP1076"
+    }
+   }
+  },
+  {
+   "key": "repeat_low:SP1114",
+   "kind": "repeat_low",
+   "lever": "More repeat",
+   "store_id": "BLR-01",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "Manjunath C. (BLR-01): customers don't come back",
+   "cause": "2.3% of Manjunath C.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (470 customers first billed 6–18 months ago). Karthik J. is the role model at 12.7%.",
+   "action": {
+    "who": "Manjunath C.",
+    "what": "Call 15 of the 20 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first",
+    "when": "today, before 12 noon"
+   },
+   "rupees": 12199,
+   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+   "evidence": {
+    "repeat_rate": 0.023404255319148935,
+    "store_rate": 0.05696063338464922,
+    "z": 3.1388581635156756,
+    "customers": 470,
+    "lapsed_wedding_customers": 20,
+    "peer": "SP1110"
+   },
+   "track": {
+    "metric": "returning_share",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1114"
+    ],
+    "at_alert": null,
+    "target": null,
+    "better": "up"
+   },
+   "cards": {
+    "SP1114": {
+     "behaviour": "Bring past customers back",
+     "text": "Today: call 15 past wedding customers who haven't been back and invite them in. 2.3% of your customers return; 12.7% of Karthik J.'s do. Ask Karthik J. what they say on the call.",
+     "peer": "SP1110"
+    }
+   }
+  },
+  {
+   "key": "repeat_low:SP1120",
+   "kind": "repeat_low",
+   "lever": "More repeat",
+   "store_id": "BLR-01",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "Suresh V. (BLR-01): customers don't come back",
+   "cause": "2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (492 customers first billed 6–18 months ago). Karthik J. is the role model at 12.7%.",
+   "action": {
+    "who": "Suresh V.",
+    "what": "Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first",
+    "when": "today, before 12 noon"
+   },
+   "rupees": 11558,
+   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+   "evidence": {
+    "repeat_rate": 0.026422764227642278,
+    "store_rate": 0.056795580110497235,
+    "z": 2.910766884695106,
+    "customers": 492,
+    "lapsed_wedding_customers": 14,
+    "peer": "SP1110"
+   },
+   "track": {
+    "metric": "returning_share",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1120"
+    ],
+    "at_alert": null,
+    "target": null,
+    "better": "up"
+   },
+   "cards": {
+    "SP1120": {
+     "behaviour": "Bring past customers back",
+     "text": "Today: call 14 past wedding customers who haven't been back and invite them in. 2.6% of your customers return; 12.7% of Karthik J.'s do. Ask Karthik J. what they say on the call.",
+     "peer": "SP1110"
+    }
+   }
+  },
+  {
+   "key": "category_avoid:SP1173:indo_western",
+   "kind": "category_avoid",
+   "lever": "Bigger baskets",
+   "store_id": "MYS-02",
+   "city": "Mysuru",
+   "am_id": "AM-06",
+   "title": "Mohan Y. (MYS-02) rarely sells Indo-Western",
+   "cause": "Indo-Western is on 2.4% of Mohan Y.'s bills vs 6.1% for other Mysuru salespeople (170 bills, last 12 months). Mysuru buys it; this is one person's gap.",
+   "action": {
+    "who": "Mohan Y.",
+    "what": "Show two Indo-Western looks to every wedding customer; ask Madhu G. for their best look first",
+    "when": "today"
+   },
+   "rupees": 11526,
+   "rupees_formula": "(city Indo-Western share − own) × own bills per 4 weeks × season factor × avg Indo-Western value per bill",
+   "evidence": {
+    "mix": 0.023529411764705882,
+    "city_median": 0.06052717977580789,
+    "bills_12m": 170,
+    "season_factor": 1.042857142857143,
+    "peer": "SP1174"
+   },
+   "track": {
+    "metric": "mix",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1173"
+    ],
+    "col": "has_indo_western",
+    "at_alert": 0.023529411764705882,
+    "target": 0.06052717977580789,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1173": {
+     "behaviour": "Show Indo-Western to wedding customers",
+     "text": "Today: show two Indo-Western looks to every wedding customer. Indo-Western is on 2.4% of your bills and 6.1% across Mysuru. Madhu G. sells it most here; ask for their best look.",
+     "peer": "SP1174"
+    }
+   }
+  },
+  {
+   "key": "repeat_low:SP1013",
+   "kind": "repeat_low",
+   "lever": "More repeat",
+   "store_id": "LKO-01",
+   "city": "Lucknow",
+   "am_id": "AM-01",
+   "title": "Arif M. (LKO-01): customers don't come back",
+   "cause": "1.3% of Arif M.'s customers came back 30+ days later vs 4.4% for the rest of LKO-01 (298 customers first billed 6–18 months ago). Manoj T. is the role model at 7.8%.",
+   "action": {
+    "who": "Arif M.",
+    "what": "Call 15 of the 17 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Manoj T. for their follow-up words first",
+    "when": "today, before 12 noon"
+   },
+   "rupees": 6928,
+   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+   "evidence": {
+    "repeat_rate": 0.013422818791946308,
+    "store_rate": 0.04376012965964344,
+    "z": 2.560132777820738,
+    "customers": 298,
+    "lapsed_wedding_customers": 17,
+    "peer": "SP1012"
+   },
+   "track": {
+    "metric": "returning_share",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1013"
+    ],
+    "at_alert": null,
+    "target": null,
+    "better": "up"
+   },
+   "cards": {
+    "SP1013": {
+     "behaviour": "Bring past customers back",
+     "text": "Today: call 15 past wedding customers who haven't been back and invite them in. 1.3% of your customers return; 7.8% of Manoj T.'s do. Ask Manoj T. what they say on the call.",
+     "peer": "SP1012"
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1087:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "PAT-02",
+   "city": "Patna",
+   "am_id": "AM-03",
+   "title": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani",
+   "cause": "adds a safa to 14% of sherwani bills vs 48% for the rest of PAT-02; adds a mojari to 29% of sherwani bills vs 58% for the rest of PAT-02; adds a mala to 10% of sherwani bills vs 34% for the rest of PAT-02 (21 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Arjun D.",
+    "what": "Show a safa, mojari and mala with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 6892,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 21,
+    "season_factor": 2.3417450812660396,
+    "gaps": [
+     {
+      "add": "Safa",
+      "rate": 0.14285714285714285,
+      "peer_rate": 0.4794520547945205,
+      "rupees": 2615.6543437997834
+     },
+     {
+      "add": "Mojari",
+      "rate": 0.2857142857142857,
+      "peer_rate": 0.5821917808219178,
+      "rupees": 3161.042961405076
+     },
+     {
+      "add": "Mala",
+      "rate": 0.09523809523809523,
+      "peer_rate": 0.3424657534246575,
+      "rupees": 1114.8338938561235
+     }
+    ],
+    "peer": "SP1088",
+    "peer_rate": 0.85
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1087"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_mojari",
+    "at_alert": 0.2857142857142857,
+    "target": 0.5821917808219178,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1087": {
+     "behaviour": "Add a safa, mojari and mala to every sherwani",
+     "text": "Today: show a safa, mojari and mala with every sherwani trial. You add a mojari on 29% of sherwani bills; Saurabh P. does it on 85%. Watch Saurabh P. at the next trial.",
+     "peer": "SP1088"
+    }
+   }
+  },
+  {
+   "key": "repeat_low:SP1129",
+   "kind": "repeat_low",
+   "lever": "More repeat",
+   "store_id": "BLR-02",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "Pavan N. (BLR-02): customers don't come back",
+   "cause": "1.4% of Pavan N.'s customers came back 30+ days later vs 4.5% for the rest of BLR-02 (287 customers first billed 6–18 months ago). Deepak V. is the role model at 5.8%.",
+   "action": {
+    "who": "Pavan N.",
+    "what": "Call 15 of the 15 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Deepak V. for their follow-up words first",
+    "when": "today, before 12 noon"
+   },
+   "rupees": 6767,
+   "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+   "evidence": {
+    "repeat_rate": 0.013937282229965157,
+    "store_rate": 0.0448780487804878,
+    "z": 2.531777996136707,
+    "customers": 287,
+    "lapsed_wedding_customers": 15,
+    "peer": "SP1136"
+   },
+   "track": {
+    "metric": "returning_share",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1129"
+    ],
+    "at_alert": null,
+    "target": null,
+    "better": "up"
+   },
+   "cards": {
+    "SP1129": {
+     "behaviour": "Bring past customers back",
+     "text": "Today: call 15 past wedding customers who haven't been back and invite them in. 1.4% of your customers return; 5.8% of Deepak V.'s do. Ask Deepak V. what they say on the call.",
+     "peer": "SP1136"
+    }
+   }
+  },
+  {
+   "key": "discount_outlier:BLR-01",
+   "kind": "discount_outlier",
+   "lever": "Bigger baskets",
+   "store_id": "BLR-01",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "BLR-01: discounts well above the store norm",
+   "cause": "Sunil T. gives 3.8% off MRP vs 1.2% for the rest of the store (last 90 days).",
+   "action": {
+    "who": "BLR-01 store manager with Sunil T.",
+    "what": "No discount without the store manager's OK; sell at MRP like Prasad M.",
+    "when": "from today's first bill"
+   },
+   "rupees": 4277,
+   "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90",
+   "evidence": {
+    "people": {
+     "SP1122": {
+      "discount_pct": 0.03823980109219016,
+      "norm": 0.012424958056242393
+     }
+    },
+    "peer": "SP1118"
+   },
+   "track": {
+    "metric": "discount_pct",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1122"
+    ],
+    "at_alert": 0.03823980109219016,
+    "target": 0.012424958056242393,
+    "better": "down",
+    "window_days": 90
+   },
+   "cards": {
+    "SP1122": {
+     "behaviour": "Sell at MRP",
+     "text": "Today: sell at MRP and ask the manager before any discount. You gave 3.8% off MRP; the rest of the store gives 1.2%. Prasad M. closes at MRP; copy their pitch.",
+     "peer": "SP1118"
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1034:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "LKO-04",
+   "city": "Lucknow",
+   "am_id": "AM-01",
+   "title": "Ravi K. (LKO-04) rarely adds a safa to a sherwani",
+   "cause": "adds a safa to 18% of sherwani bills vs 42% for the rest of LKO-04 (17 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Ravi K.",
+    "what": "Show a safa with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 1631,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 17,
+    "season_factor": 2.4722906403940885,
+    "gaps": [
+     {
+      "add": "Safa",
+      "rate": 0.17647058823529413,
+      "peer_rate": 0.42424242424242425,
+      "rupees": 1630.6714616064748
+     }
+    ],
+    "peer": "SP1041",
+    "peer_rate": 0.4
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1034"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_safa",
+    "at_alert": 0.17647058823529413,
+    "target": 0.42424242424242425,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1034": {
+     "behaviour": "Add a safa to every sherwani",
+     "text": "Today: show a safa with every sherwani trial. You add a safa on 18% of sherwani bills; Kamal A. does it on 40%. Watch Kamal A. at the next trial.",
+     "peer": "SP1041"
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1027:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "LKO-02",
+   "city": "Lucknow",
+   "am_id": "AM-01",
+   "title": "Sumit A. (LKO-02) rarely adds a mojari to a sherwani",
+   "cause": "adds a mojari to 27% of sherwani bills vs 55% for the rest of LKO-02 (15 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Sumit A.",
+    "what": "Show a mojari with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 1483,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 15,
+    "season_factor": 1.6294642857142856,
+    "gaps": [
+     {
+      "add": "Mojari",
+      "rate": 0.26666666666666666,
+      "peer_rate": 0.5477178423236515,
+      "rupees": 1482.6848599357245
+     }
+    ],
+    "peer": null,
+    "peer_rate": null
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1027"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_mojari",
+    "at_alert": 0.26666666666666666,
+    "target": 0.5477178423236515,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1027": {
+     "behaviour": "Add a mojari to every sherwani",
+     "text": "Today: show a mojari with every sherwani trial. You add a mojari on 27% of sherwani bills; your best colleague does it on 55%. Watch your best colleague at the next trial.",
+     "peer": null
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1128:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "BLR-02",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "Venkatesh Y. (BLR-02) rarely adds a mala to a sherwani",
+   "cause": "adds a mala to 12% of sherwani bills vs 39% for the rest of BLR-02 (32 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Venkatesh Y.",
+    "what": "Show a mala with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 1356,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 32,
+    "season_factor": 1.7464114832535884,
+    "gaps": [
+     {
+      "add": "Mala",
+      "rate": 0.125,
+      "peer_rate": 0.3898305084745763,
+      "rupees": 1355.5043004956424
+     }
+    ],
+    "peer": "SP1140",
+    "peer_rate": 0.625
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1128"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_mala",
+    "at_alert": 0.125,
+    "target": 0.3898305084745763,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1128": {
+     "behaviour": "Add a mala to every sherwani",
+     "text": "Today: show a mala with every sherwani trial. You add a mala on 12% of sherwani bills; Venkatesh S. does it on 62%. Watch Venkatesh S. at the next trial.",
+     "peer": "SP1140"
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1045:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "KNP-01",
+   "city": "Kanpur",
+   "am_id": "AM-02",
+   "title": "Ravi C. (KNP-01) rarely adds a safa to a sherwani",
+   "cause": "adds a safa to 16% of sherwani bills vs 36% for the rest of KNP-01 (19 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Ravi C.",
+    "what": "Show a safa with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 1222,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 19,
+    "season_factor": 1.9751082251082253,
+    "gaps": [
+     {
+      "add": "Safa",
+      "rate": 0.15789473684210525,
+      "peer_rate": 0.36283185840707965,
+      "rupees": 1221.7790105519603
+     }
+    ],
+    "peer": "SP1050",
+    "peer_rate": 0.4166666666666667
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1045"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_safa",
+    "at_alert": 0.15789473684210525,
+    "target": 0.36283185840707965,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1045": {
+     "behaviour": "Add a safa to every sherwani",
+     "text": "Today: show a safa with every sherwani trial. You add a safa on 16% of sherwani bills; Sachin T. does it on 42%. Watch Sachin T. at the next trial.",
+     "peer": "SP1050"
+    }
+   }
+  },
+  {
+   "key": "category_avoid:SP1108:mala",
+   "kind": "category_avoid",
+   "lever": "Bigger baskets",
+   "store_id": "MZF-02",
+   "city": "Muzaffarpur",
+   "am_id": "AM-04",
+   "title": "Manish C. (MZF-02) rarely sells Mala",
+   "cause": "Mala is on 1.5% of Manish C.'s bills vs 6.6% for other Muzaffarpur salespeople (131 bills, last 12 months). Muzaffarpur buys it; this is one person's gap.",
+   "action": {
+    "who": "Manish C.",
+    "what": "Show two Mala looks to every wedding customer; ask Ankit P. for their best look first",
+    "when": "today"
+   },
+   "rupees": 960,
+   "rupees_formula": "(city Mala share − own) × own bills per 4 weeks × season factor × avg Mala value per bill",
+   "evidence": {
+    "mix": 0.015267175572519083,
+    "city_median": 0.06584362139917696,
+    "bills_12m": 131,
+    "season_factor": 1.4484126984126984,
+    "peer": "SP1106"
+   },
+   "track": {
+    "metric": "mix",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1108"
+    ],
+    "col": "has_mala",
+    "at_alert": 0.015267175572519083,
+    "target": 0.06584362139917696,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1108": {
+     "behaviour": "Show Mala to wedding customers",
+     "text": "Today: show two Mala looks to every wedding customer. Mala is on 1.5% of your bills and 6.6% across Muzaffarpur. Ankit P. sells it most here; ask for their best look.",
+     "peer": "SP1106"
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1125:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "BLR-02",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "Suresh K. (BLR-02) rarely adds a mala to a sherwani",
+   "cause": "adds a mala to 13% of sherwani bills vs 38% for the rest of BLR-02 (23 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Suresh K.",
+    "what": "Show a mala with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 905,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 23,
+    "season_factor": 1.7464114832535884,
+    "gaps": [
+     {
+      "add": "Mala",
+      "rate": 0.13043478260869565,
+      "peer_rate": 0.3763440860215054,
+      "rupees": 904.6606550877799
+     }
+    ],
+    "peer": "SP1140",
+    "peer_rate": 0.625
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1125"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_mala",
+    "at_alert": 0.13043478260869565,
+    "target": 0.3763440860215054,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1125": {
+     "behaviour": "Add a mala to every sherwani",
+     "text": "Today: show a mala with every sherwani trial. You add a mala on 13% of sherwani bills; Venkatesh S. does it on 62%. Watch Venkatesh S. at the next trial.",
+     "peer": "SP1140"
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1092:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "PAT-03",
+   "city": "Patna",
+   "am_id": "AM-03",
+   "title": "Amit A. (PAT-03) rarely adds a mala to a sherwani",
+   "cause": "adds a mala to 11% of sherwani bills vs 40% for the rest of PAT-03 (18 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Amit A.",
+    "what": "Show a mala with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 759,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 18,
+    "season_factor": 1.51578073089701,
+    "gaps": [
+     {
+      "add": "Mala",
+      "rate": 0.1111111111111111,
+      "peer_rate": 0.4,
+      "rupees": 759.0665597433841
+     }
+    ],
+    "peer": null,
+    "peer_rate": null
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1092"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_mala",
+    "at_alert": 0.1111111111111111,
+    "target": 0.4,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1092": {
+     "behaviour": "Add a mala to every sherwani",
+     "text": "Today: show a mala with every sherwani trial. You add a mala on 11% of sherwani bills; your best colleague does it on 40%. Watch your best colleague at the next trial.",
+     "peer": null
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1090:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "PAT-02",
+   "city": "Patna",
+   "am_id": "AM-03",
+   "title": "Jitendra K. (PAT-02) rarely adds a mala to a sherwani",
+   "cause": "adds a mala to 13% of sherwani bills vs 33% for the rest of PAT-02 (15 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Jitendra K.",
+    "what": "Show a mala with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 630,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 15,
+    "season_factor": 2.3417450812660396,
+    "gaps": [
+     {
+      "add": "Mala",
+      "rate": 0.13333333333333333,
+      "peer_rate": 0.32894736842105265,
+      "rupees": 630.0646076268515
+     }
+    ],
+    "peer": "SP1088",
+    "peer_rate": 0.6
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1090"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_mala",
+    "at_alert": 0.13333333333333333,
+    "target": 0.32894736842105265,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1090": {
+     "behaviour": "Add a mala to every sherwani",
+     "text": "Today: show a mala with every sherwani trial. You add a mala on 13% of sherwani bills; Saurabh P. does it on 60%. Watch Saurabh P. at the next trial.",
+     "peer": "SP1088"
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1116:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "BLR-01",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "Chetan S. (BLR-01) rarely adds a mala to a sherwani",
+   "cause": "adds a mala to 16% of sherwani bills vs 32% for the rest of BLR-01 (19 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Chetan S.",
+    "what": "Show a mala with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 491,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 19,
+    "season_factor": 1.7216981132075473,
+    "gaps": [
+     {
+      "add": "Mala",
+      "rate": 0.15789473684210525,
+      "peer_rate": 0.32124352331606215,
+      "rupees": 490.8287524773593
+     }
+    ],
+    "peer": "SP1122",
+    "peer_rate": 0.375
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1116"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_mala",
+    "at_alert": 0.15789473684210525,
+    "target": 0.32124352331606215,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1116": {
+     "behaviour": "Add a mala to every sherwani",
+     "text": "Today: show a mala with every sherwani trial. You add a mala on 16% of sherwani bills; Sunil T. does it on 38%. Watch Sunil T. at the next trial.",
+     "peer": "SP1122"
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1054:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "KNP-01",
+   "city": "Kanpur",
+   "am_id": "AM-02",
+   "title": "Shahid A. (KNP-01) rarely adds a mala to a sherwani",
+   "cause": "adds a mala to 12% of sherwani bills vs 28% for the rest of KNP-01 (16 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Shahid A.",
+    "what": "Show a mala with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 441,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 16,
+    "season_factor": 1.9751082251082253,
+    "gaps": [
+     {
+      "add": "Mala",
+      "rate": 0.125,
+      "peer_rate": 0.27586206896551724,
+      "rupees": 441.3347470649702
+     }
+    ],
+    "peer": "SP1050",
+    "peer_rate": 0.4166666666666667
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1054"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_mala",
+    "at_alert": 0.125,
+    "target": 0.27586206896551724,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1054": {
+     "behaviour": "Add a mala to every sherwani",
+     "text": "Today: show a mala with every sherwani trial. You add a mala on 12% of sherwani bills; Sachin T. does it on 42%. Watch Sachin T. at the next trial.",
+     "peer": "SP1050"
+    }
+   }
+  },
+  {
+   "key": "attach_gap:SP1159:sherwani",
+   "kind": "attach_gap",
+   "lever": "Bigger baskets",
+   "store_id": "BLR-04",
+   "city": "Bengaluru",
+   "am_id": "AM-05",
+   "title": "Venkatesh T. (BLR-04) rarely adds a mala to a sherwani",
+   "cause": "adds a mala to 13% of sherwani bills vs 27% for the rest of BLR-04 (15 sherwani bills, last 12 months).",
+   "action": {
+    "who": "Venkatesh T.",
+    "what": "Show a mala with every sherwani trial",
+    "when": "today, at every trial"
+   },
+   "rupees": 323,
+   "rupees_formula": "Σ (store attach − own attach) × own sherwani bills per 4 weeks × season factor (same 4 weeks last year) × add-on avg price",
+   "evidence": {
+    "anchor_bills_12m": 15,
+    "season_factor": 1.7380952380952381,
+    "gaps": [
+     {
+      "add": "Mala",
+      "rate": 0.13333333333333333,
+      "peer_rate": 0.26666666666666666,
+      "rupees": 323.3636363636363
+     }
+    ],
+    "peer": "SP1157",
+    "peer_rate": 0.35294117647058826
+   },
+   "track": {
+    "metric": "attach",
+    "scope": "salesperson_id",
+    "ids": [
+     "SP1159"
+    ],
+    "anchor": "has_sherwani",
+    "col": "has_mala",
+    "at_alert": 0.13333333333333333,
+    "target": 0.26666666666666666,
+    "better": "up",
+    "window_days": 365
+   },
+   "cards": {
+    "SP1159": {
+     "behaviour": "Add a mala to every sherwani",
+     "text": "Today: show a mala with every sherwani trial. You add a mala on 13% of sherwani bills; Kumar B. does it on 35%. Watch Kumar B. at the next trial.",
+     "peer": "SP1157"
+    }
+   }
+  }
+ ]
+}

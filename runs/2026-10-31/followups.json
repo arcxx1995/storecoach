@@ -1,0 +1,18 @@
+{
+ "meta": {
+  "as_of": "2026-10-31",
+  "today": "2026-11-01",
+  "data_ends": "2026-10-31",
+  "window": [
+   "2026-10-04",
+   "2026-10-31"
+  ],
+  "issues_found": 26,
+  "cards": 126,
+  "sarvam": true,
+  "translated": 132,
+  "fallback_en": 0,
+  "audio": 132
+ },
+ "followups": []
+}

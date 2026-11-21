@@ -1,0 +1,70 @@
+{
+ "meta": {
+  "as_of": "2026-10-03",
+  "today": "2026-10-04",
+  "data_ends": "2026-10-31",
+  "window": [
+   "2026-09-06",
+   "2026-10-03"
+  ],
+  "issues_found": 26,
+  "cards": 120,
+  "sarvam": false,
+  "translated": 0,
+  "fallback_en": 0,
+  "audio": 0
+ },
+ "rows": [
+  {
+   "type": "new_store_no_baseline",
+   "store_id": "BLR-05",
+   "from": "2026-10-10",
+   "note": "Opened <90 days ago; kept out of peer comparisons."
+  },
+  {
+   "type": "placeholder_customer_id",
+   "store_id": "PAT-02",
+   "customer_id": "C99999999",
+   "from": "2026-07-11",
+   "share_last_90d": 0.32,
+   "share_before": 0.02,
+   "bills_affected": 113,
+   "top_salespeople": {
+    "SP1083": 26,
+    "SP1085": 21,
+    "SP1090": 17
+   },
+   "note": "Dummy mobile number on bills; repeat rate for this store can't be measured. Excluded from repeat."
+  },
+  {
+   "type": "salesperson_no_bills",
+   "store_id": "BLR-02",
+   "salesperson_id": "SP1138",
+   "note": "On staff list but never billed."
+  },
+  {
+   "type": "salesperson_no_bills",
+   "store_id": "BLR-05",
+   "salesperson_id": "SP1163",
+   "note": "On staff list but never billed."
+  },
+  {
+   "type": "salesperson_no_bills",
+   "store_id": "BLR-05",
+   "salesperson_id": "SP1164",
+   "note": "On staff list but never billed."
+  },
+  {
+   "type": "salesperson_no_bills",
+   "store_id": "BLR-05",
+   "salesperson_id": "SP1165",
+   "note": "On staff list but never billed."
+  },
+  {
+   "type": "salesperson_no_bills",
+   "store_id": "LKO-02",
+   "salesperson_id": "SP1175",
+   "note": "On staff list but never billed."
+  }
+ ]
+}

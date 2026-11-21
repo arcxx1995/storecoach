@@ -1,0 +1,259 @@
+{
+ "meta": {
+  "as_of": "2026-10-27",
+  "today": "2026-10-28",
+  "data_ends": "2026-10-31",
+  "window": [
+   "2026-09-30",
+   "2026-10-27"
+  ],
+  "issues_found": 25,
+  "cards": 125,
+  "sarvam": false,
+  "translated": 0,
+  "fallback_en": 0,
+  "audio": 0
+ },
+ "digests": {
+  "AM-01": {
+   "am_id": "AM-01",
+   "name": "Rakesh Srivastava",
+   "city": "Lucknow",
+   "lang": "hi-IN",
+   "as_of": "2026-10-27",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [],
+   "notes": [],
+   "briefing_en": "Good morning Rakesh. Store Coach for Wed 28 Oct. No new issues today.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-02": {
+   "am_id": "AM-02",
+   "name": "Alok Tiwari",
+   "city": "Kanpur",
+   "lang": "hi-IN",
+   "as_of": "2026-10-27",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1061",
+     "name": "Kunal N.",
+     "store_id": "KNP-03",
+     "city": "Kanpur",
+     "am_id": "AM-02",
+     "repeat_rate": 0.05741626794258373,
+     "store_rate": 0.026706231454005934,
+     "customers": 209
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Alok. Store Coach for Wed 28 Oct. No new issues today. Role model: Kunal N. at KNP-03; 6% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-03": {
+   "am_id": "AM-03",
+   "name": "Nitin Sinha",
+   "city": "Patna",
+   "lang": "hi-IN",
+   "as_of": "2026-10-27",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [],
+   "notes": [
+    "Low priority (PAT-02): 41% of bills since Fri 7 Aug use the dummy number C99999999, mostly by Aman B., Prakash J. and Jitendra K. Ask staff to type each customer's real mobile number from today; until then repeat for PAT-02 can't be tracked."
+   ],
+   "briefing_en": "Good morning Nitin. Store Coach for Wed 28 Oct. No new issues today.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-04": {
+   "am_id": "AM-04",
+   "name": "Pankaj Jha",
+   "city": "Muzaffarpur",
+   "lang": "hi-IN",
+   "as_of": "2026-10-27",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1106",
+     "name": "Ankit P.",
+     "store_id": "MZF-02",
+     "city": "Muzaffarpur",
+     "am_id": "AM-04",
+     "repeat_rate": 0.07741935483870968,
+     "store_rate": 0.03140096618357488,
+     "customers": 155
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Pankaj. Store Coach for Wed 28 Oct. No new issues today. Role model: Ankit P. at MZF-02; 8% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-05": {
+   "am_id": "AM-05",
+   "name": "Harish Gowda",
+   "city": "Bengaluru",
+   "lang": "kn-IN",
+   "as_of": "2026-10-27",
+   "max_per_week": 5,
+   "new_today": [
+    {
+     "key": "discount_outlier:BLR-01",
+     "kind": "discount_outlier",
+     "lever": "Bigger baskets",
+     "store_id": "BLR-01",
+     "city": "Bengaluru",
+     "am_id": "AM-05",
+     "title": "BLR-01: discounts well above the store norm",
+     "cause": "Sunil T. gives 3.9% off MRP vs 1.3% for the rest of the store (last 90 days).",
+     "action": {
+      "who": "BLR-01 store manager with Sunil T.",
+      "what": "No discount without the store manager's OK; sell at MRP like Prasad M.",
+      "when": "from today's first bill"
+     },
+     "rupees": 5023,
+     "rupees_formula": "Σ (own discount % − store norm) × own MRP value (90 days) × 28/90",
+     "evidence": {
+      "people": {
+       "SP1122": {
+        "discount_pct": 0.039179338486223216,
+        "norm": 0.01287923002456848
+       }
+      },
+      "peer": "SP1118"
+     },
+     "track": {
+      "metric": "discount_pct",
+      "scope": "salesperson_id",
+      "ids": [
+       "SP1122"
+      ],
+      "at_alert": 0.039179338486223216,
+      "target": 0.01287923002456848,
+      "better": "down",
+      "window_days": 90
+     },
+     "text_en": "BLR-01: discounts well above the store norm. Cause: Sunil T. gives 3.9% off MRP vs 1.3% for the rest of the store (last 90 days). Action for BLR-01 store manager with Sunil T.: No discount without the store manager's OK; sell at MRP like Prasad M., from today's first bill. At stake: ₹5k per 4 weeks.",
+     "text_local": null
+    }
+   ],
+   "earlier_this_week": [
+    {
+     "sent_on": "2026-10-22",
+     "key": "repeat_low:SP1120",
+     "kind": "repeat_low",
+     "lever": "More repeat",
+     "store_id": "BLR-01",
+     "city": "Bengaluru",
+     "am_id": "AM-05",
+     "title": "Suresh V. (BLR-01): customers don't come back",
+     "cause": "2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (491 customers first billed 6–18 months ago). Karthik J. is the role model at 12.4%.",
+     "action": {
+      "who": "Suresh V.",
+      "what": "Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first",
+      "when": "today, before 12 noon"
+     },
+     "rupees": 11470,
+     "rupees_formula": "(store repeat rate − own) × own new customers (12-month cohort) × avg bill value, per 4 weeks",
+     "evidence": {
+      "repeat_rate": 0.026476578411405296,
+      "store_rate": 0.056699889258028796,
+      "z": 2.8957878120986957,
+      "customers": 491,
+      "lapsed_wedding_customers": 14,
+      "peer": "SP1110"
+     },
+     "track": {
+      "metric": "returning_share",
+      "scope": "salesperson_id",
+      "ids": [
+       "SP1120"
+      ],
+      "at_alert": null,
+      "target": null,
+      "better": "up"
+     },
+     "text_en": "Suresh V. (BLR-01): customers don't come back. Cause: 2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (491 customers first billed 6–18 months ago). Karthik J. is the role model at 12.4%. Action for Suresh V.: Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first, today, before 12 noon. At stake: ₹11k per 4 weeks.",
+     "text_local": null
+    }
+   ],
+   "held_back": 0,
+   "followups": [],
+   "role_models": [
+    {
+     "salesperson_id": "SP1110",
+     "name": "Karthik J.",
+     "store_id": "BLR-01",
+     "city": "Bengaluru",
+     "am_id": "AM-05",
+     "repeat_rate": 0.12266666666666666,
+     "store_rate": 0.047700902449505804,
+     "customers": 375
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Harish. Store Coach for Wed 28 Oct. 1 new issue today. 1. BLR-01: discounts well above the store norm. No discount without the store manager's OK; sell at MRP like Prasad M., from today's first bill. ₹5k at stake. Role model: Karthik J. at BLR-01; 12% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  },
+  "AM-06": {
+   "am_id": "AM-06",
+   "name": "Mahesh Shetty",
+   "city": "Mysuru",
+   "lang": "kn-IN",
+   "as_of": "2026-10-27",
+   "max_per_week": 5,
+   "new_today": [],
+   "earlier_this_week": [],
+   "held_back": 0,
+   "followups": [
+    {
+     "key": "category_avoid:SP1173:indo_western",
+     "title": "Mohan Y. (MYS-02) rarely sells Indo-Western",
+     "am_id": "AM-06",
+     "alerted_on": "2026-10-20",
+     "metric": "share of bills",
+     "before": 0.023391812865497075,
+     "after": 0.0,
+     "sample": 3,
+     "status": "too_early",
+     "summary": "Mohan Y. (MYS-02) rarely sells Indo-Western: too few bills in 7 days to tell (3)."
+    }
+   ],
+   "role_models": [
+    {
+     "salesperson_id": "SP1172",
+     "name": "Santosh B.",
+     "store_id": "MYS-02",
+     "city": "Mysuru",
+     "am_id": "AM-06",
+     "repeat_rate": 0.07692307692307693,
+     "store_rate": 0.03125,
+     "customers": 247
+    }
+   ],
+   "notes": [],
+   "briefing_en": "Good morning Mahesh. Store Coach for Wed 28 Oct. No new issues today. Role model: Santosh B. at MYS-02; 8% of their customers come back.",
+   "briefing_local": null,
+   "briefing_audio": null
+  }
+ }
+}
