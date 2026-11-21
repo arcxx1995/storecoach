@@ -5,11 +5,19 @@ export default function Chat({ date, amId }: { date: string; amId: string }) {
   const [q, setQ] = useState("");
   const [answer, setAnswer] = useState("");
   const [busy, setBusy] = useState(false);
+  const [audio, setAudio] = useState("");
+
+  async function speak() {
+    setAudio("");
+    const r = await fetch("/api/tts", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ text: answer }) });
+    if (r.ok) setAudio(URL.createObjectURL(await r.blob()));
+  }
 
   async function ask(e: React.FormEvent) {
     e.preventDefault();
     setBusy(true);
     setAnswer("");
+    setAudio("");
     try {
       const r = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" },
         body: JSON.stringify({ date, amId, question: q }) });
@@ -29,6 +37,8 @@ export default function Chat({ date, amId }: { date: string; amId: string }) {
         placeholder="Why is LKO-02 on my list? Who should Sumit call first?" />
       <button disabled={busy || !q.trim()}>{busy ? "Thinking…" : "Ask"}</button>
       {answer && <div className="answer" aria-live="polite">{answer}</div>}
+      {answer && <button type="button" onClick={speak}>Listen</button>}
+      {audio && <audio controls autoPlay src={audio} />}
     </form>
   );
 }

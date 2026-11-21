@@ -1,12 +1,11 @@
 """Load the Manyavar CSVs into typed DataFrames, cut at an as-of date."""
-import os
 from dataclasses import dataclass
-from pathlib import Path
 
 import pandas as pd
 
-DATA_DIR = Path(os.environ.get("STORECOACH_DATA", Path(__file__).resolve().parent.parent / "data"))
-LAST_DAY = pd.Timestamp("2026-10-31")
+from engine import source
+from engine.source import DATA_DIR  # noqa: F401  (tests read the raw CSVs)
+
 PLACEHOLDER_MIN_BILLS = 50
 
 NUMERIC = {
@@ -34,7 +33,7 @@ def slug(s: str) -> str:
 
 def read(name: str) -> pd.DataFrame:
     # IDs stay text; blanks stay "" until a column is converted.
-    df = pd.read_csv(DATA_DIR / f"{name}.csv", dtype=str, keep_default_na=False)
+    df = source.table(name)
     for c in NUMERIC.get(name, []):
         df[c] = pd.to_numeric(df[c])
     for c in DATES.get(name, []):
@@ -58,7 +57,7 @@ class Data:
 
 
 def load(as_of=None) -> Data:
-    as_of = pd.Timestamp(as_of) if as_of else LAST_DAY
+    as_of = pd.Timestamp(as_of) if as_of else source.data_end()
     stores, items, cal = read("stores"), read("items"), read("calendar")
 
     bills = read("bills")

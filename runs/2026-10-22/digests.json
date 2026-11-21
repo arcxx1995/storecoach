@@ -9,10 +9,15 @@
   ],
   "issues_found": 24,
   "cards": 124,
-  "sarvam": false,
-  "translated": 0,
+  "sarvam": true,
+  "translated": 6,
   "fallback_en": 0,
-  "audio": 0
+  "audio": 6,
+  "health": {
+   "seconds": 11.3,
+   "source": "csv",
+   "sarvam_cut_off": false
+  }
  },
  "digests": {
   "AM-01": {
@@ -49,13 +54,25 @@
      "sample": 5,
      "status": "too_early",
      "summary": "Arif M. (LKO-01): customers don't come back: too few bills in 7 days to tell (5)."
+    },
+    {
+     "key": "repeat_low:SP1013",
+     "title": "Arif M. (LKO-01): customers don't come back",
+     "am_id": "AM-01",
+     "alerted_on": "2026-10-01",
+     "metric": "bills from returning customers",
+     "before": 0.16666666666666666,
+     "after": 0.0,
+     "sample": 11,
+     "status": "too_early",
+     "summary": "Arif M. (LKO-01): customers don't come back: too few bills in 7 days to tell (11)."
     }
    ],
    "role_models": [],
    "notes": [],
    "briefing_en": "Good morning Rakesh. Store Coach for Fri 23 Oct. No new issues today. Last week's alerts: LKO-02: top seller Imran C. has left: conversion improved, 9.3% → 12.3% in the week since.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "गुड मॉर्निंग राकेश। 23 Oct Fri के लिए Store Coach। आज कोई नया issue नहीं है। पिछले हफ़्ते के alerts: LKO-02: top seller Imran C. चले गए हैं: conversion सुधरा है, 9.3% → 12.3% पिछले हफ़्ते में।",
+   "briefing_audio": "2026-10-22/audio/briefing_AM-01.mp3"
   },
   "AM-02": {
    "am_id": "AM-02",
@@ -67,7 +84,20 @@
    "new_today": [],
    "earlier_this_week": [],
    "held_back": 0,
-   "followups": [],
+   "followups": [
+    {
+     "key": "attach_gap:SP1053:kurta_set",
+     "title": "Dheeraj R. (KNP-01) rarely adds a jacket to a kurta set",
+     "am_id": "AM-02",
+     "alerted_on": "2026-10-01",
+     "metric": "attach rate",
+     "before": 0.10795454545454546,
+     "after": 1.0,
+     "sample": 1,
+     "status": "too_early",
+     "summary": "Dheeraj R. (KNP-01) rarely adds a jacket to a kurta set: too few bills in 7 days to tell (1)."
+    }
+   ],
    "role_models": [
     {
      "salesperson_id": "SP1061",
@@ -82,8 +112,8 @@
    ],
    "notes": [],
    "briefing_en": "Good morning Alok. Store Coach for Fri 23 Oct. No new issues today. Role model: Kunal N. at KNP-03; 6% of their customers come back.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "गुड मॉर्निंग आलोक। 23 Oct, Fri का Store Coach। आज कोई नया issue नहीं है। रोल मॉडल: KNP-03 में Kunal N.; उनके 6% customers वापस आते हैं।",
+   "briefing_audio": "2026-10-22/audio/briefing_AM-02.mp3"
   },
   "AM-03": {
    "am_id": "AM-03",
@@ -143,15 +173,49 @@
      "sample": 0,
      "status": "too_early",
      "summary": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani: too few bills in 7 days to tell (0)."
+    },
+    {
+     "key": "category_avoid:SP1093:sherwani",
+     "title": "Jitendra N. (PAT-03) rarely sells Sherwani",
+     "am_id": "AM-03",
+     "alerted_on": "2026-10-01",
+     "metric": "share of bills",
+     "before": 0.023809523809523808,
+     "after": 0.0,
+     "sample": 2,
+     "status": "too_early",
+     "summary": "Jitendra N. (PAT-03) rarely sells Sherwani: too few bills in 7 days to tell (2)."
+    },
+    {
+     "key": "repeat_low:SP1072",
+     "title": "Faizan K. (PAT-01): customers don't come back",
+     "am_id": "AM-03",
+     "alerted_on": "2026-10-01",
+     "metric": "bills from returning customers",
+     "before": 0.0,
+     "after": 0.08333333333333333,
+     "sample": 12,
+     "status": "too_early",
+     "summary": "Faizan K. (PAT-01): customers don't come back: too few bills in 7 days to tell (12)."
+    },
+    {
+     "key": "attach_gap:SP1087:sherwani",
+     "title": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani",
+     "am_id": "AM-03",
+     "alerted_on": "2026-10-01",
+     "metric": "attach rate",
+     "before": 0.2608695652173913,
+     "after": null,
+     "sample": 0,
+     "status": "too_early",
+     "summary": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani: too few bills in 7 days to tell (0)."
     }
    ],
    "role_models": [],
-   "notes": [
-    "Low priority (PAT-02): 40% of bills since Mon 27 Jul use the dummy number C99999999, mostly by Aman B., Prakash J. and Jitendra K. Ask staff to type each customer's real mobile number from today; until then repeat for PAT-02 can't be tracked."
-   ],
+   "notes": [],
    "briefing_en": "Good morning Nitin. Store Coach for Fri 23 Oct. No new issues today. Last week's alerts: PAT-01: discounts well above the store norm: discount off MRP improved, 7.7% → 2.5% in the week since.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "गुड मॉर्निंग नितिन। फ्राइडे 23 Oct के लिए Store Coach। आज कोई नया इशू नहीं है। पिछले हफ्ते के अलर्ट्स: PAT-01: डिस्काउंट्स स्टोर नॉर्म से काफी ऊपर हैं: MRP पर डिस्काउंट इस हफ्ते में सुधरकर 7.7% → 2.5% हो गया।",
+   "briefing_audio": "2026-10-22/audio/briefing_AM-03.mp3"
   },
   "AM-04": {
    "am_id": "AM-04",
@@ -178,8 +242,8 @@
    ],
    "notes": [],
    "briefing_en": "Good morning Pankaj. Store Coach for Fri 23 Oct. No new issues today. Role model: Ankit P. at MZF-02; 7% of their customers come back.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "गुड मॉर्निंग पंकज जी। 23 Oct Fri के लिए Store Coach। आज कोई नया issue नहीं है। रोल मॉडल: MZF-02 में Ankit P. हैं; उनके 7% customers वापस आते हैं।",
+   "briefing_audio": "2026-10-22/audio/briefing_AM-04.mp3"
   },
   "AM-05": {
    "am_id": "AM-05",
@@ -224,7 +288,7 @@
       "better": "up"
      },
      "text_en": "Suresh V. (BLR-01): customers don't come back. Cause: 2.6% of Suresh V.'s customers came back 30+ days later vs 5.7% for the rest of BLR-01 (491 customers first billed 6–18 months ago). Karthik J. is the role model at 12.4%. Action for Suresh V.: Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first, today, before 12 noon. At stake: ₹11k per 4 weeks.",
-     "text_local": null
+     "text_local": "ಸುರೇಶ್ ವಿ. (BLR-01): ಕಸ್ಟಮರ್ಸ್ ಮತ್ತೆ ಬರೋದಿಲ್ಲ. ಕಾರಣ: ಸುರೇಶ್ ವಿ. ಅವರ 2.6% ಕಸ್ಟಮರ್ಸ್ 30+ ದಿನಗಳ ನಂತರ ಮತ್ತೆ ಬಂದಿದ್ದಾರೆ, ಆದರೆ BLR-01 ನ ಉಳಿದವರದ್ದು 5.7% ಇದೆ (6–18 ತಿಂಗಳ ಹಿಂದೆ ಮೊದಲ ಬಾರಿಗೆ ಬಿಲ್ ಆದ 491 ಕಸ್ಟಮರ್ಸ್). ಕಾರ್ತಿಕ್ ಜೆ. ಅವರು 12.4% ನೊಂದಿಗೆ ರೋಲ್ ಮಾಡೆಲ್ ಆಗಿದ್ದಾರೆ. ಸುರೇಶ್ ವಿ. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: 6–18 ತಿಂಗಳ ಹಿಂದೆ ಮದುವೆಗಾಗಿ ಬಂದಿದ್ದ 14 ಜನ ಕಸ್ಟಮರ್ಸ್ ಗಳಲ್ಲಿ, ಮತ್ತೆ ಬಾರದ 14 ಜನರನ್ನು ಕಾಲ್ ಮಾಡಿ ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ; ಅವರ ಫಾಲೋ-ಅಪ್ ಮಾತುಕತೆಯ ವಿಧಾನವನ್ನು ಮೊದಲು ಕಾರ್ತಿಕ್ ಜೆ. ಅವರ ಹತ್ತಿರ ಕೇಳಿ ತಿಳಿದುಕೊಳ್ಳಿ, ಇವತ್ತೇ ಮಧ್ಯಾಹ್ನ 12 ಗಂಟೆಗಿಂತ ಮುಂಚೆ. ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹11k."
     }
    ],
    "earlier_this_week": [],
@@ -289,6 +353,42 @@
      "sample": 14,
      "status": "too_early",
      "summary": "Pavan N. (BLR-02): customers don't come back: too few bills in 7 days to tell (14)."
+    },
+    {
+     "key": "category_avoid:SP1125:indo_western",
+     "title": "Suresh K. (BLR-02) rarely sells Indo-Western",
+     "am_id": "AM-05",
+     "alerted_on": "2026-10-01",
+     "metric": "share of bills",
+     "before": 0.014989293361884369,
+     "after": 0.0,
+     "sample": 7,
+     "status": "too_early",
+     "summary": "Suresh K. (BLR-02) rarely sells Indo-Western: too few bills in 7 days to tell (7)."
+    },
+    {
+     "key": "repeat_low:SP1114",
+     "title": "Manjunath C. (BLR-01): customers don't come back",
+     "am_id": "AM-05",
+     "alerted_on": "2026-10-01",
+     "metric": "bills from returning customers",
+     "before": 0.09523809523809523,
+     "after": 0.0,
+     "sample": 9,
+     "status": "too_early",
+     "summary": "Manjunath C. (BLR-01): customers don't come back: too few bills in 7 days to tell (9)."
+    },
+    {
+     "key": "repeat_low:SP1129",
+     "title": "Pavan N. (BLR-02): customers don't come back",
+     "am_id": "AM-05",
+     "alerted_on": "2026-10-01",
+     "metric": "bills from returning customers",
+     "before": 0.0625,
+     "after": 0.0,
+     "sample": 5,
+     "status": "too_early",
+     "summary": "Pavan N. (BLR-02): customers don't come back: too few bills in 7 days to tell (5)."
     }
    ],
    "role_models": [
@@ -305,8 +405,8 @@
    ],
    "notes": [],
    "briefing_en": "Good morning Harish. Store Coach for Fri 23 Oct. 1 new issue today. 1. Suresh V. (BLR-01): customers don't come back. Call 14 of the 14 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first, today, before 12 noon. ₹11k at stake. Last week's alerts: Bengaluru: conversion down across the city: conversion has not moved, 13.0% → 13.8% in the week since. BLR-03: short-staffed on weekends and wedding days: busy-day conversion improved, 8.2% → 9.3% in the week since. Role model: Karthik J. at BLR-01; 12% of their customers come back.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "ಶುಭ ಬೆಳಗ್ಗೆ ಹರೀಶ್. Fri 23 Oct ಗೆ Store Coach. ಇವತ್ತು 1 ಹೊಸ ಸಮಸ್ಯೆ ಇದೆ. 1. Suresh V. (BLR-01): ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಿಲ್ಲ. 6–18 ತಿಂಗಳ ಹಿಂದೆ ನೀವು ಸೇವೆ ಮಾಡಿದ 14 ಮದುವೆ ಗ್ರಾಹಕರಲ್ಲಿ 14 ಜನರನ್ನೂ ಕರೆದು, ಅವರು ಮತ್ತೆ ಬಂದಿಲ್ಲವಲ್ಲ, ಅವರನ್ನು ಅಂಗಡಿಗೆ ಆಹ್ವಾನಿಸಿ; ಮೊದಲು Karthik J. ಅವರ ಹತ್ತಿರ ಅವರ ಫಾಲೋ-ಅಪ್ ಮಾತುಗಳನ್ನು ಇವತ್ತು 12 ಮಧ್ಯಾಹ್ನದ ಒಳಗೆ ಕೇಳಿ. ಇಲ್ಲಿ ₹11k ಪಣಕ್ಕಿದೆ. ಕಳೆದ ವಾರದ ಅಲರ್ಟ್ಸ್: ಬೆಂಗಳೂರು: ಇಡೀ ನಗರದಲ್ಲಿ conversion ಕಡಿಮೆಯಾಗಿದೆ: ಕಳೆದ ವಾರದಲ್ಲಿ conversion ಬದಲಾಗಿಲ್ಲ, 13.0% → 13.8%. BLR-03: ವೀಕೆಂಡ್ ಮತ್ತು ಮದುವೆ ದಿನಗಳಲ್ಲಿ ಸಿಬ್ಬಂದಿ ಕೊರತೆ ಇದೆ: ಬಿಜಿ ಇದ್ದ ದಿನಗಳಲ್ಲಿ conversion ಸುಧಾರಿಸಿದೆ, ಕಳೆದ ವಾರದಲ್ಲಿ 8.2% → 9.3%. ರೋಲ್ ಮಾಡೆಲ್: BLR-01 ನಲ್ಲಿರುವ Karthik J.; ಅವರ 12% ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಾರೆ.",
+   "briefing_audio": "2026-10-22/audio/briefing_AM-05.mp3"
   },
   "AM-06": {
    "am_id": "AM-06",
@@ -354,7 +454,7 @@
       "window_days": 365
      },
      "text_en": "Mohan Y. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.3% of Mohan Y.'s bills vs 6.1% for other Mysuru salespeople (171 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Mohan Y.: Show two Indo-Western looks to every wedding customer; ask Madhu G. for their best look first, today. At stake: ₹18k per 4 weeks.",
-     "text_local": null
+     "text_local": "ಮೋಹನ್ ವೈ. (MYS-02) ಅವರು Indo-Western ಅನ್ನು ತುಂಬಾ ಅಪರೂಪಕ್ಕೆ ಸೇಲ್ ಮಾಡುತ್ತಾರೆ. ಕಾರಣ: ಮೋಹನ್ ವೈ. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ Indo-Western ಕೇವಲ 2.3% ಇದೆ, ಆದರೆ ಇತರ ಮೈಸೂರು ಸೇಲ್ಸ್‌ಪರ್ಸನ್‌ಗಳ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.1% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳಲ್ಲಿ 171 ಬಿಲ್‌ಗಳು). ಮೈಸೂರಿನವರು ಇದನ್ನು ಖರೀದಿಸುತ್ತಾರೆ; ಇದು ಒಬ್ಬ ವ್ಯಕ್ತಿಯ ಗ್ಯಾಪ್ ಆಗಿದೆ. ಮೋಹನ್ ವೈ. ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಪ್ರತಿಯೊಬ್ಬ ಮದುವೆ ಗ್ರಾಹಕರಿಗೆ ಎರಡು Indo-Western ಲುಕ್ಸ್ ತೋರಿಸಿ; ಇವತ್ತೇ ಮೊದಲು ಮಧು ಜಿ. ಅವರ ಹತ್ತಿರ ಅವರ ಬೆಸ್ಟ್ ಲುಕ್ ಯಾವುದು ಅಂತ ಕೇಳಿ. ಇದರಲ್ಲಿ ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹18k."
     }
    ],
    "held_back": 0,
@@ -370,6 +470,30 @@
      "sample": 326,
      "status": "flat",
      "summary": "Mysuru: conversion down across the city: conversion has not moved, 7.7% → 7.4% in the week since."
+    },
+    {
+     "key": "category_avoid:SP1172:indo_western",
+     "title": "Santosh B. (MYS-02) rarely sells Indo-Western",
+     "am_id": "AM-06",
+     "alerted_on": "2026-10-11",
+     "metric": "share of bills",
+     "before": 0.025735294117647058,
+     "after": 0.0,
+     "sample": 5,
+     "status": "too_early",
+     "summary": "Santosh B. (MYS-02) rarely sells Indo-Western: too few bills in 7 days to tell (5)."
+    },
+    {
+     "key": "category_avoid:SP1173:indo_western",
+     "title": "Mohan Y. (MYS-02) rarely sells Indo-Western",
+     "am_id": "AM-06",
+     "alerted_on": "2026-10-06",
+     "metric": "share of bills",
+     "before": 0.022099447513812154,
+     "after": null,
+     "sample": 0,
+     "status": "too_early",
+     "summary": "Mohan Y. (MYS-02) rarely sells Indo-Western: too few bills in 7 days to tell (0)."
     }
    ],
    "role_models": [
@@ -386,8 +510,8 @@
    ],
    "notes": [],
    "briefing_en": "Good morning Mahesh. Store Coach for Fri 23 Oct. No new issues today. Last week's alerts: Mysuru: conversion down across the city: conversion has not moved, 7.7% → 7.4% in the week since. Role model: Santosh B. at MYS-02; 7% of their customers come back.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "ನಮಸ್ಕಾರ Mahesh ಅವರೇ. ಶುಕ್ರವಾರ 23 Oct ಗೆ Store Coach. ಇವತ್ತು ಯಾವುದೇ ಹೊಸ ಸಮಸ್ಯೆಗಳಿಲ್ಲ. ಕಳೆದ ವಾರದ alerts: Mysuru: ನಗರದಾದ್ಯಂತ conversion ಕಡಿಮೆಯಾಗಿದೆ: ಕಳೆದ ವಾರದಲ್ಲಿ conversion ಬದಲಾಗಿಲ್ಲ, 7.7% → 7.4% ಆಗಿದೆ. Role model: MYS-02 ನಲ್ಲಿರುವ Santosh B. ಅವರು; ಅವರಲ್ಲಿ 7% ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಾರೆ.",
+   "briefing_audio": "2026-10-22/audio/briefing_AM-06.mp3"
   }
  }
 }

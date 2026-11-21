@@ -9,10 +9,15 @@
   ],
   "issues_found": 24,
   "cards": 124,
-  "sarvam": false,
-  "translated": 0,
+  "sarvam": true,
+  "translated": 6,
   "fallback_en": 0,
-  "audio": 0
+  "audio": 6,
+  "health": {
+   "seconds": 7.1,
+   "source": "csv",
+   "sarvam_cut_off": false
+  }
  },
  "rows": [
   {

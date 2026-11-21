@@ -8,11 +8,16 @@
    "2026-10-02"
   ],
   "issues_found": 27,
-  "cards": 119,
-  "sarvam": false,
-  "translated": 0,
+  "cards": 120,
+  "sarvam": true,
+  "translated": 6,
   "fallback_en": 0,
-  "audio": 0
+  "audio": 6,
+  "health": {
+   "seconds": 7.2,
+   "source": "csv",
+   "sarvam_cut_off": false
+  }
  },
  "followups": []
 }

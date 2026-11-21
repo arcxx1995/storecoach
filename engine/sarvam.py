@@ -15,6 +15,8 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+from engine import store
+
 ROOT = Path(__file__).resolve().parent.parent
 API = "https://api.sarvam.ai"
 CHAT_MODEL = os.environ.get("SARVAM_CHAT_MODEL", "sarvam-105b")
@@ -47,8 +49,10 @@ def _post(path: str, body: dict, timeout=90, tries=5) -> dict:
         API + path, data=json.dumps(body).encode(), method="POST",
         headers={"api-subscription-key": os.environ["SARVAM_API_KEY"], "content-type": "application/json"})
     for k in range(tries):
+        if DEADLINE and time.time() > DEADLINE:
+            raise TimeoutError("sarvam time budget spent")
         try:
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+            with urllib.request.urlopen(req, timeout=min(timeout, DEADLINE - time.time()) if DEADLINE else timeout) as r:
                 return json.load(r)
         except urllib.error.HTTPError as e:
             if e.code not in (429, 500, 502, 503) or k == tries - 1:
@@ -61,10 +65,21 @@ def _cache(kind: str, payload: dict, ext: str, fn):
     p = CACHE / f"{h}.{ext}"
     if p.exists():
         return p.read_bytes()
+    if store.TOKEN:  # /tmp is wiped between cron runs; Blob copy survives
+        try:
+            if (b := store.read_bytes(f"cache/{p.name}")) is not None:
+                return b
+        except Exception:
+            pass
     out = fn()
     if out is not None:
         CACHE.mkdir(parents=True, exist_ok=True)
         p.write_bytes(out)
+        if store.TOKEN:
+            try:
+                store.write_bytes(f"cache/{p.name}", out)
+            except Exception as e:
+                print(f"blob cache write failed: {e}")
     return out
 
 
@@ -74,7 +89,7 @@ def numbers(s: str) -> set:
 
 def valid(src: str, out: str, max_words=None, keep=()) -> bool:
     """Every number and every name in the English must appear in the translation; word cap holds."""
-    if not out or not numbers(src) <= numbers(out):
+    if not out or numbers(src) != numbers(out):  # nothing dropped, nothing invented
         return False
     if any(k and k not in out for k in keep):
         return False
@@ -114,22 +129,50 @@ def translate(text: str, lang: str, max_words=None, keep=()) -> str | None:
     return out.decode() if out else None
 
 
+def _chunks(text: str, limit: int = 2500) -> list[str]:
+    """Cut at sentence ends so a long briefing is voiced in full, not chopped mid-word."""
+    out, cur = [], ""
+    for sent in re.split(r"(?<=[.!?।])\s+", text):
+        if cur and len(cur) + len(sent) + 1 > limit:
+            out.append(cur)
+            cur = ""
+        cur = f"{cur} {sent}".strip()
+    return out + [cur] if cur else out
+
+
 def tts(text: str, lang: str) -> bytes | None:
     if not enabled() or not text:
         return None
-    body = {"text": text[:2500], "language_code": lang, "model": TTS_MODEL, "speaker": SPEAKER,
-            "pace": 1.0, "speech_sample_rate": 22050, "output_audio_codec": "mp3"}
 
-    def call():
+    def one(chunk: str) -> bytes | None:
+        body = {"text": chunk, "language_code": lang, "model": TTS_MODEL, "speaker": SPEAKER,
+                "pace": 1.0, "speech_sample_rate": 22050, "output_audio_codec": "mp3"}
+
+        def call():
+            try:
+                return base64.b64decode(_post("/text-to-speech", body)["audios"][0])
+            except Exception as e:
+                print(f"sarvam tts failed: {e}")
+                return None
+
+        return _cache("tts", body, "mp3", call)
+
+    parts = [one(c) for c in _chunks(text)]
+    return b"".join(parts) if all(parts) else None  # ponytail: mp3 frames concatenate; one bad chunk = no audio
+
+
+DEADLINE = 0.0  # epoch seconds; set by engine.run so Sarvam can never outlive the function
+
+
+def pmap(fn, items, workers=8, default=None):
+    """Like map, but items still pending at DEADLINE get `default` instead of blocking the run."""
+    ex = ThreadPoolExecutor(workers)
+    futs = [ex.submit(fn, x) for x in items]
+    out = []
+    for f in futs:
         try:
-            return base64.b64decode(_post("/text-to-speech", body)["audios"][0])
-        except Exception as e:
-            print(f"sarvam tts failed: {e}")
-            return None
-
-    return _cache("tts", body, "mp3", call)
-
-
-def pmap(fn, items, workers=8):
-    with ThreadPoolExecutor(workers) as ex:
-        return list(ex.map(fn, items))
+            out.append(f.result(timeout=max(0.1, DEADLINE - time.time()) if DEADLINE else None))
+        except Exception:  # timeout or a failed item
+            out.append(default)
+    ex.shutdown(wait=False, cancel_futures=True)
+    return out

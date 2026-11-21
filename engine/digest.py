@@ -3,7 +3,7 @@ import pandas as pd
 
 from engine.detectors import Ctx, role_models
 from engine.followup import check
-from engine.text import LANG, day, inr, names
+from engine.text import LANG, day, inr
 
 COOLDOWN_DAYS = 14
 MIN_RUPEES = 5000  # per 4 weeks; smaller gaps still coach the salesperson via their card, not the AM
@@ -15,25 +15,10 @@ def issue_text(i: dict) -> str:
             f"At stake: {inr(i['rupees'])} per 4 weeks.")
 
 
-def placeholder_notes(ctx: Ctx, data_issues: list) -> dict:
-    """Low-priority line per AM: dummy mobile numbers at the till (data issue the store can fix today)."""
-    out = {}
-    for x in data_issues:
-        if x["type"] != "placeholder_customer_id":
-            continue
-        am = ctx.stores.loc[x["store_id"], "area_manager_id"]
-        who = names([ctx.names[s] for s in x["top_salespeople"]])
-        out.setdefault(am, []).append(
-            f"Low priority ({x['store_id']}): {x['share_last_90d'] * 100:.0f}% of bills since {day(x['from'])} use "
-            f"the dummy number {x['customer_id']}, mostly by {who.rstrip('.')}. Ask staff to type each customer's real mobile "
-            f"number from today; until then repeat for {x['store_id']} can't be tracked.")
-    return out
-
-
 def build_digests(ctx: Ctx, issues: list, data_issues: list, history: dict) -> tuple[dict, list]:
     """history: {date_str: digests_dict} for previous runs. Returns (digests by AM, follow-ups)."""
     d, E = ctx.d, ctx.E
-    notes = placeholder_notes(ctx, data_issues)
+    notes = {}  # dummy-number notes stay in data_issues.json; the brief says data issues never reach the AM
     models = role_models(ctx)
     followups = []
     week_ago = (E - pd.Timedelta(days=7)).date().isoformat()
@@ -45,7 +30,10 @@ def build_digests(ctx: Ctx, issues: list, data_issues: list, history: dict) -> t
         slots = max(0, int(am.max_alerts_per_week) - len(this_week))
         mine = [i for i in issues if i["am_id"] == am_id and i["key"] not in recent and i["rupees"] >= MIN_RUPEES]
         new = [{k: v for k, v in i.items() if k != "cards"} | {"text_en": issue_text(i)} for i in mine[:slots]]
-        fu = [check(d, i, week_ago) for dt, i in sent if dt == week_ago]
+        # Any alert at least 7 days old and not yet measured (a missed run or "too early" retries next day).
+        done = {(f["key"], f["alerted_on"]) for dg in history.values()
+                for f in dg.get(am_id, {}).get("followups", []) if f["status"] != "too_early"}
+        fu = [check(d, i, dt) for dt, i in sent if dt <= week_ago and (i["key"], dt) not in done]
         followups += fu
         state = ctx.stores[ctx.stores.area_manager_id == am_id].state.iat[0]
         digests[am_id] = {

@@ -134,6 +134,25 @@ def data_issues(d: Data) -> list[dict]:
                     "bills_affected": int(len(ph)),
                     "top_salespeople": ph.salesperson_id.value_counts().head(3).to_dict(),
                     "note": "Dummy mobile number on bills; repeat rate for this store can't be measured. Excluded from repeat."})
+    ln = d.lines[d.lines.is_packaging == 0]
+    for kind, mask, note in [
+        ("price_above_mrp", ln.selling_price > ln.mrp, "Selling price above MRP."),
+        ("qty_not_positive", ln.qty <= 0, "Quantity zero or negative."),
+        ("price_not_positive", ln.selling_price <= 0, "Product line sold at zero or negative price."),
+    ]:
+        if mask.any():
+            out.append({"type": kind, "bills_affected": int(ln[mask].bill_id.nunique()),
+                        "stores": sorted(ln[mask].store_id.unique()), "note": note})
+    join = d.salespeople.set_index("salesperson_id").join_date
+    early = d.bills[d.bills.bill_date < d.bills.salesperson_id.map(join)]
+    if len(early):
+        out.append({"type": "bill_before_join_date", "bills_affected": len(early),
+                    "salespeople": sorted(early.salesperson_id.unique())[:10], "note": "Bill dated before the salesperson joined."})
+    off = d.roster[d.roster.status == "Off"][["date", "store_id", "salesperson_id"]]
+    ghost = d.bills.merge(off, left_on=["bill_date", "salesperson_id"], right_on=["date", "salesperson_id"])
+    if len(ghost):
+        out.append({"type": "bill_on_off_day", "bills_affected": len(ghost),
+                    "salespeople": sorted(ghost.salesperson_id.unique())[:10], "note": "Bill by someone rostered Off that day."})
     billed = set(d.bills.salesperson_id)
     for _, p in d.salespeople[~d.salespeople.salesperson_id.isin(billed)].iterrows():
         out.append({"type": "salesperson_no_bills", "store_id": p.store_id, "salesperson_id": p.salesperson_id,

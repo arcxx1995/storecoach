@@ -68,7 +68,7 @@ These come from profiling with the standard library. They are leads to check aga
 Vercel Cron (daily 07:00 IST)
    │
    ▼
-api/run.py ── Python (pandas) engine, ?as_of=YYYY-MM-DD
+api/cron.py ── sync live data → run every missing day (oldest first) → Python (pandas) engine
    │   metrics → detectors → suppressors → rank → cap → phrase (Sarvam) → TTS (Bulbul)
    ▼
 Vercel Blob  runs/{as_of}/
@@ -82,7 +82,7 @@ Vercel Blob  runs/{as_of}/
 Next.js (App Router) on Vercel
    /                 run picker (as-of date)
    /am/[id]          area manager digest + briefing audio
-   /sp/[id]          salesperson card + voice note
+   /stores, /stores/[id]  salesperson cards + voice notes by store
    /issues           data issues
    /followups        week-later outcomes
    /api/chat         ask-the-coach, grounded on that run's JSON
@@ -208,7 +208,7 @@ python tests/test_signals.py               # planted patterns found with the rig
 npm run dev                                # http://localhost:3000
 ```
 
-`SARVAM_API_KEY` goes in `.env` (git-ignored). The CSVs are bundled in `data/`; set `STORECOACH_DATA` to use another folder.
+`hello_sarvam.py` needs `pip install sarvamai` (not in requirements.txt; the engine uses plain HTTP). `SARVAM_API_KEY` goes in `.env` (git-ignored). The CSVs are bundled in `data/`; set `STORECOACH_DATA` to use another folder.
 
 ## 11. What's built
 
@@ -231,3 +231,35 @@ npm run dev                                # http://localhost:3000
 2. `vercel env add SARVAM_API_KEY` and `vercel env add CRON_SECRET`.
 3. Seed Blob with the October replay: `BLOB_READ_WRITE_TOKEN=… python -m engine.backfill`.
 4. `vercel deploy --prod`. The cron then runs `api/cron.py` every morning.
+
+## 13. Running daily against a live API
+
+Without `LIVE_API_URL` the engine reads `data/*.csv` (the October replay). With it, the cron does this each morning:
+
+1. `engine.source.sync()` pulls new rows into `snapshot/<table>.csv` (re-fetching the last 3 days for late corrections).
+2. `data_end` = last day that has both bills and footfall. Days from the last run up to `min(yesterday IST, data_end)` run oldest first, at most 3 per call. Only the newest gets Sarvam translation and audio.
+3. If the data is not there yet the call returns 202 and the next call picks up where it stopped. A run writes `index.json` last, so a run that died half-way is redone.
+4. A lock (`lock.json`) stops overlapping calls; Sarvam gets a deadline and falls back to English if the 300 s budget runs short.
+
+API contract (Bearer `LIVE_API_TOKEN` if set): `GET {LIVE_API_URL}/<table>?since=YYYY-MM-DD` returns a JSON array of rows or CSV with the same columns as `data/<table>.csv`. Transactional tables (`bills`, `bill_lines`, `footfall_daily`, `roster_daily`) honour `since`; masters (`stores`, `items`, `calendar`, `salespeople`, `area_managers`) return everything. Publish only complete days.
+
+Env: `CRON_SECRET` is required (the endpoint refuses without it), `LIVE_API_URL`, `LIVE_API_TOKEN`, `BLOB_READ_WRITE_TOKEN`, `SARVAM_API_KEY`.
+Vercel Hobby allows one cron run per day (`vercel.json` is daily, 07:00 IST); on Pro use an hourly schedule such as `0 1-6 * * *` to retry until data lands.
+
+Try it offline: `python scripts/mock_api.py --through 2026-10-05`, then `LIVE_API_URL=http://127.0.0.1:8765 python -m engine.run`. Tests: `python tests/test_source.py && python tests/test_cron.py`.
+
+## 14. Telegram delivery
+
+After the newest day runs, `engine/deliver.py` sends each area manager a Telegram message (their briefing in Hindi or Kannada, the new issues with who/what/when, last week's results) and the voice briefing as an audio message. A quiet day gets a short all-clear. Status per manager is in `runs/<date>/delivered.json` and on the Data issues page; a manager already delivered is never sent twice (`?resend=1` overrides).
+
+Setup (one time):
+1. In Telegram, talk to `@BotFather`, `/newbot`, copy the token into `TELEGRAM_BOT_TOKEN`.
+2. Set `TELEGRAM_SECRET` to a long random string (letters, digits, `_`, `-`). It signs the personal links and authenticates Telegram's calls to the webhook. Set both, plus `BLOB_READ_WRITE_TOKEN` and `APP_URL`, in Vercel too, then deploy.
+3. `python scripts/telegram_setup.py --webhook https://<your-app>` points the bot at `/api/telegram`.
+4. `python scripts/telegram_setup.py --links` prints one personal link per manager. Send each link to that manager only. When they press **Start**, the bot saves their chat id (`runs/subscribers/<am>.json`) and replies "Connected".
+5. `--status` shows who has registered; `--test AM-01` sends a hello. The next daily run delivers to everyone registered.
+
+A link only works for its own manager (the code is an HMAC of the manager id), so nobody can claim another manager's slot. Changing `TELEGRAM_SECRET` invalidates all old links. `DELIVERY_RECIPIENTS` still works as a manual override. Saved chat ids sit in the public run store next to the digests; a chat id alone cannot message anyone without the bot token.
+
+`DELIVERY_DRY_RUN=1` prints the messages instead of sending. A manager with no `chat_id` is skipped without an error; one who blocked the bot is marked failed and the others still go out. Tests: `python tests/test_deliver.py`.
+

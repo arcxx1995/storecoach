@@ -9,10 +9,15 @@
   ],
   "issues_found": 27,
   "cards": 125,
-  "sarvam": false,
-  "translated": 0,
+  "sarvam": true,
+  "translated": 6,
   "fallback_en": 0,
-  "audio": 0
+  "audio": 6,
+  "health": {
+   "seconds": 7.3,
+   "source": "csv",
+   "sarvam_cut_off": false
+  }
  },
  "digests": {
   "AM-01": {
@@ -60,7 +65,7 @@
       "better": "up"
      },
      "text_en": "LKO-02: top seller Imran C. has left. Cause: Imran C. (#1 seller, 34% of store sales) last billed on Sun 13 Sep. Conversion since: 9.6%, vs 12.3% before and 12.3% in the same weeks last year. Action for LKO-02 store manager and Sumit A.: Hand Imran C.'s 585 customers from the last 12 months to Sumit A.; Sumit A. calls 10 of them today, and is on the floor 5–9 pm on Sat 17 Oct and Sun 18 Oct, today; Sat 17 Oct and Sun 18 Oct. At stake: ₹2.7 lakh per 4 weeks.",
-     "text_local": null
+     "text_local": "LKO-02: टॉप सेलर Imran C. अब यहाँ नहीं हैं। कारण: Imran C. (#1 सेलर, स्टोर की 34% सेल्स) ने आखिरी बार Sun 13 Sep को बिल किया था। तब से कन्वर्जन: 9.6%, जबकि पहले यह 12.3% था और पिछले साल इन्हीं हफ्तों में 12.3% था। \n\nLKO-02 स्टोर मैनेजर और Sumit A. के लिए एक्शन: पिछले 12 महीनों के Imran C. के 585 कस्टमर्स को Sumit A. को सौंप दें। Sumit A. आज उनमें से 10 लोगों को कॉल करेंगे। वे Sat 17 Oct और Sun 18 Oct को शाम 5–9 बजे तक फ्लोर पर रहेंगे—आज, Sat 17 Oct और Sun 18 Oct को। \n\nजो रिस्क है: हर 4 हफ्तों में ₹2.7 lakh।"
     },
     {
      "sent_on": "2026-10-15",
@@ -98,16 +103,29 @@
       "better": "up"
      },
      "text_en": "Arif M. (LKO-01): customers don't come back. Cause: 1.4% of Arif M.'s customers came back 30+ days later vs 4.7% for the rest of LKO-01 (278 customers first billed 6–18 months ago). Manoj T. is the role model at 8.9%. Action for Arif M.: Call 15 of the 17 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Manoj T. for their follow-up words first, today, before 12 noon. At stake: ₹7k per 4 weeks.",
-     "text_local": null
+     "text_local": "अरीफ़ M. (LKO-01): कस्टमर्स वापस नहीं आ रहे हैं। कारण: अरीफ़ M. के 1.4% कस्टमर्स 30+ दिन बाद वापस आए, जबकि बाकी LKO-01 के लिए यह 4.7% है (278 कस्टमर्स जिन्हें पहली बार 6–18 महीने पहले बिल किया गया था)। मनोज T. 8.9% के साथ रोल मॉडल हैं। अरीफ़ M. के लिए एक्शन: जिन 17 वेडिंग कस्टमर्स को आपने 6–18 महीने पहले सर्विस दी थी और जो वापस नहीं आए हैं, उनमें से 15 को कॉल करें और उन्हें स्टोर में बुलाएं; मनोज T. से आज 12 बजे से पहले उनके फॉलो-अप के तरीके पूछ लें। दांव पर है: हर 4 हफ़्ते में ₹7k।"
     }
    ],
    "held_back": 0,
-   "followups": [],
+   "followups": [
+    {
+     "key": "repeat_low:SP1013",
+     "title": "Arif M. (LKO-01): customers don't come back",
+     "am_id": "AM-01",
+     "alerted_on": "2026-10-01",
+     "metric": "bills from returning customers",
+     "before": 0.16666666666666666,
+     "after": 0.0,
+     "sample": 11,
+     "status": "too_early",
+     "summary": "Arif M. (LKO-01): customers don't come back: too few bills in 7 days to tell (11)."
+    }
+   ],
    "role_models": [],
    "notes": [],
    "briefing_en": "Good morning Rakesh. Store Coach for Sun 18 Oct. No new issues today.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "गुड मॉर्निंग राकेश जी। 18 Oct Sun के लिए Store Coach। आज कोई नया issue नहीं है।",
+   "briefing_audio": "2026-10-17/audio/briefing_AM-01.mp3"
   },
   "AM-02": {
    "am_id": "AM-02",
@@ -119,7 +137,20 @@
    "new_today": [],
    "earlier_this_week": [],
    "held_back": 0,
-   "followups": [],
+   "followups": [
+    {
+     "key": "attach_gap:SP1053:kurta_set",
+     "title": "Dheeraj R. (KNP-01) rarely adds a jacket to a kurta set",
+     "am_id": "AM-02",
+     "alerted_on": "2026-10-01",
+     "metric": "attach rate",
+     "before": 0.10795454545454546,
+     "after": 1.0,
+     "sample": 1,
+     "status": "too_early",
+     "summary": "Dheeraj R. (KNP-01) rarely adds a jacket to a kurta set: too few bills in 7 days to tell (1)."
+    }
+   ],
    "role_models": [
     {
      "salesperson_id": "SP1061",
@@ -134,8 +165,8 @@
    ],
    "notes": [],
    "briefing_en": "Good morning Alok. Store Coach for Sun 18 Oct. No new issues today. Role model: Kunal N. at KNP-03; 7% of their customers come back.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "गुड मॉर्निंग आलोक। Sun 18 Oct के लिए स्टोर कोच। आज कोई नया issue नहीं है। रोल मॉडल: KNP-03 के Kunal N.; उनके 7% कस्टमर्स वापस आते हैं।",
+   "briefing_audio": "2026-10-17/audio/briefing_AM-02.mp3"
   },
   "AM-03": {
    "am_id": "AM-03",
@@ -183,7 +214,7 @@
       "window_days": 365
      },
      "text_en": "Jitendra N. (PAT-03) rarely sells Sherwani. Cause: Sherwani is on 2.7% of Jitendra N.'s bills vs 7.5% for other Patna salespeople (188 bills, last 12 months). Patna buys it; this is one person's gap. Action for Jitendra N.: Show two Sherwani looks to every wedding customer; ask Amit A. for their best look first, today. At stake: ₹41k per 4 weeks.",
-     "text_local": null
+     "text_local": "जितेंद्र N. (PAT-03) शायद ही कभी Sherwani बेचते हैं। कारण: पिछले 12 महीनों के 188 bills में, जितेंद्र N. के bills में Sherwani का हिस्सा 2.7% है, जबकि पटना के बाकी salespeople का 7.5% है। पटना में लोग इसे खरीदते हैं; यह सिर्फ एक व्यक्ति का गैप है। जितेंद्र N. के लिए action: हर शादी वाले customer को दो Sherwani looks दिखाएं; आज ही अमित A. से उनके सबसे अच्छे looks के बारे में पूछें। दांव पर है: हर 4 हफ्तों में ₹41k।"
     },
     {
      "sent_on": "2026-10-15",
@@ -228,7 +259,7 @@
       "window_days": 90
      },
      "text_en": "PAT-01: discounts well above the store norm. Cause: Manoj N. gives 8.2% off MRP vs 2.2% for the rest of the store; Sanjay K. gives 7.3% off MRP vs 2.2% for the rest of the store (last 90 days). Action for PAT-01 store manager with Manoj N. and Sanjay K.: No discount without the store manager's OK; sell at MRP like Tarun T., from today's first bill. At stake: ₹24k per 4 weeks.",
-     "text_local": null
+     "text_local": "PAT-01: discounts स्टोर के normal से काफी ज़्यादा हैं। कारण: Manoj N. 8.2% off MRP देते हैं जबकि बाकी स्टोर के लिए यह 2.2% है; Sanjay K. 7.3% off MRP देते हैं जबकि बाकी स्टोर के लिए यह 2.2% है (पिछले 90 दिनों में)। \n\nPAT-01 के स्टोर मैनेजर को Manoj N. और Sanjay K. के साथ यह action लेना है: स्टोर मैनेजर की OK के बिना कोई discount नहीं; आज की पहली bill से Tarun T. की तरह MRP पर बेचें। \n\nजोखिम में है: ₹24k प्रति 4 weeks।"
     },
     {
      "sent_on": "2026-10-15",
@@ -266,7 +297,7 @@
       "better": "up"
      },
      "text_en": "Faizan K. (PAT-01): customers don't come back. Cause: 1.5% of Faizan K.'s customers came back 30+ days later vs 5.0% for the rest of PAT-01 (467 customers first billed 6–18 months ago). Raju P. is the role model at 7.7%. Action for Faizan K.: Call 15 of the 47 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Raju P. for their follow-up words first, today, before 12 noon. At stake: ₹13k per 4 weeks.",
-     "text_local": null
+     "text_local": "Faizan K. (PAT-01): कस्टमर्स वापस नहीं आते हैं। कारण: Faizan K. के 1.5% कस्टमर्स 30+ दिन बाद वापस आए, जबकि बाकी PAT-01 के लिए यह 5.0% है (467 कस्टमर्स जिन्हें पहली बार 6–18 महीने पहले बिल किया गया था)। Raju P. 7.7% के साथ रोल मॉडल हैं। Faizan K. के लिए एक्शन: आपने 6–18 महीने पहले जिन 47 वेडिंग कस्टमर्स को सर्विस दी थी, उनमें से 15 को कॉल करें जो वापस नहीं आए हैं और उन्हें स्टोर में बुलाएं; आज 12 दोपहर से पहले Raju P. से उनके फॉलो-अप के तरीके पूछ लें। दांव पर है: हर 4 हफ्तों में ₹13k।"
     },
     {
      "sent_on": "2026-10-15",
@@ -325,18 +356,53 @@
       "window_days": 365
      },
      "text_en": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani. Cause: adds a safa to 13% of sherwani bills vs 47% for the rest of PAT-02; adds a mojari to 26% of sherwani bills vs 59% for the rest of PAT-02; adds a mala to 13% of sherwani bills vs 34% for the rest of PAT-02 (23 sherwani bills, last 12 months). Action for Arjun D.: Show a safa, mojari and mala with every sherwani trial, today, at every trial. At stake: ₹7k per 4 weeks.",
-     "text_local": null
+     "text_local": "Arjun D. (PAT-02) बहुत कम ही sherwani के साथ safa, mojari और mala जोड़ते हैं। कारण: ये PAT-02 के बाकी लोगों के 47% के मुकाबले, सिर्फ 13% sherwani bills में safa जोड़ते हैं; PAT-02 के बाकी लोगों के 59% के मुकाबले, सिर्फ 26% sherwani bills में mojari जोड़ते हैं; PAT-02 के बाकी लोगों के 34% के मुकाबले, सिर्फ 13% sherwani bills में mala जोड़ते हैं (23 sherwani bills, पिछले 12 महीने)। Arjun D. के लिए action: आज, हर sherwani trial में safa, mojari और mala दिखाएं। दांव पर है: हर 4 हफ़्ते में ₹7k।"
     }
    ],
    "held_back": 0,
-   "followups": [],
-   "role_models": [],
-   "notes": [
-    "Low priority (PAT-02): 39% of bills since Mon 27 Jul use the dummy number C99999999, mostly by Aman B., Prakash J. and Jitendra K. Ask staff to type each customer's real mobile number from today; until then repeat for PAT-02 can't be tracked."
+   "followups": [
+    {
+     "key": "category_avoid:SP1093:sherwani",
+     "title": "Jitendra N. (PAT-03) rarely sells Sherwani",
+     "am_id": "AM-03",
+     "alerted_on": "2026-10-01",
+     "metric": "share of bills",
+     "before": 0.023809523809523808,
+     "after": 0.0,
+     "sample": 2,
+     "status": "too_early",
+     "summary": "Jitendra N. (PAT-03) rarely sells Sherwani: too few bills in 7 days to tell (2)."
+    },
+    {
+     "key": "repeat_low:SP1072",
+     "title": "Faizan K. (PAT-01): customers don't come back",
+     "am_id": "AM-03",
+     "alerted_on": "2026-10-01",
+     "metric": "bills from returning customers",
+     "before": 0.0,
+     "after": 0.08333333333333333,
+     "sample": 12,
+     "status": "too_early",
+     "summary": "Faizan K. (PAT-01): customers don't come back: too few bills in 7 days to tell (12)."
+    },
+    {
+     "key": "attach_gap:SP1087:sherwani",
+     "title": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani",
+     "am_id": "AM-03",
+     "alerted_on": "2026-10-01",
+     "metric": "attach rate",
+     "before": 0.2608695652173913,
+     "after": null,
+     "sample": 0,
+     "status": "too_early",
+     "summary": "Arjun D. (PAT-02) rarely adds a safa, mojari and mala to a sherwani: too few bills in 7 days to tell (0)."
+    }
    ],
+   "role_models": [],
+   "notes": [],
    "briefing_en": "Good morning Nitin. Store Coach for Sun 18 Oct. No new issues today.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "गुड मॉर्निंग नितिन। सन 18 ऑक्टोबर के लिए स्टोर कोच। आज कोई नया इशू नहीं है।",
+   "briefing_audio": "2026-10-17/audio/briefing_AM-03.mp3"
   },
   "AM-04": {
    "am_id": "AM-04",
@@ -363,8 +429,8 @@
    ],
    "notes": [],
    "briefing_en": "Good morning Pankaj. Store Coach for Sun 18 Oct. No new issues today. Role model: Ankit P. at MZF-02; 7% of their customers come back.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "गुड मॉर्निंग पंकज। सन 18 Oct के लिए स्टोर कोच। आज कोई नया इश्यू नहीं है। रोल मॉडल: MZF-02 में अंकित पी. हैं; उनके 7% कस्टमर्स वापस आते हैं।",
+   "briefing_audio": "2026-10-17/audio/briefing_AM-04.mp3"
   },
   "AM-05": {
    "am_id": "AM-05",
@@ -418,7 +484,7 @@
       "window_days": 91
      },
      "text_en": "Bengaluru: conversion down across the city. Cause: Market problem, not one store: city conversion 13.0% vs 14.5% in the same 13 weeks last year (-10%, rest of the network -2%); 4 of 4 stores are down. Action for Harish Gowda: At today's morning call, tell all 4 Bengaluru store managers the drop is city-wide, not their store; keep full Saturday and Sunday rosters and compare stores with each other, not with last year, today's morning call. At stake: ₹7.4 lakh per 4 weeks.",
-     "text_local": null
+     "text_local": "ಬೆಂಗಳೂರು: ಸಿಟಿಯಾದ್ಯಂತ ಕನ್ವರ್ಷನ್ ಡೌನ್ ಆಗಿದೆ. ಕಾರಣ: ಮಾರ್ಕೆಟ್ ಪ್ರಾಬ್ಲಮ್, ಒಂದೇ ಸ್ಟೋರ್ ಅಲ್ಲ: ಕಳೆದ ವರ್ಷದ ಅದೇ 13 ವಾರಗಳಿಗೆ ಹೋಲಿಸಿದರೆ ಸಿಟಿ ಕನ್ವರ್ಷನ್ 13.0% ಇದೆ, ಕಳೆದ ವರ್ಷ 14.5% ಇತ್ತು (-10%, ಉಳಿದ ನೆಟ್‌ವರ್ಕ್ -2%); 4 ಸ್ಟೋರ್‌ಗಳಲ್ಲಿ 4 ಸ್ಟೋರ್‌ಗಳು ಡೌನ್ ಆಗಿವೆ. ಹರೀಶ್ ಗೌಡ ಅವರಿಗೆ ಆಕ್ಷನ್: ಇವತ್ತಿನ ಬೆಳಗಿನ ಕಾಲ್‌ನಲ್ಲಿ, ಎಲ್ಲಾ 4 ಬೆಂಗಳೂರು ಸ್ಟೋರ್ ಮ್ಯಾನೇಜರ್‌ಗಳಿಗೆ ಇದು ಸಿಟಿ-ವೈಡ್ ಡ್ರಾಪ್, ಅವರ ಸ್ಟೋರ್‌ಗೆ ಮಾತ್ರ ಅಲ್ಲ ಅಂತ ಹೇಳಿ; ಶನಿವಾರ ಮತ್ತು ಭಾನುವಾರದ ಪೂರ್ಣ ರೋಸ್ಟರ್‌ಗಳನ್ನು ಹಾಗೇ ಇಡಿ ಮತ್ತು ಸ್ಟೋರ್‌ಗಳನ್ನು ಒಂದಕ್ಕೊಂದು ಹೋಲಿಸಿ, ಕಳೆದ ವರ್ಷದ ಜೊತೆ ಅಲ್ಲ, ಇವತ್ತಿನ ಬೆಳಗಿನ ಕಾಲ್‌ನಲ್ಲಿ. ಅಪಾಯದಲ್ಲಿರುವುದು: 4 ವಾರಗಳಿಗೆ ₹7.4 ಲಕ್ಷ."
     },
     {
      "sent_on": "2026-10-15",
@@ -458,7 +524,7 @@
       "better": "up"
      },
      "text_en": "BLR-03: short-staffed on weekends and wedding days. Cause: Busy-day headcount fell from 7.3 to 5.9 and busy-day conversion from 12.6% to 8.2% (last 4 weeks vs the store's norm since May). Manjunath K. was off 8 of 8 busy days; Vijay N. was off 8 of 8 busy days. Action for BLR-03 store manager: Keep 7 people on the floor both days; Manjunath K. and Vijay N. work both days and take their weekly off on Tue or Wed, Sat 17 Oct and Sun 18 Oct. At stake: ₹1.9 lakh per 4 weeks.",
-     "text_local": null
+     "text_local": "BLR-03: ವೀಕೆಂಡ್‌ಗಳಲ್ಲಿ ಮತ್ತು ಮದುವೆ ದಿನಗಳಲ್ಲಿ ಸಿಬ್ಬಂದಿ ಕೊರತೆ ಇದೆ. ಕಾರಣ: ಬ್ಯುಸಿ-ಡೇ headcount 7.3 ರಿಂದ 5.9 ಕ್ಕೆ ಇಳಿದಿದೆ ಮತ್ತು ಬ್ಯುಸಿ-ಡೇ conversion 12.6% ರಿಂದ 8.2% ಗೆ ಇಳಿದಿದೆ (ಕಳೆದ 4 ವಾರಗಳು vs ಮೇ ತಿಂಗಳಿಂದ ಸ್ಟೋರ್‌ನ ನಾರ್ಮ್). ಮಂಜುನಾಥ್ ಕೆ. ಅವರು 8 ಬ್ಯುಸಿ ದಿನಗಳಲ್ಲಿ 8 ದಿನ ರಜೆ ಹಾಕಿದ್ದರು; ವಿಜಯ್ ಎನ್. ಅವರು 8 ಬ್ಯುಸಿ ದಿನಗಳಲ್ಲಿ 8 ದಿನ ರಜೆ ಹಾಕಿದ್ದರು. BLR-03 ಸ್ಟೋರ್ ಮ್ಯಾನೇಜರ್ ತೆಗೆದುಕೊಳ್ಳಬೇಕಾದ ಆಕ್ಷನ್: ಎರಡೂ ದಿನಗಳಲ್ಲಿ ಫ್ಲೋರ್ ಮೇಲೆ 7 ಜನರನ್ನು ಇಟ್ಟುಕೊಳ್ಳಿ; ಮಂಜುನಾಥ್ ಕೆ. ಮತ್ತು ವಿಜಯ್ ಎನ್. ಎರಡೂ ದಿನ ಕೆಲಸ ಮಾಡಬೇಕು ಮತ್ತು ಅವರ ವೀಕ್ಲಿ ಆಫ್ ಅನ್ನು Tue ಅಥವಾ Wed ಗೆ ತೆಗೆದುಕೊಳ್ಳಬೇಕು, Sat 17 Oct ಮತ್ತು Sun 18 Oct. ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹1.9 lakh."
     },
     {
      "sent_on": "2026-10-15",
@@ -497,7 +563,7 @@
       "window_days": 365
      },
      "text_en": "Suresh K. (BLR-02) rarely sells Indo-Western. Cause: Indo-Western is on 1.3% of Suresh K.'s bills vs 8.1% for other Bengaluru salespeople (461 bills, last 12 months). Bengaluru buys it; this is one person's gap. Action for Suresh K.: Show two Indo-Western looks to every wedding customer; ask Girish V. for their best look first, today. At stake: ₹1.0 lakh per 4 weeks.",
-     "text_local": null
+     "text_local": "ಸುರೇಶ್ ಕೆ. (BLR-02) ಅವರು Indo-Western ಅನ್ನು ಬಹಳ ಅಪರೂಪಕ್ಕೆ ಮಾರಾಟ ಮಾಡುತ್ತಾರೆ. ಕಾರಣ: ಸುರೇಶ್ ಕೆ. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ Indo-Western ಕೇವಲ 1.3% ಇದೆ, ಆದರೆ ಬೆಂಗಳೂರಿನ ಇತರ ಸೇಲ್ಸ್‌ಪರ್ಸನ್‌ಗಳ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 8.1% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳಲ್ಲಿ 461 ಬಿಲ್‌ಗಳು). ಬೆಂಗಳೂರಿನಲ್ಲಿ ಜನರು ಇದನ್ನು ಖರೀದಿಸುತ್ತಾರೆ; ಇದು ಸುರೇಶ್ ಕೆ. ಅವರೊಬ್ಬರ ಕೊರತೆ ಅಷ್ಟೇ. ಸುರೇಶ್ ಕೆ. ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಪ್ರತಿ ಮದುವೆ ಗ್ರಾಹಕರಿಗೆ ಎರಡು Indo-Western ಲುಕ್‌ಗಳನ್ನು ತೋರಿಸಿ; ಇವತ್ತೇ ಗಿರೀಶ್ ವಿ. ಅವರನ್ನು ಕೇಳಿ ಅವರ ಅತ್ಯುತ್ತಮ ಲುಕ್ ಯಾವುದು ಎಂದು ತಿಳಿದುಕೊಳ್ಳಿ. ಇಲ್ಲಿ ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹1.0 lakh."
     },
     {
      "sent_on": "2026-10-15",
@@ -535,7 +601,7 @@
       "better": "up"
      },
      "text_en": "Manjunath C. (BLR-01): customers don't come back. Cause: 2.6% of Manjunath C.'s customers came back 30+ days later vs 5.9% for the rest of BLR-01 (464 customers first billed 6–18 months ago). Karthik J. is the role model at 13.1%. Action for Manjunath C.: Call 15 of the 19 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Karthik J. for their follow-up words first, today, before 12 noon. At stake: ₹12k per 4 weeks.",
-     "text_local": null
+     "text_local": "ಮಂಜುನಾಥ್ ಸಿ. (BLR-01): ಕಸ್ಟಮರ್ಸ್ ವಾಪಸ್ ಬರ್ತಿಲ್ಲ. ಕಾರಣ: ಮಂಜುನಾಥ್ ಸಿ. ಅವರ 2.6% ಕಸ್ಟಮರ್ಸ್ 30+ ದಿನಗಳ ನಂತರ ವಾಪಸ್ ಬಂದಿದ್ದಾರೆ, ಆದರೆ BLR-01 ರ ಉಳಿದವರದ್ದು 5.9% ಇದೆ (464 ಕಸ್ಟಮರ್ಸ್ ಗೆ 6–18 ತಿಂಗಳ ಹಿಂದೆ ಮೊದಲ ಬಾರಿ ಬಿಲ್ ಮಾಡಲಾಗಿದೆ). ಕಾರ್ತಿಕ್ ಜೆ. ಅವರು 13.1% ನೊಂದಿಗೆ ರೋಲ್ ಮಾಡೆಲ್ ಆಗಿದ್ದಾರೆ. ಮಂಜುನಾಥ್ ಸಿ. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: 6–18 ತಿಂಗಳ ಹಿಂದೆ ಮದುವೆಗಾಗಿ ಸೇವೆ ಒದಗಿಸಿದ 19 ಕಸ್ಟಮರ್ಸ್ ನಲ್ಲಿ ವಾಪಸ್ ಬಾರದ 15 ಜನರಿಗೆ ಕಾಲ್ ಮಾಡಿ ಅವರನ್ನು ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ; ಅವರ ಫಾಲೋ-ಅಪ್ ಮಾತುಗಳನ್ನು ಮೊದಲು ಕಾರ್ತಿಕ್ ಜೆ. ಅವರ ಬಳಿ ಕೇಳಿ, ಇವತ್ತೇ ಮಧ್ಯಾಹ್ನ 12 ಗಂಟೆ ಒಳಗೆ. ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹12k."
     },
     {
      "sent_on": "2026-10-15",
@@ -573,11 +639,48 @@
       "better": "up"
      },
      "text_en": "Pavan N. (BLR-02): customers don't come back. Cause: 1.4% of Pavan N.'s customers came back 30+ days later vs 4.7% for the rest of BLR-02 (286 customers first billed 6–18 months ago). Deepak V. is the role model at 5.9%. Action for Pavan N.: Call 15 of the 17 wedding customers you served 6–18 months ago who haven't been back and invite them in; ask Deepak V. for their follow-up words first, today, before 12 noon. At stake: ₹7k per 4 weeks.",
-     "text_local": null
+     "text_local": "ಪವನ್ ಎನ್. (BLR-02): ಕಸ್ಟಮರ್ಸ್ ಮತ್ತೆ ಬರೋದಿಲ್ಲ. ಕಾರಣ: ಪವನ್ ಎನ್. ಅವರ 1.4% ಕಸ್ಟಮರ್ಸ್ 30+ ದಿನಗಳ ನಂತರ ಮತ್ತೆ ಬಂದಿದ್ದಾರೆ, ಆದರೆ BLR-02 ನ ಉಳಿದವರದ್ದು 4.7% ಇದೆ (6–18 ತಿಂಗಳ ಹಿಂದೆ ಮೊದಲ ಬಾರಿಗೆ ಬಿಲ್ ಆದ 286 ಕಸ್ಟಮರ್ಸ್). ದೀಪಕ್ ವಿ. ಅವರು 5.9% ನೊಂದಿಗೆ ರೋಲ್ ಮಾಡೆಲ್ ಆಗಿದ್ದಾರೆ. ಪವನ್ ಎನ್. ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಕೆಲಸ: 6–18 ತಿಂಗಳ ಹಿಂದೆ ನೀವು ಸೇವೆ ಮಾಡಿದ 17 ಮದುವೆ ಕಸ್ಟಮರ್ಸ್‌ನಲ್ಲಿ, ಮತ್ತೆ ಬಾರದ 15 ಜನರಿಗೆ ಕಾಲ್ ಮಾಡಿ ಅವರನ್ನು ಅಂಗಡಿಗೆ ಕರೆಯಿರಿ; ಅವರ ಫಾಲೋ-ಅಪ್ ಮಾತುಗಳನ್ನು ಮೊದಲು ದೀಪಕ್ ವಿ. ಅವರ ಬಳಿ ಕೇಳಿ, ಇವತ್ತು ಮಧ್ಯಾಹ್ನ 12 ಗಂಟೆ ಒಳಗೆ ಮಾಡಿ. ಅಪಾಯದಲ್ಲಿ ಇರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹7k."
     }
    ],
    "held_back": 1,
-   "followups": [],
+   "followups": [
+    {
+     "key": "category_avoid:SP1125:indo_western",
+     "title": "Suresh K. (BLR-02) rarely sells Indo-Western",
+     "am_id": "AM-05",
+     "alerted_on": "2026-10-01",
+     "metric": "share of bills",
+     "before": 0.014989293361884369,
+     "after": 0.0,
+     "sample": 7,
+     "status": "too_early",
+     "summary": "Suresh K. (BLR-02) rarely sells Indo-Western: too few bills in 7 days to tell (7)."
+    },
+    {
+     "key": "repeat_low:SP1114",
+     "title": "Manjunath C. (BLR-01): customers don't come back",
+     "am_id": "AM-05",
+     "alerted_on": "2026-10-01",
+     "metric": "bills from returning customers",
+     "before": 0.09523809523809523,
+     "after": 0.0,
+     "sample": 9,
+     "status": "too_early",
+     "summary": "Manjunath C. (BLR-01): customers don't come back: too few bills in 7 days to tell (9)."
+    },
+    {
+     "key": "repeat_low:SP1129",
+     "title": "Pavan N. (BLR-02): customers don't come back",
+     "am_id": "AM-05",
+     "alerted_on": "2026-10-01",
+     "metric": "bills from returning customers",
+     "before": 0.0625,
+     "after": 0.0,
+     "sample": 5,
+     "status": "too_early",
+     "summary": "Pavan N. (BLR-02): customers don't come back: too few bills in 7 days to tell (5)."
+    }
+   ],
    "role_models": [
     {
      "salesperson_id": "SP1110",
@@ -592,8 +695,8 @@
    ],
    "notes": [],
    "briefing_en": "Good morning Harish. Store Coach for Sun 18 Oct. No new issues today. Role model: Karthik J. at BLR-01; 13% of their customers come back.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "ಶುಭ ಬೆಳಿಗ್ಗೆ ಹರೀಶ್. Sun 18 Oct ಗೆ Store Coach. ಇಂದು ಯಾವುದೇ ಹೊಸ ಸಮಸ್ಯೆಗಳಿಲ್ಲ. Role model: BLR-01 ನಲ್ಲಿರುವ Karthik J.; ಅವರಲ್ಲಿ 13% ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಾರೆ.",
+   "briefing_audio": "2026-10-17/audio/briefing_AM-05.mp3"
   },
   "AM-06": {
    "am_id": "AM-06",
@@ -643,7 +746,7 @@
       "window_days": 91
      },
      "text_en": "Mysuru: conversion down across the city. Cause: Market problem, not one store: city conversion 7.7% vs 9.2% in the same 13 weeks last year (-16%, rest of the network -5%); 2 of 2 stores are down. Action for Mahesh Shetty: At today's morning call, tell both Mysuru store managers the drop is city-wide, not their store; keep full Saturday and Sunday rosters and compare stores with each other, not with last year, today's morning call. At stake: ₹97k per 4 weeks.",
-     "text_local": null
+     "text_local": "ಮೈಸೂರು: ಇಡೀ ಸಿಟಿಯಲ್ಲಿ ಕನ್ವರ್ಷನ್ ಕಡಿಮೆಯಾಗಿದೆ. ಕಾರಣ: ಇದು ಮಾರ್ಕೆಟ್ ಸಮಸ್ಯೆ, ಕೇವಲ ಒಂದು ಸ್ಟೋರ್ ಅಲ್ಲ. ಕಳೆದ ವರ್ಷದ ಅದೇ 13 ವಾರಗಳಿಗೆ ಹೋಲಿಸಿದರೆ ಸಿಟಿ ಕನ್ವರ್ಷನ್ 7.7% ಇದೆ, ಕಳೆದ ವರ್ಷ 9.2% ಇತ್ತು (-16%, ಉಳಿದ ನೆಟ್‌ವರ್ಕ್ -5%). 2 ಸ್ಟೋರ್‌ಗಳಲ್ಲಿ 2 ಸ್ಟೋರ್‌ಗಳ ಕನ್ವರ್ಷನ್ ಕಡಿಮೆಯಾಗಿದೆ. ಮಹೇಶ್ ಶೆಟ್ಟಿ ಅವರಿಗೆ ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಇವತ್ತಿನ ಬೆಳಗಿನ ಕಾಲ್‌ನಲ್ಲಿ, ಇಬ್ಬರೂ ಮೈಸೂರು ಸ್ಟೋರ್ ಮ್ಯಾನೇಜರ್‌ಗಳಿಗೆ ಈ ಕುಸಿತ ಇಡೀ ಸಿಟಿಯಲ್ಲಿದೆ, ಅವರ ಸ್ಟೋರ್‌ನಿಂದಲ್ಲ ಅಂತ ತಿಳಿಸಿ. ಶನಿವಾರ ಮತ್ತು ಭಾನುವಾರ ಪೂರ್ಣ ರೋಸ್ಟರ್‌ಗಳನ್ನು ಇಟ್ಟುಕೊಳ್ಳಿ ಮತ್ತು ಸ್ಟೋರ್‌ಗಳನ್ನು ಕಳೆದ ವರ್ಷದ ಬದಲು ಒಂದಕ್ಕೊಂದು ಹೋಲಿಸಿ ನೋಡಿ, ಇವತ್ತಿನ ಬೆಳಗಿನ ಕಾಲ್‌ನಲ್ಲಿ. ಅಪಾಯದಲ್ಲಿ ಇರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹97k."
     },
     {
      "sent_on": "2026-10-11",
@@ -682,11 +785,24 @@
       "window_days": 365
      },
      "text_en": "Santosh B. (MYS-02) rarely sells Indo-Western. Cause: Indo-Western is on 2.6% of Santosh B.'s bills vs 6.5% for other Mysuru salespeople (272 bills, last 12 months). Mysuru buys it; this is one person's gap. Action for Santosh B.: Show two Indo-Western looks to every wedding customer; ask Mohan Y. for their best look first, today. At stake: ₹45k per 4 weeks.",
-     "text_local": null
+     "text_local": "ಸಂತೋಷ್ ಬಿ. (MYS-02) ಅವರು ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಸೇಲ್ಸ್ ಮಾಡೋದು ತುಂಬಾ ಅಪರೂಪ. ಇದಕ್ಕೆ ಕಾರಣ: ಸಂತೋಷ್ ಬಿ. ಅವರ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಕೇವಲ 2.6% ಇದೆ, ಆದ್ರೆ ಮೈಸೂರಿನ ಇತರ ಸೇಲ್ಸ್‌ಪರ್ಸನ್‌ಗಳ ಬಿಲ್‌ಗಳಲ್ಲಿ ಇದು 6.5% ಇದೆ (ಕಳೆದ 12 ತಿಂಗಳುಗಳ 272 ಬಿಲ್‌ಗಳು). ಮೈಸೂರಿನ ಗ್ರಾಹಕರು ಇದನ್ನ ಖರೀದಿಸುತ್ತಾರೆ; ಇದು ಒಬ್ಬರ ಗ್ಯಾಪ್ ಅಷ್ಟೇ. ಸಂತೋಷ್ ಬಿ. ಅವರು ಮಾಡಬೇಕಾದ ಕೆಲಸ: ಪ್ರತಿಯೊಂದು ಮದುವೆ ಕಸ್ಟಮರ್‌ಗೂ ಎರಡು ಇಂಡೋ-ವೆಸ್ಟರ್ನ್ ಲುಕ್ಸ್ ತೋರಿಸಬೇಕು; ಇವತ್ತೇ ಮೋಹನ್ ವೈ. ಅವರ ಹತ್ತಿರ ಅವರ ಬೆಸ್ಟ್ ಲುಕ್ ಬಗ್ಗೆ ಮೊದಲು ಕೇಳಬೇಕು. ಇಲ್ಲಿ ಅಪಾಯದಲ್ಲಿರುವುದು: ಪ್ರತಿ 4 ವಾರಗಳಿಗೆ ₹45k."
     }
    ],
    "held_back": 0,
-   "followups": [],
+   "followups": [
+    {
+     "key": "category_avoid:SP1173:indo_western",
+     "title": "Mohan Y. (MYS-02) rarely sells Indo-Western",
+     "am_id": "AM-06",
+     "alerted_on": "2026-10-06",
+     "metric": "share of bills",
+     "before": 0.022099447513812154,
+     "after": null,
+     "sample": 0,
+     "status": "too_early",
+     "summary": "Mohan Y. (MYS-02) rarely sells Indo-Western: too few bills in 7 days to tell (0)."
+    }
+   ],
    "role_models": [
     {
      "salesperson_id": "SP1172",
@@ -701,8 +817,8 @@
    ],
    "notes": [],
    "briefing_en": "Good morning Mahesh. Store Coach for Sun 18 Oct. No new issues today. Role model: Santosh B. at MYS-02; 7% of their customers come back.",
-   "briefing_local": null,
-   "briefing_audio": null
+   "briefing_local": "ಗುಡ್ ಮಾರ್ನಿಂಗ್ ಮಹೇಶ್. Sun 18 Oct ಗೆ ಸ್ಟೋರ್ ಕೋಚ್. ಇವತ್ತು ಯಾವುದೇ ಹೊಸ ಸಮಸ್ಯೆಗಳು ಇಲ್ಲ. ರೋಲ್ ಮಾಡೆಲ್: MYS-02 ನಲ್ಲಿ ಸಂತೋಷ್ ಬಿ.; ಅವರಲ್ಲಿ 7% ಗ್ರಾಹಕರು ಮತ್ತೆ ಬರುತ್ತಾರೆ.",
+   "briefing_audio": "2026-10-17/audio/briefing_AM-06.mp3"
   }
  }
 }

@@ -8,11 +8,16 @@
    "2026-10-16"
   ],
   "issues_found": 27,
-  "cards": 122,
-  "sarvam": false,
-  "translated": 0,
+  "cards": 123,
+  "sarvam": true,
+  "translated": 6,
   "fallback_en": 0,
-  "audio": 0
+  "audio": 6,
+  "health": {
+   "seconds": 6.7,
+   "source": "csv",
+   "sarvam_cut_off": false
+  }
  },
  "rows": [
   {
@@ -44,6 +49,15 @@
     "SP1090": 24
    },
    "note": "Dummy mobile number on bills; repeat rate for this store can't be measured. Excluded from repeat."
+  },
+  {
+   "type": "bill_on_off_day",
+   "bills_affected": 6,
+   "salespeople": [
+    "SP1028",
+    "SP1055"
+   ],
+   "note": "Bill by someone rostered Off that day."
   },
   {
    "type": "salesperson_no_bills",

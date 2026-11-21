@@ -1,26 +1,13 @@
 import Link from "next/link";
+import { DatePicker } from "./datepicker";
+import Listen from "./listen";
 import { audioUrl, day, inr, type Followup, type Issue } from "@/lib/data";
 
-export function Header({ date, dates, path = "/" }: { date: string; dates: string[]; path?: string }) {
-  const i = dates.indexOf(date);
-  const prev = i > 0 ? dates[i - 1] : null;
-  const next = i >= 0 && i < dates.length - 1 ? dates[i + 1] : null;
-  const q = (d: string) => `${path}?date=${d}`;
+export function Header({ from, to, dates, path = "/", title }: { from: string; to: string; dates: string[]; path?: string; title?: string }) {
   return (
     <header className="top">
-      <Link href={`/?date=${date}`} className="brand">Store <span>Coach</span></Link>
-      <nav className="links">
-        <Link href={`/?date=${date}`}>Area managers</Link>
-        <Link href={`/stores?date=${date}`}>Salesperson cards</Link>
-        <Link href={`/issues?date=${date}`}>All issues</Link>
-        <Link href={`/followups?date=${date}`}>Follow-ups</Link>
-        <Link href={`/data?date=${date}`}>Data issues</Link>
-      </nav>
-      <div className="datenav" aria-label="Run date">
-        {prev ? <Link href={q(prev)}>←</Link> : <span className="btn">←</span>}
-        <span>Morning of <b>{day(nextDay(date))}</b></span>
-        {next ? <Link href={q(next)}>→</Link> : <span className="btn">→</span>}
-      </div>
+      <div className="crumb">{title}</div>
+      <DatePicker dates={dates} from={from} to={to} path={path} />
     </header>
   );
 }
@@ -31,12 +18,13 @@ export const nextDay = (iso: string) => {
   return d.toISOString().slice(0, 10);
 };
 
-export function IssueCard({ i }: { i: Issue }) {
+export function IssueCard({ i, fb = false }: { i: Issue; fb?: boolean }) {
   return (
-    <article className="panel issue">
+    <article className="panel issue" data-reveal>
       <div className="chips">
         <span className="chip lever">{i.lever}</span>
         {i.sent_on && <span className="chip">sent {day(i.sent_on)}</span>}
+        <Fallback on={fb && !i.text_local} />
       </div>
       <h3>{i.title}</h3>
       <div><span className="rupees">{inr(i.rupees)}</span> <span className="small">at stake per 4 weeks</span></div>
@@ -56,14 +44,19 @@ export function FollowupRow({ f }: { f: Followup }) {
   const cls = f.status === "improved" ? "ok" : f.status === "worse" ? "bad" : "";
   const label = { improved: "Improved", worse: "Got worse", flat: "Not moved", too_early: "Too early to tell" }[f.status] ?? f.status;
   return (
-    <div className="panel">
+    <div className="panel" data-reveal>
       <div className="chips"><span className={`chip ${cls}`}>{label}</span><span className="chip">alerted {day(f.alerted_on)}</span></div>
       <div>{f.summary}</div>
     </div>
   );
 }
 
-export function Audio({ src }: { src: string | null | undefined }) {
+// Old runs have a pre-made mp3 (src); otherwise voice on first click via /api/tts (CDN-cached after that).
+export function Audio({ src, date, am, sp }: { src?: string | null; date?: string; am?: string; sp?: string }) {
   const u = audioUrl(src);
-  return u ? <audio controls preload="none" src={u} /> : null;
+  if (u) return <audio controls preload="none" src={u} />;
+  return date && (am || sp) ? <Listen date={date} am={am} sp={sp} /> : null;
 }
+
+export const Fallback = ({ on }: { on: boolean }) =>
+  on ? <span className="chip bad" title="Translation was unavailable or failed number checks">English only</span> : null;

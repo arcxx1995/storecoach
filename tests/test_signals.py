@@ -7,7 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from engine.cards import MAX_WORDS, build_cards  # noqa: E402
-from engine.detectors import detect, make_ctx, role_models  # noqa: E402
+from engine.detectors import DAY, detect, make_ctx, role_models  # noqa: E402
 from engine.load import load  # noqa: E402
 from engine.metrics import data_issues  # noqa: E402
 from engine.text import words  # noqa: E402
@@ -57,6 +57,17 @@ def main():
     kinds = {(x["type"], x.get("store_id")) for x in data_issues(load())}
     assert {("footfall_zero_with_bills", "PAT-03"), ("placeholder_customer_id", "PAT-02"),
             ("new_store_no_baseline", "BLR-05")} <= kinds
+    # Not a problem: Muzaffarpur is up year on year, so no city alert; small-store cards fall back to city peers
+    ctx = make_ctx(load())
+    assert not any(i["city"] in ("Muzaffarpur", "Kanpur") and i["kind"] == "city_slowdown" for i in detect(ctx))
+    # BLR-05 (new store, nobody there qualifies) benchmarks against Bengaluru, but names no outside peer
+    from engine.cards import _peers
+    from engine.metrics import bill_metrics, window
+    w = window(ctx.d.bills, "bill_date", ctx.E - 89 * DAY, ctx.E)
+    m = bill_metrics(w, "salesperson_id").join(__import__("pandas").Series(ctx.sp_store, name="store_id"))
+    peers, same = _peers(ctx, "SP1163", "BLR-05", m)
+    assert len(peers) and not same and set(peers.store_id) <= {"BLR-01", "BLR-02", "BLR-03", "BLR-04"}
+    assert any(x["type"] == "bill_on_off_day" for x in data_issues(load()))
     print("ok")
 
 

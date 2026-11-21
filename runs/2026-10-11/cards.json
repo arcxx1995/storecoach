@@ -8,11 +8,16 @@
    "2026-10-11"
   ],
   "issues_found": 27,
-  "cards": 122,
-  "sarvam": false,
-  "translated": 0,
+  "cards": 123,
+  "sarvam": true,
+  "translated": 6,
   "fallback_en": 0,
-  "audio": 0
+  "audio": 6,
+  "health": {
+   "seconds": 8.9,
+   "source": "csv",
+   "sarvam_cut_off": false
+  }
  },
  "cards": [
   {
@@ -1115,6 +1120,22 @@
    "source": "items_per_bill",
    "rupees": 9035,
    "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.5 items a bill; Amit A. averages 1.8. Offer the add-on before billing.",
+   "lang": "hi-IN",
+   "text_local": null,
+   "audio": null
+  },
+  {
+   "salesperson_id": "SP1098",
+   "name": "Zaid A.",
+   "store_id": "PAT-04",
+   "city": "Patna",
+   "state": "Bihar",
+   "behaviour": "One more piece on every bill",
+   "peer_id": null,
+   "peer_name": null,
+   "source": "items_per_bill",
+   "rupees": 54421,
+   "text_en": "Today: add one more piece to every bill, like a stole, mala or mojari. You average 1.4 items a bill; the best Patna salesperson averages 2.5. Offer the add-on before billing.",
    "lang": "hi-IN",
    "text_local": null,
    "audio": null

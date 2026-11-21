@@ -4,6 +4,7 @@ Blob REST protocol mirrors @vercel/blob put() (node_modules/@vercel/blob/dist, A
 """
 import json
 import os
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -11,7 +12,7 @@ from pathlib import Path
 
 RUNS = Path(os.environ.get("RUNS_DIR", Path(__file__).resolve().parent.parent / "runs"))
 TOKEN = os.environ.get("BLOB_READ_WRITE_TOKEN")
-STORE_ID = TOKEN.split("_")[3] if TOKEN else None
+STORE_ID = TOKEN.split("_")[3] if TOKEN and TOKEN.count("_") >= 3 else None  # vercel_blob_rw_<store>_<secret>
 PUBLIC = f"https://{STORE_ID}.public.blob.vercel-storage.com" if STORE_ID else None
 TYPES = {".json": "application/json", ".mp3": "audio/mpeg"}
 
@@ -35,20 +36,33 @@ def write_bytes(rel: str, data: bytes) -> None:
     p.write_bytes(data)
 
 
-def read_json(rel: str):
+def read_bytes(rel: str) -> bytes | None:
     if TOKEN:
-        try:
-            with urllib.request.urlopen(f"{PUBLIC}/runs/{rel}", timeout=30) as r:
-                return json.load(r)
-        except urllib.error.HTTPError as e:
-            if e.code == 404:
-                return None
-            raise
+        for k in range(3):
+            try:
+                with urllib.request.urlopen(f"{PUBLIC}/runs/{rel}", timeout=30) as r:
+                    return r.read()
+            except urllib.error.HTTPError as e:
+                if e.code == 404:
+                    return None
+                if k == 2:
+                    raise
+            except (urllib.error.URLError, TimeoutError):
+                if k == 2:
+                    raise
+            time.sleep(2 ** k)
     p = RUNS / rel
-    return json.loads(p.read_text()) if p.exists() else None
+    return p.read_bytes() if p.exists() else None
+
+
+def read_json(rel: str):
+    b = read_bytes(rel)
+    return json.loads(b) if b is not None else None
 
 
 def run_dates() -> list[str]:
-    if TOKEN:
-        return (read_json("index.json") or {}).get("dates", [])
-    return sorted(p.name for p in RUNS.glob("20??-??-??") if (p / "digests.json").exists())
+    """Completed runs. index.json is written last, so a half-written run is not listed (and gets redone)."""
+    idx = read_json("index.json")
+    if idx is not None:
+        return idx.get("dates", [])
+    return sorted(p.name for p in RUNS.glob("20??-??-??") if (p / "digests.json").exists())  # pre-index local runs
